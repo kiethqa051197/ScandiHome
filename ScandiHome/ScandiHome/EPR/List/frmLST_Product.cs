@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ScandiHome
+namespace ScandiHome.EPR.List
 {
-    public partial class Form1 : Form
+    public partial class frmLST_Product : DevExpress.XtraEditors.XtraForm
     {
-        public Form1()
+        public frmLST_Product()
         {
             InitializeComponent();
         }
