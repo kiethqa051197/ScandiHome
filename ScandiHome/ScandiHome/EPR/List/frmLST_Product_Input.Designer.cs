@@ -812,7 +812,8 @@ namespace ScandiHome.EPR.List
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnSaveClose);
             this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(850, 650);
+            this.MaximumSize = new System.Drawing.Size(1080, 650);
+            this.MinimumSize = new System.Drawing.Size(1080, 650);
             this.Name = "frmLST_Product_Input";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLST_Product_Input";
