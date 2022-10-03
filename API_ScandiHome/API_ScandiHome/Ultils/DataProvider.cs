@@ -30,7 +30,7 @@ namespace API_ScandiHome.Ultils
             var mUser = readWriteINIfile.ReadINI("Connection", "User");
             var mPass = readWriteINIfile.ReadINI("Connection", "Pass");
 
-            return String.Format("Server={0};Database={1};User Id={2};Password={3};", mInstance, mDBConnection, mUser, mPass);
+            return String.Format("Data Source={0}; Initial Catalog={1};User Id={2};Password={3}", mInstance, mDBConnection, mUser, mPass);
         }
 
         public DataTable ExecuteQuery(string query, Object[] parameter = null)
