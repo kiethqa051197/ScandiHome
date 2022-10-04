@@ -3,6 +3,7 @@ using API_ScandiHome.DTO;
 using API_ScandiHome.Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -15,11 +16,17 @@ namespace API_ScandiHome.Controllers
     {
         [System.Web.Http.Route("login")]
         [System.Web.Http.HttpPost]
-        public ResponseModel<Account> login(RequestModel request)
+        public ResponseModel<Account> Login(RequestModel request)
         {
             try
             {
-                return new ResponseModel<Account>(AccountDAO.Instance.Login(request.DataCode, request.DataValue), true, "Get data success!!!" , null);
+                var mResult = AccountDAO.Instance.Login(request.DataCode, request.DataValue);
+
+                var mData = mResult.Rows[0];
+                if (mData.Field<bool>("Success"))
+                    return new ResponseModel<Account>(new Account(mData), true, mData.Field<string>("Message"), null);
+                else
+                    return new ResponseModel<Account>(false, null, "Lỗi: " + mData.Field<string>("Message"));
             }
             catch (Exception ex)
             {

@@ -20,32 +20,9 @@ namespace API_ScandiHome.DAO
 
         private AccountDAO() { }
 
-        public Account Login(string userName, string password)
+        public DataTable Login(string userName, string password)
         {
-            //byte[] temp = ASCIIEncoding.ASCII.GetBytes(password);
-            //byte[] hasData = new MD5CryptoServiceProvider().ComputeHash(temp);
-
-            //string hasPass = "";
-
-            //foreach (byte item in hasData)
-            //{
-            //    hasPass += item;
-            //}
-            ////var list = hasData.ToString();
-            ////list.Reverse();
-
-            string query = string.Format("SELECT * FROM dbo.[User] WHERE UserName=N'{0}' AND PasswordHash=N'{1}'", userName, password);
-
-            DataTable result = DataProvider.Instance.ExecuteQuery(query);
-
-            if (result.Rows.Count > 0)
-            {
-                return new Account(userName, password, 1);
-            }
-            else
-            {
-                return null;
-            }
+            return DataProvider.Instance.ExecuteQuery("EXEC SCH_proc_Login @username , @password ", new object[] { userName, password });
         }
     }
 }
