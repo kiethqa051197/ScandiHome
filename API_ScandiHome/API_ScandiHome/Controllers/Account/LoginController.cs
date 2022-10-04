@@ -10,15 +10,21 @@ using System.Web.Mvc;
 
 namespace API_ScandiHome.Controllers
 {
+    [System.Web.Http.RoutePrefix("api/Account")]
     public class LoginController : ApiController
     {
+        [System.Web.Http.Route("login")]
         [System.Web.Http.HttpPost]
-        public ResponseModel Login(RequestModel request)
+        public ResponseModel<Account> login(RequestModel request)
         {
-            string username = request.DataCode;
-            string password = request.DataValue;
-
-            return new ResponseModel(200, username, AccountDAO.Instance.Login(username, password), null);
+            try
+            {
+                return new ResponseModel<Account>(AccountDAO.Instance.Login(request.DataCode, request.DataValue), true, "Get data success!!!" , null);
+            }
+            catch (Exception ex)
+            {
+                return new ResponseModel<Account>(false, null, "Lỗi: " + ex.Message);
+            }
         }
     }
 }

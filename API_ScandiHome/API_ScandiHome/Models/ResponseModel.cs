@@ -1,24 +1,33 @@
-﻿using API_ScandiHome.DTO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace API_ScandiHome.Models
+﻿namespace API_ScandiHome.Models
 {
-    public class ResponseModel
+    public class ResponseModel<T>
     {
-        public int DataStatus = 0;
-        public string DataCode = string.Empty;
-        public Account DataValue = null;
-        public string DataErrorDescription = string.Empty;
+        public bool Succeeded { get; set; }
+        public string Message { get; set; }
+        public string Errors { get; set; }
+        public T Data { get; set; }
 
-        public ResponseModel(int pDataStatus, string pDataCode, Account pDataValue, string pDataErrorDescription)
+        public ResponseModel() {}
+
+        public ResponseModel(T pData, string pMessage = null)
         {
-            this.DataStatus = pDataStatus;
-            this.DataCode = pDataCode;
-            this.DataValue = pDataValue;
-            this.DataErrorDescription = pDataErrorDescription;
+            Data = pData;
+            Message = pMessage;
+        }
+
+        public ResponseModel(bool pSucceeded, string pMessage, string pErrors)
+        {
+            Succeeded = pSucceeded;
+            Message = pMessage;
+            Errors = pErrors;
+        }
+
+        public ResponseModel(T pData, bool pSucceeded, string pMessage, string pErrors)
+        {
+            Data = pData;
+            Succeeded = pSucceeded;
+            Message = pMessage;
+            Errors = pErrors;
         }
     }
 }
