@@ -23,10 +23,10 @@ namespace API_ScandiHome.Controllers
                 var mResult = AccountDAO.Instance.Login(request.DataCode, request.DataValue);
 
                 var mData = mResult.Rows[0];
-                if (mData.Field<bool>("Success"))
-                    return new ResponseModel<Account>(new Account(mData), true, mData.Field<string>("Message"), null);
+                if (Boolean.Parse(mData["Success"].ToString()))
+                    return new ResponseModel<Account>(new Account(mData), true, mData["Message"].ToString(), null);
                 else
-                    return new ResponseModel<Account>(false, null, "Lỗi: " + mData.Field<string>("Message"));
+                    return new ResponseModel<Account>(false, null, "Lỗi: " + mData["Message"].ToString());
             }
             catch (Exception ex)
             {

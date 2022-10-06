@@ -44,32 +44,32 @@ namespace ScandiHome
             // 
             // chk_Remember
             // 
-            this.chk_Remember.Location = new System.Drawing.Point(132, 71);
-            this.chk_Remember.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chk_Remember.Location = new System.Drawing.Point(106, 57);
+            this.chk_Remember.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.chk_Remember.Name = "chk_Remember";
             this.chk_Remember.Properties.Caption = "Ghi nhớ đăng nhập";
-            this.chk_Remember.Size = new System.Drawing.Size(149, 24);
+            this.chk_Remember.Size = new System.Drawing.Size(119, 20);
             this.chk_Remember.TabIndex = 4;
             // 
             // txtPass
             // 
             this.txtPass.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPass.Location = new System.Drawing.Point(132, 41);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPass.Location = new System.Drawing.Point(106, 33);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtPass.Name = "txtPass";
             this.txtPass.Properties.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(251, 22);
+            this.txtPass.Size = new System.Drawing.Size(201, 20);
             this.txtPass.TabIndex = 3;
             this.txtPass.Tag = "";
             this.txtPass.ToolTip = "Mật khẩu";
             // 
             // lblPass
             // 
-            this.lblPass.Location = new System.Drawing.Point(58, 44);
-            this.lblPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lblPass.Location = new System.Drawing.Point(46, 35);
+            this.lblPass.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.lblPass.Name = "lblPass";
-            this.lblPass.Size = new System.Drawing.Size(56, 17);
+            this.lblPass.Size = new System.Drawing.Size(44, 13);
             this.lblPass.TabIndex = 2;
             this.lblPass.Text = "Mật khẩu";
             // 
@@ -77,19 +77,20 @@ namespace ScandiHome
             // 
             this.txtUserName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUserName.Location = new System.Drawing.Point(132, 12);
+            this.txtUserName.Location = new System.Drawing.Point(106, 10);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(251, 22);
+            this.txtUserName.Size = new System.Drawing.Size(201, 20);
             this.txtUserName.TabIndex = 1;
             this.txtUserName.Tag = "";
             this.txtUserName.ToolTip = "Tên đăng nhập";
             // 
             // lblUserName
             // 
-            this.lblUserName.Location = new System.Drawing.Point(21, 14);
-            this.lblUserName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lblUserName.Location = new System.Drawing.Point(17, 11);
+            this.lblUserName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(93, 17);
+            this.lblUserName.Size = new System.Drawing.Size(72, 13);
             this.lblUserName.TabIndex = 0;
             this.lblUserName.Text = "Tên đăng nhập";
             // 
@@ -102,13 +103,15 @@ namespace ScandiHome
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCancel.ImageOptions.SvgImage")));
             this.btnCancel.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.btnCancel.Location = new System.Drawing.Point(297, 105);
+            this.btnCancel.Location = new System.Drawing.Point(226, 80);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Padding = new System.Windows.Forms.Padding(3);
+            this.btnCancel.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancel.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.btnCancel.Size = new System.Drawing.Size(86, 35);
+            this.btnCancel.Size = new System.Drawing.Size(68, 28);
             this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "Đó&ng";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnLogin
             // 
@@ -119,20 +122,22 @@ namespace ScandiHome
             this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnLogin.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnLogin.ImageOptions.SvgImage")));
             this.btnLogin.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.btnLogin.Location = new System.Drawing.Point(169, 105);
+            this.btnLogin.Location = new System.Drawing.Point(118, 80);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Padding = new System.Windows.Forms.Padding(3);
+            this.btnLogin.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogin.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.btnLogin.Size = new System.Drawing.Size(122, 35);
+            this.btnLogin.Size = new System.Drawing.Size(95, 28);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "&Đăng nhập";
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // frmLogin
             // 
             this.ActiveGlowColor = System.Drawing.Color.Blue;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(418, 160);
+            this.ClientSize = new System.Drawing.Size(337, 129);
             this.Controls.Add(this.chk_Remember);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.lblPass);
@@ -140,9 +145,10 @@ namespace ScandiHome
             this.Controls.Add(this.lblUserName);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnLogin);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(420, 200);
-            this.MinimumSize = new System.Drawing.Size(420, 200);
+            this.MinimumSize = new System.Drawing.Size(420, 192);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
