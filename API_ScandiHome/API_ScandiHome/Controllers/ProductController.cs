@@ -14,7 +14,7 @@ namespace API_ScandiHome.Controllers
     {
         [Route("GetAll")]
         [HttpPost]
-        public ResponseModel<DataTable> login()
+        public ResponseModel<DataTable> GetAllProduct()
         {
             try
             {
