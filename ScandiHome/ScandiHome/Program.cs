@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ScandiHome.EPR.List;
+using System;
 using System.Windows.Forms;
 
 namespace ScandiHome
@@ -13,7 +14,7 @@ namespace ScandiHome
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            Application.Run(new frmLST_Product());
         }
     }
 }

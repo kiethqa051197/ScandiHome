@@ -43,6 +43,7 @@ namespace API_ScandiHome.Ultils
                 connection.Open();
 
                 SqlCommand command = new SqlCommand(query, connection);
+                command.CommandTimeout = 0;
 
                 if (parameter != null)
                 {
@@ -78,7 +79,7 @@ namespace API_ScandiHome.Ultils
                 connection.Open();
 
                 SqlCommand command = new SqlCommand(query, connection);
-
+                command.CommandTimeout = 0;
                 if (parameter != null)
                 {
                     string[] listPara = query.Split(' ');
@@ -111,6 +112,7 @@ namespace API_ScandiHome.Ultils
                 connection.Open();
 
                 SqlCommand command = new SqlCommand(query, connection);
+                command.CommandTimeout = 0;
 
                 if (parameter != null)
                 {

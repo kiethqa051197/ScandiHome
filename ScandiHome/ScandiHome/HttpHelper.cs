@@ -44,6 +44,7 @@ namespace ScandiHome
             httpWebRequest.ContentType = pzContentType;
             httpWebRequest.Method = pzMethod;
             httpWebRequest.Proxy = new WebProxy();
+            httpWebRequest.ContentLength = 0;
 
             if (!string.IsNullOrEmpty(pzData))
             {
