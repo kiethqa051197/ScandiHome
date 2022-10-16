@@ -1,16 +1,8 @@
-﻿using DevExpress.XtraEditors;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json.Linq;
+using ScandiHome.Helper;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Threading;
 
 namespace ScandiHome.EPR.List
 {
@@ -20,12 +12,39 @@ namespace ScandiHome.EPR.List
         {
             InitializeComponent();
 
-            string result = HttpHelper.webRequest("https://localhost:44368/api/Product/GetAll", null, "POST", "application/json");
+            
+            RefreshData();
+        }
 
-            var jsonObject = JObject.Parse(result);
-            DataTable dt = jsonObject["Data"].ToObject<DataTable>();
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            RefreshData();
+        }
 
-            grdProduct.DataSource = dt;
+        private void RefreshData()
+        {
+            try
+            {
+                WaitFormFunc waitForm = new WaitFormFunc();
+                waitForm.Show();
+
+                Thread.Sleep(500);
+
+                string result = HttpHelper.webRequest("Product/GetAll", null, "POST", "application/json");
+
+                var jsonObject = JObject.Parse(result);
+                DataTable dt = jsonObject["Data"].ToObject<DataTable>();
+                gc_Data.DataSource = dt;
+               
+                waitForm.Close(dt);
+            }
+            catch { }
+        }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            frmLST_Product_Input mform = new frmLST_Product_Input(gv_Data.GetFocusedRowCellValue("SKU").ToString());
+            mform.ShowDialog();
         }
     }
 }

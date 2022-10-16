@@ -46,8 +46,6 @@ namespace ScandiHome.EPR.List
             this.pn_ModifyBy = new DevExpress.XtraEditors.PanelControl();
             this.lblModifyBy = new DevExpress.XtraEditors.LabelControl();
             this.txtModifyBy = new DevExpress.XtraEditors.TextEdit();
-            this.lblProductCode = new DevExpress.XtraEditors.LabelControl();
-            this.txtProductCode = new DevExpress.XtraEditors.TextEdit();
             this.lblDesigner = new DevExpress.XtraEditors.LabelControl();
             this.gr_info = new DevExpress.XtraEditors.GroupControl();
             this.cb_Designer = new DevExpress.XtraEditors.LookUpEdit();
@@ -63,17 +61,19 @@ namespace ScandiHome.EPR.List
             this.lblSKUModel = new DevExpress.XtraEditors.LabelControl();
             this.lblProductName = new DevExpress.XtraEditors.LabelControl();
             this.txtProductName = new DevExpress.XtraEditors.TextEdit();
-            this.grdColor = new DevExpress.XtraGrid.GridControl();
-            this.grvColor = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gc_Color = new DevExpress.XtraGrid.GridControl();
+            this.gv_Color = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.grdCol_Color_STT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.grdCol_Color_DataCode = new DevExpress.XtraGrid.Columns.GridColumn();
             this.grdCol_Color_DataName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.grd_Material = new DevExpress.XtraGrid.GridControl();
-            this.grv_Material = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gc_Material = new DevExpress.XtraGrid.GridControl();
+            this.gv_Material = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.grdCol_Material_STT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.grdCol_Material_DataCode = new DevExpress.XtraGrid.Columns.GridColumn();
             this.grdCol_Material_DataName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.grdCol_Material_Quantity = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.grdCol_Material_Amount = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.grdCol_Material_TotalAmount = new DevExpress.XtraGrid.Columns.GridColumn();
             this.lblDescription = new DevExpress.XtraEditors.LabelControl();
             this.txtDescription = new DevExpress.XtraEditors.TextEdit();
             this.lblSeries = new DevExpress.XtraEditors.LabelControl();
@@ -93,7 +93,6 @@ namespace ScandiHome.EPR.List
             ((System.ComponentModel.ISupportInitialize)(this.pn_ModifyBy)).BeginInit();
             this.pn_ModifyBy.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtModifyBy.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtProductCode.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gr_info)).BeginInit();
             this.gr_info.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cb_Designer.Properties)).BeginInit();
@@ -103,10 +102,10 @@ namespace ScandiHome.EPR.List
             ((System.ComponentModel.ISupportInitialize)(this.cb_Model.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cb_Category.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtProductName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grdColor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grvColor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grd_Material)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grv_Material)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gc_Color)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gv_Color)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gc_Material)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gv_Material)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescription.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cb_Series.Properties)).BeginInit();
             this.SuspendLayout();
@@ -120,10 +119,10 @@ namespace ScandiHome.EPR.List
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCancel.ImageOptions.SvgImage")));
             this.btnCancel.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.btnCancel.Location = new System.Drawing.Point(772, 446);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancel.Location = new System.Drawing.Point(988, 456);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancel.Padding = new System.Windows.Forms.Padding(2);
             this.btnCancel.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.btnCancel.Size = new System.Drawing.Size(68, 28);
             this.btnCancel.TabIndex = 23;
@@ -138,10 +137,10 @@ namespace ScandiHome.EPR.List
             this.btnSaveClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnSaveClose.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSaveClose.ImageOptions.SvgImage")));
             this.btnSaveClose.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.btnSaveClose.Location = new System.Drawing.Point(674, 446);
-            this.btnSaveClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSaveClose.Location = new System.Drawing.Point(890, 456);
+            this.btnSaveClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnSaveClose.Name = "btnSaveClose";
-            this.btnSaveClose.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSaveClose.Padding = new System.Windows.Forms.Padding(2);
             this.btnSaveClose.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.btnSaveClose.Size = new System.Drawing.Size(88, 28);
             this.btnSaveClose.TabIndex = 22;
@@ -156,10 +155,10 @@ namespace ScandiHome.EPR.List
             this.btnSave.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnSave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSave.ImageOptions.SvgImage")));
             this.btnSave.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.btnSave.Location = new System.Drawing.Point(613, 446);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Location = new System.Drawing.Point(829, 456);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Padding = new System.Windows.Forms.Padding(2);
             this.btnSave.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.btnSave.Size = new System.Drawing.Size(61, 28);
             this.btnSave.TabIndex = 22;
@@ -204,7 +203,7 @@ namespace ScandiHome.EPR.List
             this.lblCreateBy.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCreateBy.Appearance.Options.UseFont = true;
             this.lblCreateBy.Location = new System.Drawing.Point(5, 14);
-            this.lblCreateBy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblCreateBy.Margin = new System.Windows.Forms.Padding(2);
             this.lblCreateBy.Name = "lblCreateBy";
             this.lblCreateBy.Size = new System.Drawing.Size(48, 12);
             this.lblCreateBy.TabIndex = 0;
@@ -216,7 +215,7 @@ namespace ScandiHome.EPR.List
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCreateBy.EditValue = "";
             this.txtCreateBy.Location = new System.Drawing.Point(58, 9);
-            this.txtCreateBy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCreateBy.Margin = new System.Windows.Forms.Padding(2);
             this.txtCreateBy.Name = "txtCreateBy";
             this.txtCreateBy.Properties.AutoHeight = false;
             this.txtCreateBy.Properties.ReadOnly = true;
@@ -243,7 +242,7 @@ namespace ScandiHome.EPR.List
             this.lblCreateDate.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCreateDate.Appearance.Options.UseFont = true;
             this.lblCreateDate.Location = new System.Drawing.Point(10, 14);
-            this.lblCreateDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblCreateDate.Margin = new System.Windows.Forms.Padding(2);
             this.lblCreateDate.Name = "lblCreateDate";
             this.lblCreateDate.Size = new System.Drawing.Size(44, 12);
             this.lblCreateDate.TabIndex = 0;
@@ -255,7 +254,7 @@ namespace ScandiHome.EPR.List
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCreateDate.EditValue = "";
             this.txtCreateDate.Location = new System.Drawing.Point(60, 9);
-            this.txtCreateDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCreateDate.Margin = new System.Windows.Forms.Padding(2);
             this.txtCreateDate.Name = "txtCreateDate";
             this.txtCreateDate.Properties.AutoHeight = false;
             this.txtCreateDate.Properties.DisplayFormat.FormatString = "dd/MM/yyyy HH:mm:ss";
@@ -284,7 +283,7 @@ namespace ScandiHome.EPR.List
             this.lblModifyDate.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblModifyDate.Appearance.Options.UseFont = true;
             this.lblModifyDate.Location = new System.Drawing.Point(9, 14);
-            this.lblModifyDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblModifyDate.Margin = new System.Windows.Forms.Padding(2);
             this.lblModifyDate.Name = "lblModifyDate";
             this.lblModifyDate.Size = new System.Drawing.Size(46, 12);
             this.lblModifyDate.TabIndex = 0;
@@ -296,7 +295,7 @@ namespace ScandiHome.EPR.List
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtModifyDate.EditValue = "";
             this.txtModifyDate.Location = new System.Drawing.Point(60, 9);
-            this.txtModifyDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtModifyDate.Margin = new System.Windows.Forms.Padding(2);
             this.txtModifyDate.Name = "txtModifyDate";
             this.txtModifyDate.Properties.AutoHeight = false;
             this.txtModifyDate.Properties.DisplayFormat.FormatString = "dd/MM/yyyy HH:mm:ss";
@@ -325,7 +324,7 @@ namespace ScandiHome.EPR.List
             this.lblModifyBy.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblModifyBy.Appearance.Options.UseFont = true;
             this.lblModifyBy.Location = new System.Drawing.Point(5, 14);
-            this.lblModifyBy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblModifyBy.Margin = new System.Windows.Forms.Padding(2);
             this.lblModifyBy.Name = "lblModifyBy";
             this.lblModifyBy.Size = new System.Drawing.Size(50, 12);
             this.lblModifyBy.TabIndex = 0;
@@ -337,35 +336,17 @@ namespace ScandiHome.EPR.List
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtModifyBy.EditValue = "";
             this.txtModifyBy.Location = new System.Drawing.Point(58, 9);
-            this.txtModifyBy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtModifyBy.Margin = new System.Windows.Forms.Padding(2);
             this.txtModifyBy.Name = "txtModifyBy";
             this.txtModifyBy.Properties.AutoHeight = false;
             this.txtModifyBy.Properties.ReadOnly = true;
             this.txtModifyBy.Size = new System.Drawing.Size(104, 22);
             this.txtModifyBy.TabIndex = 26;
             // 
-            // lblProductCode
-            // 
-            this.lblProductCode.Location = new System.Drawing.Point(14, 170);
-            this.lblProductCode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.lblProductCode.Name = "lblProductCode";
-            this.lblProductCode.Size = new System.Drawing.Size(63, 13);
-            this.lblProductCode.TabIndex = 30;
-            this.lblProductCode.Text = "Mã sản phẩm";
-            // 
-            // txtProductCode
-            // 
-            this.txtProductCode.Location = new System.Drawing.Point(80, 165);
-            this.txtProductCode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtProductCode.Name = "txtProductCode";
-            this.txtProductCode.Properties.AutoHeight = false;
-            this.txtProductCode.Size = new System.Drawing.Size(291, 24);
-            this.txtProductCode.TabIndex = 25;
-            // 
             // lblDesigner
             // 
-            this.lblDesigner.Location = new System.Drawing.Point(35, 228);
-            this.lblDesigner.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblDesigner.Location = new System.Drawing.Point(33, 203);
+            this.lblDesigner.Margin = new System.Windows.Forms.Padding(2);
             this.lblDesigner.Name = "lblDesigner";
             this.lblDesigner.Size = new System.Drawing.Size(42, 13);
             this.lblDesigner.TabIndex = 27;
@@ -375,7 +356,7 @@ namespace ScandiHome.EPR.List
             // 
             this.gr_info.Controls.Add(this.tpl_groupinfo);
             this.gr_info.Location = new System.Drawing.Point(21, 338);
-            this.gr_info.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gr_info.Margin = new System.Windows.Forms.Padding(2);
             this.gr_info.Name = "gr_info";
             this.gr_info.Size = new System.Drawing.Size(350, 108);
             this.gr_info.TabIndex = 38;
@@ -383,8 +364,8 @@ namespace ScandiHome.EPR.List
             // 
             // cb_Designer
             // 
-            this.cb_Designer.Location = new System.Drawing.Point(80, 222);
-            this.cb_Designer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cb_Designer.Location = new System.Drawing.Point(78, 197);
+            this.cb_Designer.Margin = new System.Windows.Forms.Padding(2);
             this.cb_Designer.Name = "cb_Designer";
             this.cb_Designer.Properties.AutoHeight = false;
             this.cb_Designer.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -401,8 +382,6 @@ namespace ScandiHome.EPR.List
             // 
             // gr_SKU
             // 
-            this.gr_SKU.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.gr_SKU.Controls.Add(this.btn_Add_Model);
             this.gr_SKU.Controls.Add(this.lblSKUCategory);
             this.gr_SKU.Controls.Add(this.cb_Product);
@@ -413,7 +392,7 @@ namespace ScandiHome.EPR.List
             this.gr_SKU.Controls.Add(this.cb_Category);
             this.gr_SKU.Controls.Add(this.lblSKUModel);
             this.gr_SKU.Location = new System.Drawing.Point(21, 10);
-            this.gr_SKU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gr_SKU.Margin = new System.Windows.Forms.Padding(2);
             this.gr_SKU.Name = "gr_SKU";
             this.gr_SKU.Size = new System.Drawing.Size(350, 122);
             this.gr_SKU.TabIndex = 40;
@@ -421,21 +400,19 @@ namespace ScandiHome.EPR.List
             // 
             // btn_Add_Model
             // 
-            this.btn_Add_Model.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Add_Model.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Add_Model.ImageOptions.SvgImage")));
             this.btn_Add_Model.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Add_Model.Location = new System.Drawing.Point(317, 61);
-            this.btn_Add_Model.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Add_Model.Location = new System.Drawing.Point(317, 60);
+            this.btn_Add_Model.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Add_Model.Name = "btn_Add_Model";
             this.btn_Add_Model.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.btn_Add_Model.Size = new System.Drawing.Size(23, 24);
+            this.btn_Add_Model.Size = new System.Drawing.Size(26, 24);
             this.btn_Add_Model.TabIndex = 40;
             // 
             // lblSKUCategory
             // 
             this.lblSKUCategory.Location = new System.Drawing.Point(14, 38);
-            this.lblSKUCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblSKUCategory.Margin = new System.Windows.Forms.Padding(2);
             this.lblSKUCategory.Name = "lblSKUCategory";
             this.lblSKUCategory.Size = new System.Drawing.Size(45, 13);
             this.lblSKUCategory.TabIndex = 30;
@@ -443,10 +420,8 @@ namespace ScandiHome.EPR.List
             // 
             // cb_Product
             // 
-            this.cb_Product.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.cb_Product.Location = new System.Drawing.Point(59, 90);
-            this.cb_Product.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cb_Product.Margin = new System.Windows.Forms.Padding(2);
             this.cb_Product.Name = "cb_Product";
             this.cb_Product.Properties.AutoHeight = false;
             this.cb_Product.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -458,18 +433,16 @@ namespace ScandiHome.EPR.List
             this.cb_Product.Properties.DropDownRows = 10;
             this.cb_Product.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.cb_Product.Properties.ValueMember = "DataCode";
-            this.cb_Product.Size = new System.Drawing.Size(253, 24);
+            this.cb_Product.Size = new System.Drawing.Size(252, 24);
             this.cb_Product.TabIndex = 39;
             // 
             // btn_Add_Product
             // 
-            this.btn_Add_Product.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Add_Product.AutoSize = true;
             this.btn_Add_Product.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Add_Product.ImageOptions.SvgImage")));
             this.btn_Add_Product.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.btn_Add_Product.Location = new System.Drawing.Point(317, 90);
-            this.btn_Add_Product.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Add_Product.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Add_Product.Name = "btn_Add_Product";
             this.btn_Add_Product.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.btn_Add_Product.Size = new System.Drawing.Size(26, 24);
@@ -477,10 +450,8 @@ namespace ScandiHome.EPR.List
             // 
             // cb_Model
             // 
-            this.cb_Model.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.cb_Model.Location = new System.Drawing.Point(59, 61);
-            this.cb_Model.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cb_Model.Margin = new System.Windows.Forms.Padding(2);
             this.cb_Model.Name = "cb_Model";
             this.cb_Model.Properties.AutoHeight = false;
             this.cb_Model.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -492,13 +463,13 @@ namespace ScandiHome.EPR.List
             this.cb_Model.Properties.DropDownRows = 10;
             this.cb_Model.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.cb_Model.Properties.ValueMember = "DataCode";
-            this.cb_Model.Size = new System.Drawing.Size(253, 24);
+            this.cb_Model.Size = new System.Drawing.Size(252, 24);
             this.cb_Model.TabIndex = 39;
             // 
             // lblSKUProduct
             // 
             this.lblSKUProduct.Location = new System.Drawing.Point(20, 95);
-            this.lblSKUProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblSKUProduct.Margin = new System.Windows.Forms.Padding(2);
             this.lblSKUProduct.Name = "lblSKUProduct";
             this.lblSKUProduct.Size = new System.Drawing.Size(37, 13);
             this.lblSKUProduct.TabIndex = 30;
@@ -506,23 +477,19 @@ namespace ScandiHome.EPR.List
             // 
             // btn_Add_Category
             // 
-            this.btn_Add_Category.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Add_Category.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Add_Category.ImageOptions.SvgImage")));
             this.btn_Add_Category.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.btn_Add_Category.Location = new System.Drawing.Point(317, 32);
-            this.btn_Add_Category.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Add_Category.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Add_Category.Name = "btn_Add_Category";
             this.btn_Add_Category.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.btn_Add_Category.Size = new System.Drawing.Size(23, 24);
+            this.btn_Add_Category.Size = new System.Drawing.Size(26, 24);
             this.btn_Add_Category.TabIndex = 40;
             // 
             // cb_Category
             // 
-            this.cb_Category.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.cb_Category.Location = new System.Drawing.Point(59, 32);
-            this.cb_Category.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cb_Category.Margin = new System.Windows.Forms.Padding(2);
             this.cb_Category.Name = "cb_Category";
             this.cb_Category.Properties.AutoHeight = false;
             this.cb_Category.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -534,13 +501,13 @@ namespace ScandiHome.EPR.List
             this.cb_Category.Properties.DropDownRows = 10;
             this.cb_Category.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.cb_Category.Properties.ValueMember = "DataCode";
-            this.cb_Category.Size = new System.Drawing.Size(253, 24);
+            this.cb_Category.Size = new System.Drawing.Size(252, 24);
             this.cb_Category.TabIndex = 39;
             // 
             // lblSKUModel
             // 
             this.lblSKUModel.Location = new System.Drawing.Point(27, 66);
-            this.lblSKUModel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblSKUModel.Margin = new System.Windows.Forms.Padding(2);
             this.lblSKUModel.Name = "lblSKUModel";
             this.lblSKUModel.Size = new System.Drawing.Size(28, 13);
             this.lblSKUModel.TabIndex = 30;
@@ -548,8 +515,8 @@ namespace ScandiHome.EPR.List
             // 
             // lblProductName
             // 
-            this.lblProductName.Location = new System.Drawing.Point(10, 199);
-            this.lblProductName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblProductName.Location = new System.Drawing.Point(8, 171);
+            this.lblProductName.Margin = new System.Windows.Forms.Padding(2);
             this.lblProductName.Name = "lblProductName";
             this.lblProductName.Size = new System.Drawing.Size(67, 13);
             this.lblProductName.TabIndex = 30;
@@ -557,40 +524,40 @@ namespace ScandiHome.EPR.List
             // 
             // txtProductName
             // 
-            this.txtProductName.Location = new System.Drawing.Point(80, 194);
-            this.txtProductName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProductName.Location = new System.Drawing.Point(78, 166);
+            this.txtProductName.Margin = new System.Windows.Forms.Padding(2);
             this.txtProductName.Name = "txtProductName";
             this.txtProductName.Properties.AutoHeight = false;
             this.txtProductName.Size = new System.Drawing.Size(291, 24);
             this.txtProductName.TabIndex = 25;
             // 
-            // grdColor
+            // gc_Color
             // 
-            this.grdColor.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.grdColor.Location = new System.Drawing.Point(389, 254);
-            this.grdColor.MainView = this.grvColor;
-            this.grdColor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.grdColor.Name = "grdColor";
-            this.grdColor.Size = new System.Drawing.Size(464, 191);
-            this.grdColor.TabIndex = 41;
-            this.grdColor.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.grvColor});
+            this.gc_Color.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2);
+            this.gc_Color.Location = new System.Drawing.Point(389, 254);
+            this.gc_Color.MainView = this.gv_Color;
+            this.gc_Color.Margin = new System.Windows.Forms.Padding(2);
+            this.gc_Color.Name = "gc_Color";
+            this.gc_Color.Size = new System.Drawing.Size(667, 191);
+            this.gc_Color.TabIndex = 41;
+            this.gc_Color.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gv_Color});
             // 
-            // grvColor
+            // gv_Color
             // 
-            this.grvColor.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gv_Color.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.grdCol_Color_STT,
             this.grdCol_Color_DataCode,
             this.grdCol_Color_DataName});
-            this.grvColor.DetailHeight = 280;
-            this.grvColor.GridControl = this.grdColor;
-            this.grvColor.Name = "grvColor";
-            this.grvColor.OptionsView.ShowFooter = true;
-            this.grvColor.OptionsView.ShowGroupPanel = false;
-            this.grvColor.OptionsView.ShowViewCaption = true;
-            this.grvColor.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
+            this.gv_Color.DetailHeight = 280;
+            this.gv_Color.GridControl = this.gc_Color;
+            this.gv_Color.Name = "gv_Color";
+            this.gv_Color.OptionsView.ShowFooter = true;
+            this.gv_Color.OptionsView.ShowGroupPanel = false;
+            this.gv_Color.OptionsView.ShowViewCaption = true;
+            this.gv_Color.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.grdCol_Color_STT, DevExpress.Data.ColumnSortOrder.Ascending)});
-            this.grvColor.ViewCaption = "Màu";
+            this.gv_Color.ViewCaption = "Màu";
             // 
             // grdCol_Color_STT
             // 
@@ -603,7 +570,7 @@ namespace ScandiHome.EPR.List
             this.grdCol_Color_STT.Caption = "STT";
             this.grdCol_Color_STT.DisplayFormat.FormatString = "{0:N0}";
             this.grdCol_Color_STT.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.grdCol_Color_STT.FieldName = "Id";
+            this.grdCol_Color_STT.FieldName = "STT";
             this.grdCol_Color_STT.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
             this.grdCol_Color_STT.MaxWidth = 56;
             this.grdCol_Color_STT.MinWidth = 56;
@@ -652,34 +619,37 @@ namespace ScandiHome.EPR.List
             this.grdCol_Color_DataName.VisibleIndex = 2;
             this.grdCol_Color_DataName.Width = 220;
             // 
-            // grd_Material
+            // gc_Material
             // 
-            this.grd_Material.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.grd_Material.Location = new System.Drawing.Point(389, 10);
-            this.grd_Material.MainView = this.grv_Material;
-            this.grd_Material.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.grd_Material.Name = "grd_Material";
-            this.grd_Material.Size = new System.Drawing.Size(464, 240);
-            this.grd_Material.TabIndex = 41;
-            this.grd_Material.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.grv_Material});
+            this.gc_Material.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2);
+            this.gc_Material.Location = new System.Drawing.Point(389, 10);
+            this.gc_Material.MainView = this.gv_Material;
+            this.gc_Material.Margin = new System.Windows.Forms.Padding(2);
+            this.gc_Material.Name = "gc_Material";
+            this.gc_Material.Size = new System.Drawing.Size(667, 240);
+            this.gc_Material.TabIndex = 41;
+            this.gc_Material.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gv_Material});
             // 
-            // grv_Material
+            // gv_Material
             // 
-            this.grv_Material.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gv_Material.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.grdCol_Material_STT,
             this.grdCol_Material_DataCode,
             this.grdCol_Material_DataName,
-            this.grdCol_Material_Quantity});
-            this.grv_Material.DetailHeight = 280;
-            this.grv_Material.GridControl = this.grd_Material;
-            this.grv_Material.Name = "grv_Material";
-            this.grv_Material.OptionsView.ShowFooter = true;
-            this.grv_Material.OptionsView.ShowGroupPanel = false;
-            this.grv_Material.OptionsView.ShowViewCaption = true;
-            this.grv_Material.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
+            this.grdCol_Material_Quantity,
+            this.grdCol_Material_Amount,
+            this.grdCol_Material_TotalAmount});
+            this.gv_Material.DetailHeight = 280;
+            this.gv_Material.GridControl = this.gc_Material;
+            this.gv_Material.Name = "gv_Material";
+            this.gv_Material.OptionsView.ColumnAutoWidth = false;
+            this.gv_Material.OptionsView.ShowFooter = true;
+            this.gv_Material.OptionsView.ShowGroupPanel = false;
+            this.gv_Material.OptionsView.ShowViewCaption = true;
+            this.gv_Material.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.grdCol_Material_STT, DevExpress.Data.ColumnSortOrder.Ascending)});
-            this.grv_Material.ViewCaption = "Nguyên liệu";
+            this.gv_Material.ViewCaption = "Nguyên liệu";
             // 
             // grdCol_Material_STT
             // 
@@ -692,10 +662,10 @@ namespace ScandiHome.EPR.List
             this.grdCol_Material_STT.Caption = "STT";
             this.grdCol_Material_STT.DisplayFormat.FormatString = "{0:N0}";
             this.grdCol_Material_STT.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.grdCol_Material_STT.FieldName = "Id";
+            this.grdCol_Material_STT.FieldName = "STT";
             this.grdCol_Material_STT.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
-            this.grdCol_Material_STT.MaxWidth = 56;
-            this.grdCol_Material_STT.MinWidth = 56;
+            this.grdCol_Material_STT.MaxWidth = 50;
+            this.grdCol_Material_STT.MinWidth = 50;
             this.grdCol_Material_STT.Name = "grdCol_Material_STT";
             this.grdCol_Material_STT.OptionsColumn.ReadOnly = true;
             this.grdCol_Material_STT.SortMode = DevExpress.XtraGrid.ColumnSortMode.Value;
@@ -703,7 +673,7 @@ namespace ScandiHome.EPR.List
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "Id", "{0:N0}")});
             this.grdCol_Material_STT.Visible = true;
             this.grdCol_Material_STT.VisibleIndex = 0;
-            this.grdCol_Material_STT.Width = 56;
+            this.grdCol_Material_STT.Width = 50;
             // 
             // grdCol_Material_DataCode
             // 
@@ -713,8 +683,9 @@ namespace ScandiHome.EPR.List
             this.grdCol_Material_DataCode.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.grdCol_Material_DataCode.Caption = "Mã nguyên liệu";
             this.grdCol_Material_DataCode.FieldName = "DataCode";
-            this.grdCol_Material_DataCode.MaxWidth = 140;
-            this.grdCol_Material_DataCode.MinWidth = 120;
+            this.grdCol_Material_DataCode.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
+            this.grdCol_Material_DataCode.MaxWidth = 150;
+            this.grdCol_Material_DataCode.MinWidth = 110;
             this.grdCol_Material_DataCode.Name = "grdCol_Material_DataCode";
             this.grdCol_Material_DataCode.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.True;
             this.grdCol_Material_DataCode.OptionsColumn.ReadOnly = true;
@@ -731,15 +702,16 @@ namespace ScandiHome.EPR.List
             this.grdCol_Material_DataName.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.grdCol_Material_DataName.Caption = "Tên nguyên liệu";
             this.grdCol_Material_DataName.FieldName = "DataName";
-            this.grdCol_Material_DataName.MaxWidth = 220;
-            this.grdCol_Material_DataName.MinWidth = 160;
+            this.grdCol_Material_DataName.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
+            this.grdCol_Material_DataName.MaxWidth = 300;
+            this.grdCol_Material_DataName.MinWidth = 250;
             this.grdCol_Material_DataName.Name = "grdCol_Material_DataName";
             this.grdCol_Material_DataName.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.True;
             this.grdCol_Material_DataName.OptionsColumn.ReadOnly = true;
             this.grdCol_Material_DataName.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains;
             this.grdCol_Material_DataName.Visible = true;
             this.grdCol_Material_DataName.VisibleIndex = 2;
-            this.grdCol_Material_DataName.Width = 160;
+            this.grdCol_Material_DataName.Width = 250;
             // 
             // grdCol_Material_Quantity
             // 
@@ -753,17 +725,48 @@ namespace ScandiHome.EPR.List
             this.grdCol_Material_Quantity.DisplayFormat.FormatString = "{0:N0}";
             this.grdCol_Material_Quantity.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.grdCol_Material_Quantity.FieldName = "Quantity";
-            this.grdCol_Material_Quantity.MaxWidth = 80;
-            this.grdCol_Material_Quantity.MinWidth = 60;
+            this.grdCol_Material_Quantity.MaxWidth = 100;
+            this.grdCol_Material_Quantity.MinWidth = 80;
             this.grdCol_Material_Quantity.Name = "grdCol_Material_Quantity";
             this.grdCol_Material_Quantity.Visible = true;
             this.grdCol_Material_Quantity.VisibleIndex = 3;
-            this.grdCol_Material_Quantity.Width = 80;
+            this.grdCol_Material_Quantity.Width = 90;
+            // 
+            // grdCol_Material_Amount
+            // 
+            this.grdCol_Material_Amount.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grdCol_Material_Amount.AppearanceHeader.Options.UseFont = true;
+            this.grdCol_Material_Amount.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdCol_Material_Amount.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_Material_Amount.Caption = "Đơn giá";
+            this.grdCol_Material_Amount.DisplayFormat.FormatString = "{0:N0}";
+            this.grdCol_Material_Amount.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.grdCol_Material_Amount.FieldName = "Amount";
+            this.grdCol_Material_Amount.Name = "grdCol_Material_Amount";
+            this.grdCol_Material_Amount.Visible = true;
+            this.grdCol_Material_Amount.VisibleIndex = 4;
+            this.grdCol_Material_Amount.Width = 100;
+            // 
+            // grdCol_Material_TotalAmount
+            // 
+            this.grdCol_Material_TotalAmount.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grdCol_Material_TotalAmount.AppearanceHeader.Options.UseFont = true;
+            this.grdCol_Material_TotalAmount.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdCol_Material_TotalAmount.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_Material_TotalAmount.Caption = "Thành tiền";
+            this.grdCol_Material_TotalAmount.DisplayFormat.FormatString = "{0:N0}";
+            this.grdCol_Material_TotalAmount.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.grdCol_Material_TotalAmount.FieldName = "TotalAmount";
+            this.grdCol_Material_TotalAmount.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Right;
+            this.grdCol_Material_TotalAmount.Name = "grdCol_Material_TotalAmount";
+            this.grdCol_Material_TotalAmount.Visible = true;
+            this.grdCol_Material_TotalAmount.VisibleIndex = 5;
+            this.grdCol_Material_TotalAmount.Width = 110;
             // 
             // lblDescription
             // 
-            this.lblDescription.Location = new System.Drawing.Point(42, 287);
-            this.lblDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblDescription.Location = new System.Drawing.Point(40, 272);
+            this.lblDescription.Margin = new System.Windows.Forms.Padding(2);
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(35, 13);
             this.lblDescription.TabIndex = 30;
@@ -771,17 +774,17 @@ namespace ScandiHome.EPR.List
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(79, 254);
-            this.txtDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDescription.Location = new System.Drawing.Point(79, 226);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Properties.AutoHeight = false;
-            this.txtDescription.Size = new System.Drawing.Size(292, 78);
+            this.txtDescription.Size = new System.Drawing.Size(292, 106);
             this.txtDescription.TabIndex = 25;
             // 
             // lblSeries
             // 
             this.lblSeries.Location = new System.Drawing.Point(46, 142);
-            this.lblSeries.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblSeries.Margin = new System.Windows.Forms.Padding(2);
             this.lblSeries.Name = "lblSeries";
             this.lblSeries.Size = new System.Drawing.Size(29, 13);
             this.lblSeries.TabIndex = 30;
@@ -790,7 +793,7 @@ namespace ScandiHome.EPR.List
             // cb_Series
             // 
             this.cb_Series.Location = new System.Drawing.Point(80, 136);
-            this.cb_Series.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cb_Series.Margin = new System.Windows.Forms.Padding(2);
             this.cb_Series.Name = "cb_Series";
             this.cb_Series.Properties.AutoHeight = false;
             this.cb_Series.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -810,7 +813,7 @@ namespace ScandiHome.EPR.List
             this.btn_Add_Series.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Add_Series.ImageOptions.SvgImage")));
             this.btn_Add_Series.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.btn_Add_Series.Location = new System.Drawing.Point(338, 136);
-            this.btn_Add_Series.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Add_Series.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Add_Series.Name = "btn_Add_Series";
             this.btn_Add_Series.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.btn_Add_Series.Size = new System.Drawing.Size(24, 24);
@@ -820,8 +823,8 @@ namespace ScandiHome.EPR.List
             // 
             this.btn_Add_Designer.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Add_Designer.ImageOptions.SvgImage")));
             this.btn_Add_Designer.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Add_Designer.Location = new System.Drawing.Point(338, 222);
-            this.btn_Add_Designer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Add_Designer.Location = new System.Drawing.Point(337, 198);
+            this.btn_Add_Designer.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Add_Designer.Name = "btn_Add_Designer";
             this.btn_Add_Designer.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.btn_Add_Designer.Size = new System.Drawing.Size(24, 24);
@@ -831,11 +834,11 @@ namespace ScandiHome.EPR.List
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(862, 489);
-            this.Controls.Add(this.grd_Material);
+            this.ClientSize = new System.Drawing.Size(1078, 499);
+            this.Controls.Add(this.gc_Material);
             this.Controls.Add(this.btn_Add_Designer);
             this.Controls.Add(this.btn_Add_Series);
-            this.Controls.Add(this.grdColor);
+            this.Controls.Add(this.gc_Color);
             this.Controls.Add(this.gr_SKU);
             this.Controls.Add(this.cb_Designer);
             this.Controls.Add(this.cb_Series);
@@ -846,15 +849,15 @@ namespace ScandiHome.EPR.List
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.txtProductName);
             this.Controls.Add(this.lblProductName);
-            this.Controls.Add(this.txtProductCode);
-            this.Controls.Add(this.lblProductCode);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnSaveClose);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.IconOptions.Image = global::ScandiHome.Properties.Resources.logo;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(850, 642);
+            this.MinimumSize = new System.Drawing.Size(1080, 450);
             this.Name = "frmLST_Product_Input";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLST_Product_Input";
             this.tpl_groupinfo.ResumeLayout(false);
@@ -874,7 +877,6 @@ namespace ScandiHome.EPR.List
             this.pn_ModifyBy.ResumeLayout(false);
             this.pn_ModifyBy.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtModifyBy.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtProductCode.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gr_info)).EndInit();
             this.gr_info.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cb_Designer.Properties)).EndInit();
@@ -885,10 +887,10 @@ namespace ScandiHome.EPR.List
             ((System.ComponentModel.ISupportInitialize)(this.cb_Model.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cb_Category.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtProductName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grdColor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grvColor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grd_Material)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grv_Material)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gc_Color)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gv_Color)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gc_Material)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gv_Material)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescription.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cb_Series.Properties)).EndInit();
             this.ResumeLayout(false);
@@ -914,8 +916,6 @@ namespace ScandiHome.EPR.List
         private DevExpress.XtraEditors.PanelControl pn_ModifyBy;
         private DevExpress.XtraEditors.LabelControl lblModifyBy;
         private DevExpress.XtraEditors.TextEdit txtModifyBy;
-        private DevExpress.XtraEditors.LabelControl lblProductCode;
-        private DevExpress.XtraEditors.TextEdit txtProductCode;
         private DevExpress.XtraEditors.LabelControl lblDesigner;
         private DevExpress.XtraEditors.GroupControl gr_info;
         private DevExpress.XtraEditors.LookUpEdit cb_Designer;
@@ -931,13 +931,13 @@ namespace ScandiHome.EPR.List
         private DevExpress.XtraEditors.SimpleButton btn_Add_Product;
         private DevExpress.XtraEditors.LabelControl lblProductName;
         private DevExpress.XtraEditors.TextEdit txtProductName;
-        private DevExpress.XtraGrid.GridControl grdColor;
-        private DevExpress.XtraGrid.Views.Grid.GridView grvColor;
+        private DevExpress.XtraGrid.GridControl gc_Color;
+        private DevExpress.XtraGrid.Views.Grid.GridView gv_Color;
         private DevExpress.XtraGrid.Columns.GridColumn grdCol_Color_STT;
         private DevExpress.XtraGrid.Columns.GridColumn grdCol_Color_DataCode;
         private DevExpress.XtraGrid.Columns.GridColumn grdCol_Color_DataName;
-        private DevExpress.XtraGrid.GridControl grd_Material;
-        private DevExpress.XtraGrid.Views.Grid.GridView grv_Material;
+        private DevExpress.XtraGrid.GridControl gc_Material;
+        private DevExpress.XtraGrid.Views.Grid.GridView gv_Material;
         private DevExpress.XtraGrid.Columns.GridColumn grdCol_Material_STT;
         private DevExpress.XtraGrid.Columns.GridColumn grdCol_Material_DataCode;
         private DevExpress.XtraGrid.Columns.GridColumn grdCol_Material_DataName;
@@ -948,5 +948,7 @@ namespace ScandiHome.EPR.List
         private DevExpress.XtraEditors.LookUpEdit cb_Series;
         private DevExpress.XtraEditors.SimpleButton btn_Add_Series;
         private DevExpress.XtraEditors.SimpleButton btn_Add_Designer;
+        private DevExpress.XtraGrid.Columns.GridColumn grdCol_Material_Amount;
+        private DevExpress.XtraGrid.Columns.GridColumn grdCol_Material_TotalAmount;
     }
 }

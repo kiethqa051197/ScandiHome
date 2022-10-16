@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace API_ScandiHome.Models
 {
@@ -10,7 +7,7 @@ namespace API_ScandiHome.Models
         public string DataCode = string.Empty;
         public string DataValue = string.Empty;
 
-        public RequestModel(string pDataCode, String pDataValue)
+        public RequestModel(string pDataCode, string pDataValue)
         {
             this.DataCode = pDataCode;
             this.DataValue = pDataValue;

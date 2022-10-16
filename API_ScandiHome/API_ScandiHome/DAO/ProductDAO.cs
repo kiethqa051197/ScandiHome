@@ -37,7 +37,59 @@ namespace API_ScandiHome.DAO
 
         public DataTable GetProductBySKU(string pSKU)
         {
-            string query = "SELECT * FROM dbo.SCH_view_GetAllProduct WHERE SKU=N'" + pSKU + "'";
+            string query = "SELECT * FROM dbo.SCH_view_GetProductDetail WHERE SKU=N'" + pSKU + "'";
+
+            DataTable result = DataProvider.Instance.ExecuteQuery(query);
+
+            if (result.Rows.Count > 0)
+            {
+                return result;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        private DataTable GetAllCombobox(string view)
+        {
+            string query = "SELECT * FROM dbo.SCH_view_GetAll" + view;
+
+            DataTable result = DataProvider.Instance.ExecuteQuery(query);
+
+            if (result.Rows.Count > 0)
+            {
+                return result;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public DataTable GetAllCategory()
+        {
+            return GetAllCombobox("Category");
+        }
+
+        public DataTable GetAllDesign()
+        {
+            return GetAllCombobox("Design");
+        }
+
+        public DataTable GetAllModel()
+        {
+            return GetAllCombobox("Model");
+        }
+
+        public DataTable GetAllSeries()
+        {
+            return GetAllCombobox("Series");
+        }
+
+        public DataTable GetAllProductSKU()
+        {
+            string query = "SELECT ProductCode as DataCode, ProductCode as DataName FROM dbo.SKUProduct";
 
             DataTable result = DataProvider.Instance.ExecuteQuery(query);
 

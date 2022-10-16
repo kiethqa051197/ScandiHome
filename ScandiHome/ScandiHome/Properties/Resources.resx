@@ -133,4 +133,10 @@
   <data name="excel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\excel1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="waiting_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\waiting_icon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

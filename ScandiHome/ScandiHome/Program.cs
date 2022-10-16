@@ -14,7 +14,7 @@ namespace ScandiHome
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLST_Product());
+            Application.Run(new frmLogin());
         }
     }
 }
