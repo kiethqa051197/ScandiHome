@@ -122,6 +122,7 @@ namespace ScandiHome
             this.mnu_Customer.Name = "mnu_Customer";
             this.mnu_Customer.Size = new System.Drawing.Size(161, 22);
             this.mnu_Customer.Text = "Khách hàng";
+            this.mnu_Customer.Click += new System.EventHandler(this.mnu_Customer_Click);
             // 
             // mnu_customer_new
             // 
@@ -184,20 +185,21 @@ namespace ScandiHome
             // mnu_price
             // 
             this.mnu_price.Name = "mnu_price";
-            this.mnu_price.Size = new System.Drawing.Size(126, 22);
+            this.mnu_price.Size = new System.Drawing.Size(180, 22);
             this.mnu_price.Text = "Giá bán";
             // 
             // mnu_sku
             // 
             this.mnu_sku.Name = "mnu_sku";
-            this.mnu_sku.Size = new System.Drawing.Size(126, 22);
+            this.mnu_sku.Size = new System.Drawing.Size(180, 22);
             this.mnu_sku.Text = "SKU";
             // 
             // nu_quota
             // 
             this.nu_quota.Name = "nu_quota";
-            this.nu_quota.Size = new System.Drawing.Size(126, 22);
+            this.nu_quota.Size = new System.Drawing.Size(180, 22);
             this.nu_quota.Text = "Định mức";
+            this.nu_quota.Click += new System.EventHandler(this.nu_quota_Click);
             // 
             // mnu_report
             // 
@@ -211,13 +213,13 @@ namespace ScandiHome
             // mnu_manufacturing
             // 
             this.mnu_manufacturing.Name = "mnu_manufacturing";
-            this.mnu_manufacturing.Size = new System.Drawing.Size(160, 22);
+            this.mnu_manufacturing.Size = new System.Drawing.Size(180, 22);
             this.mnu_manufacturing.Text = "Lịch sản xuất";
             // 
             // mnu_delivery_report
             // 
             this.mnu_delivery_report.Name = "mnu_delivery_report";
-            this.mnu_delivery_report.Size = new System.Drawing.Size(160, 22);
+            this.mnu_delivery_report.Size = new System.Drawing.Size(180, 22);
             this.mnu_delivery_report.Text = "Phiếu giao hàng";
             // 
             // mnu_statistic

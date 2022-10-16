@@ -93,6 +93,18 @@
     <Compile Include="EPR\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="EPR\List\frmLST_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EPR\List\frmLST_Customer.Designer.cs">
+      <DependentUpon>frmLST_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EPR\List\frmLST_PriceMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EPR\List\frmLST_PriceMaterial.Designer.cs">
+      <DependentUpon>frmLST_PriceMaterial.cs</DependentUpon>
+    </Compile>
     <Compile Include="EPR\List\frmLST_Product.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +116,12 @@
     </Compile>
     <Compile Include="EPR\List\frmLST_Product_Input.Designer.cs">
       <DependentUpon>frmLST_Product_Input.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EPR\Setting\frmST_Quota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EPR\Setting\frmST_Quota.Designer.cs">
+      <DependentUpon>frmST_Quota.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper\HttpHelper.cs" />
     <Compile Include="Helper\ReadWriteINIfile.cs" />
@@ -139,11 +157,17 @@
     <EmbeddedResource Include="EPR\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EPR\List\frmLST_Customer.resx">
+      <DependentUpon>frmLST_Customer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EPR\List\frmLST_Product.resx">
       <DependentUpon>frmLST_Product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EPR\List\frmLST_Product_Input.resx">
       <DependentUpon>frmLST_Product_Input.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EPR\Setting\frmST_Quota.resx">
+      <DependentUpon>frmST_Quota.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

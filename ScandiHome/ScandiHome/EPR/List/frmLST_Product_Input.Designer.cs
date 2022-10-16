@@ -859,7 +859,7 @@ namespace ScandiHome.EPR.List
             this.Name = "frmLST_Product_Input";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmLST_Product_Input";
+            this.Text = "Chi tiết sản phẩm";
             this.tpl_groupinfo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pnCreateBy)).EndInit();
             this.pnCreateBy.ResumeLayout(false);

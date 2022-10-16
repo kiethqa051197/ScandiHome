@@ -114,6 +114,10 @@ namespace ScandiHome.EPR.ENT
             this.grdColD_Id = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand10 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.grdColD_OrderCode = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.gridBand2 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdColD_SKU = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.gridBand18 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdColD_ProductName = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand3 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand4 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand5 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
@@ -121,10 +125,6 @@ namespace ScandiHome.EPR.ENT
             this.gridBand6 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand7 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand8 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.gridBand18 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.grdColD_ProductName = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.gridBand2 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.grdColD_SKU = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand23 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.grdColD_Price = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand43 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
@@ -220,7 +220,7 @@ namespace ScandiHome.EPR.ENT
             // 
             // grdColD_Quantity
             // 
-            this.grdColD_Quantity.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grdColD_Quantity.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.grdColD_Quantity.AppearanceHeader.Options.UseFont = true;
             this.grdColD_Quantity.AppearanceHeader.Options.UseTextOptions = true;
             this.grdColD_Quantity.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -462,7 +462,7 @@ namespace ScandiHome.EPR.ENT
             this.gc_DataDetail.MainView = this.gv_DataDetail;
             this.gc_DataDetail.Margin = new System.Windows.Forms.Padding(0);
             this.gc_DataDetail.Name = "gc_DataDetail";
-            this.gc_DataDetail.Size = new System.Drawing.Size(432, 394);
+            this.gc_DataDetail.Size = new System.Drawing.Size(432, 427);
             this.gc_DataDetail.TabIndex = 0;
             this.gc_DataDetail.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gv_DataDetail});
@@ -472,10 +472,10 @@ namespace ScandiHome.EPR.ENT
             this.gv_DataDetail.Bands.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.GridBand[] {
             this.gridBand11,
             this.gridBand10,
+            this.gridBand2,
+            this.gridBand18,
             this.gridBand3,
             this.gridBand6,
-            this.gridBand18,
-            this.gridBand2,
             this.gridBand23,
             this.gridBand43,
             this.gridBand42,
@@ -552,7 +552,7 @@ namespace ScandiHome.EPR.ENT
             // 
             // gridBand11
             // 
-            this.gridBand11.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridBand11.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.gridBand11.AppearanceHeader.Options.UseFont = true;
             this.gridBand11.AppearanceHeader.Options.UseTextOptions = true;
             this.gridBand11.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -567,7 +567,7 @@ namespace ScandiHome.EPR.ENT
             // 
             this.grdColD_Id.AppearanceCell.Options.UseTextOptions = true;
             this.grdColD_Id.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdColD_Id.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grdColD_Id.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.grdColD_Id.AppearanceHeader.Options.UseFont = true;
             this.grdColD_Id.AppearanceHeader.Options.UseTextOptions = true;
             this.grdColD_Id.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -582,7 +582,7 @@ namespace ScandiHome.EPR.ENT
             // 
             // gridBand10
             // 
-            this.gridBand10.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridBand10.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.gridBand10.AppearanceHeader.Options.UseFont = true;
             this.gridBand10.AppearanceHeader.Options.UseTextOptions = true;
             this.gridBand10.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -604,6 +604,61 @@ namespace ScandiHome.EPR.ENT
             this.grdColD_OrderCode.Visible = true;
             this.grdColD_OrderCode.Width = 90;
             // 
+            // gridBand2
+            // 
+            this.gridBand2.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.gridBand2.AppearanceHeader.Options.UseFont = true;
+            this.gridBand2.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridBand2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridBand2.Caption = "SKU";
+            this.gridBand2.Columns.Add(this.grdColD_SKU);
+            this.gridBand2.Name = "gridBand2";
+            this.gridBand2.VisibleIndex = 2;
+            this.gridBand2.Width = 110;
+            // 
+            // grdColD_SKU
+            // 
+            this.grdColD_SKU.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.grdColD_SKU.AppearanceHeader.Options.UseFont = true;
+            this.grdColD_SKU.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdColD_SKU.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdColD_SKU.Caption = "SKU";
+            this.grdColD_SKU.FieldName = "SKU";
+            this.grdColD_SKU.Name = "grdColD_SKU";
+            this.grdColD_SKU.OptionsColumn.ReadOnly = true;
+            this.grdColD_SKU.OptionsColumn.ShowCaption = false;
+            this.grdColD_SKU.SortMode = DevExpress.XtraGrid.ColumnSortMode.Value;
+            this.grdColD_SKU.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "SKU", "{0:N0}")});
+            this.grdColD_SKU.Visible = true;
+            this.grdColD_SKU.Width = 110;
+            // 
+            // gridBand18
+            // 
+            this.gridBand18.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.gridBand18.AppearanceHeader.Options.UseFont = true;
+            this.gridBand18.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridBand18.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridBand18.Caption = "Product Name";
+            this.gridBand18.Columns.Add(this.grdColD_ProductName);
+            this.gridBand18.Name = "gridBand18";
+            this.gridBand18.VisibleIndex = 3;
+            this.gridBand18.Width = 255;
+            // 
+            // grdColD_ProductName
+            // 
+            this.grdColD_ProductName.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.grdColD_ProductName.AppearanceHeader.Options.UseFont = true;
+            this.grdColD_ProductName.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdColD_ProductName.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdColD_ProductName.Caption = "Product Name";
+            this.grdColD_ProductName.FieldName = "ProductName";
+            this.grdColD_ProductName.Name = "grdColD_ProductName";
+            this.grdColD_ProductName.OptionsColumn.ReadOnly = true;
+            this.grdColD_ProductName.OptionsColumn.ShowCaption = false;
+            this.grdColD_ProductName.Visible = true;
+            this.grdColD_ProductName.Width = 255;
+            // 
             // gridBand3
             // 
             this.gridBand3.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
@@ -615,7 +670,7 @@ namespace ScandiHome.EPR.ENT
             this.gridBand4,
             this.gridBand5});
             this.gridBand3.Name = "gridBand3";
-            this.gridBand3.VisibleIndex = 2;
+            this.gridBand3.VisibleIndex = 4;
             this.gridBand3.Width = 140;
             // 
             // gridBand4
@@ -665,7 +720,7 @@ namespace ScandiHome.EPR.ENT
             this.gridBand7,
             this.gridBand8});
             this.gridBand6.Name = "gridBand6";
-            this.gridBand6.VisibleIndex = 3;
+            this.gridBand6.VisibleIndex = 5;
             this.gridBand6.Width = 140;
             // 
             // gridBand7
@@ -689,61 +744,6 @@ namespace ScandiHome.EPR.ENT
             this.gridBand8.Columns.Add(this.grdColD_MaterialName2);
             this.gridBand8.Name = "gridBand8";
             this.gridBand8.VisibleIndex = 1;
-            // 
-            // gridBand18
-            // 
-            this.gridBand18.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridBand18.AppearanceHeader.Options.UseFont = true;
-            this.gridBand18.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridBand18.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridBand18.Caption = "Product Name";
-            this.gridBand18.Columns.Add(this.grdColD_ProductName);
-            this.gridBand18.Name = "gridBand18";
-            this.gridBand18.VisibleIndex = 4;
-            this.gridBand18.Width = 255;
-            // 
-            // grdColD_ProductName
-            // 
-            this.grdColD_ProductName.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdColD_ProductName.AppearanceHeader.Options.UseFont = true;
-            this.grdColD_ProductName.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdColD_ProductName.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdColD_ProductName.Caption = "Product Name";
-            this.grdColD_ProductName.FieldName = "ProductName";
-            this.grdColD_ProductName.Name = "grdColD_ProductName";
-            this.grdColD_ProductName.OptionsColumn.ReadOnly = true;
-            this.grdColD_ProductName.OptionsColumn.ShowCaption = false;
-            this.grdColD_ProductName.Visible = true;
-            this.grdColD_ProductName.Width = 255;
-            // 
-            // gridBand2
-            // 
-            this.gridBand2.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridBand2.AppearanceHeader.Options.UseFont = true;
-            this.gridBand2.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridBand2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridBand2.Caption = "SKU";
-            this.gridBand2.Columns.Add(this.grdColD_SKU);
-            this.gridBand2.Name = "gridBand2";
-            this.gridBand2.VisibleIndex = 5;
-            this.gridBand2.Width = 110;
-            // 
-            // grdColD_SKU
-            // 
-            this.grdColD_SKU.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdColD_SKU.AppearanceHeader.Options.UseFont = true;
-            this.grdColD_SKU.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdColD_SKU.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdColD_SKU.Caption = "SKU";
-            this.grdColD_SKU.FieldName = "SKU";
-            this.grdColD_SKU.Name = "grdColD_SKU";
-            this.grdColD_SKU.OptionsColumn.ReadOnly = true;
-            this.grdColD_SKU.OptionsColumn.ShowCaption = false;
-            this.grdColD_SKU.SortMode = DevExpress.XtraGrid.ColumnSortMode.Value;
-            this.grdColD_SKU.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "SKU", "{0:N0}")});
-            this.grdColD_SKU.Visible = true;
-            this.grdColD_SKU.Width = 110;
             // 
             // gridBand23
             // 
@@ -795,7 +795,7 @@ namespace ScandiHome.EPR.ENT
             // 
             // grdColD_Amount
             // 
-            this.grdColD_Amount.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grdColD_Amount.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.grdColD_Amount.AppearanceHeader.Options.UseFont = true;
             this.grdColD_Amount.AppearanceHeader.Options.UseTextOptions = true;
             this.grdColD_Amount.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -901,6 +901,7 @@ namespace ScandiHome.EPR.ENT
             this.btn_Refresh.Size = new System.Drawing.Size(55, 28);
             this.btn_Refresh.TabIndex = 20;
             this.btn_Refresh.Text = "&F5";
+            this.btn_Refresh.Visible = false;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // btnCancel
@@ -1023,11 +1024,11 @@ namespace ScandiHome.EPR.ENT
             this.tpl_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tpl_Main.Controls.Add(this.gc_Data, 0, 0);
             this.tpl_Main.Controls.Add(this.gc_DataDetail, 1, 0);
-            this.tpl_Main.Location = new System.Drawing.Point(0, 42);
+            this.tpl_Main.Location = new System.Drawing.Point(0, 9);
             this.tpl_Main.Name = "tpl_Main";
             this.tpl_Main.RowCount = 1;
             this.tpl_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tpl_Main.Size = new System.Drawing.Size(864, 394);
+            this.tpl_Main.Size = new System.Drawing.Size(864, 427);
             this.tpl_Main.TabIndex = 28;
             // 
             // gc_Data
@@ -1040,7 +1041,7 @@ namespace ScandiHome.EPR.ENT
             this.gc_Data.MainView = this.gv_Data;
             this.gc_Data.Margin = new System.Windows.Forms.Padding(0);
             this.gc_Data.Name = "gc_Data";
-            this.gc_Data.Size = new System.Drawing.Size(432, 394);
+            this.gc_Data.Size = new System.Drawing.Size(432, 427);
             this.gc_Data.TabIndex = 1;
             this.gc_Data.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gv_Data});

@@ -409,11 +409,11 @@ namespace ScandiHome.EPR.List
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gc_Data.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2);
-            this.gc_Data.Location = new System.Drawing.Point(0, 41);
+            this.gc_Data.Location = new System.Drawing.Point(0, 11);
             this.gc_Data.MainView = this.gv_Data;
             this.gc_Data.Margin = new System.Windows.Forms.Padding(2);
             this.gc_Data.Name = "gc_Data";
-            this.gc_Data.Size = new System.Drawing.Size(863, 398);
+            this.gc_Data.Size = new System.Drawing.Size(863, 428);
             this.gc_Data.TabIndex = 0;
             this.gc_Data.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gv_Data});
@@ -1655,6 +1655,7 @@ namespace ScandiHome.EPR.List
             this.btn_Refresh.Size = new System.Drawing.Size(55, 28);
             this.btn_Refresh.TabIndex = 20;
             this.btn_Refresh.Text = "&F5";
+            this.btn_Refresh.Visible = false;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // frmLST_Product
@@ -1671,6 +1672,7 @@ namespace ScandiHome.EPR.List
             this.Controls.Add(this.btnView);
             this.Controls.Add(this.gc_Data);
             this.IconOptions.Image = global::ScandiHome.Properties.Resources.logo;
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(867, 524);
             this.Name = "frmLST_Product";
@@ -1678,6 +1680,7 @@ namespace ScandiHome.EPR.List
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh sách sản phẩm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmLST_Product_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.gc_Data)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gv_Data)).EndInit();
             this.ResumeLayout(false);

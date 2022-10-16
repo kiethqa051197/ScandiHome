@@ -46,5 +46,13 @@ namespace ScandiHome.EPR.List
             frmLST_Product_Input mform = new frmLST_Product_Input(gv_Data.GetFocusedRowCellValue("SKU").ToString());
             mform.ShowDialog();
         }
+
+        private void frmLST_Product_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
+        {
+            if (e.KeyCode == System.Windows.Forms.Keys.F5)
+            {
+                RefreshData();
+            }
+        }
     }
 }
