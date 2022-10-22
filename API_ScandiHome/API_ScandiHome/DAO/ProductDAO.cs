@@ -21,7 +21,7 @@ namespace API_ScandiHome.DAO
 
         public DataTable GetAll()
         {
-            string query = "SELECT * FROM dbo.SCH_view_GetAllProduct";
+            string query = "SELECT * FROM dbo.SCH_view_GetAllProduct D ORDER BY D.SKU";
 
             DataTable result = DataProvider.Instance.ExecuteQuery(query);
 

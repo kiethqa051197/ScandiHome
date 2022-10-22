@@ -29,6 +29,7 @@ namespace ScandiHome.EPR.ENT
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmENT_Order));
             DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
@@ -39,7 +40,6 @@ namespace ScandiHome.EPR.ENT
             DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue4 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule5 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue5 = new DevExpress.XtraEditors.FormatConditionRuleValue();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmENT_Order));
             DevExpress.XtraGrid.GridFormatRule gridFormatRule6 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue6 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule7 = new DevExpress.XtraGrid.GridFormatRule();
@@ -80,19 +80,6 @@ namespace ScandiHome.EPR.ENT
             DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue24 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule25 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue25 = new DevExpress.XtraEditors.FormatConditionRuleValue();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule26 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue26 = new DevExpress.XtraEditors.FormatConditionRuleValue();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule27 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue27 = new DevExpress.XtraEditors.FormatConditionRuleValue();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule28 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue28 = new DevExpress.XtraEditors.FormatConditionRuleValue();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule29 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue29 = new DevExpress.XtraEditors.FormatConditionRuleValue();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule30 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue30 = new DevExpress.XtraEditors.FormatConditionRuleValue();
-            this.grdColD_MaterialName1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.grdColD_MaterialName2 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.grdColD_Quantity = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.grdCol_Type = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.grdCol_OrderStatus = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.grdCol_ShippingPriority = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
@@ -103,39 +90,6 @@ namespace ScandiHome.EPR.ENT
             this.grdCol_Delivery = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.grdCol_Payment = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.grdCol_CODAmount = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.grdCol_CustomerName = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.grdCol_PhoneNumber = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.grdCol_ChannelName = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.grdCol_ReferenceOrder = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.grdColD_ColorName1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.gc_DataDetail = new DevExpress.XtraGrid.GridControl();
-            this.gv_DataDetail = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridView();
-            this.gridBand11 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.grdColD_Id = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.gridBand10 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.grdColD_OrderCode = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.gridBand2 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.grdColD_SKU = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.gridBand18 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.grdColD_ProductName = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.gridBand3 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.gridBand4 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.gridBand5 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.grdColD_ColorName2 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.gridBand6 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.gridBand7 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.gridBand8 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.gridBand23 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.grdColD_Price = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.gridBand43 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.gridBand42 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.grdColD_Amount = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.gridBand24 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.grdColD_SketchupFile = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.gridBand16 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.grdColD_Weight = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.gridBand29 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.grdColD_DesignerName = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.btn_Refresh = new DevExpress.XtraEditors.SimpleButton();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
@@ -143,17 +97,19 @@ namespace ScandiHome.EPR.ENT
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btnView = new DevExpress.XtraEditors.SimpleButton();
-            this.tpl_Main = new System.Windows.Forms.TableLayoutPanel();
             this.gc_Data = new DevExpress.XtraGrid.GridControl();
             this.gv_Data = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridView();
             this.gridBand1 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdCol_OrderCodeItem = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.grdCol_OrderCode = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand9 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand25 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand26 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.grdCol_Loyalty = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand27 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdCol_CustomerName = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand44 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdCol_PhoneNumber = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand28 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.grdCol_Address = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand31 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
@@ -173,9 +129,37 @@ namespace ScandiHome.EPR.ENT
             this.grdCol_DeliveryMethodName = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand38 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.grdCol_Shipper = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.gridBand12 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdCol_SKU = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.ProductName = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdCol_ProductName = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.gridBand14 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.gridBand15 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdCol_ColorName1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.gridBand17 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdCol_ColorName2 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.gridBand19 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.gridBand20 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdCol_MaterialName1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.gridBand21 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdCol_MaterialName2 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.gridBand22 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdCol_Price = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.gridBand40 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdCol_Quantity = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.gridBand46 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdCol_Amount = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.gridBand13 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdCol_SketchupFile = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.gridBand47 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdCol_Weight = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.gridBand48 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdCol_DesignerName = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand39 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand41 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdCol_ChannelName = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand45 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdCol_ReferenceOrder = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand49 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand50 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand51 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
@@ -183,55 +167,9 @@ namespace ScandiHome.EPR.ENT
             this.gridBand53 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand54 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand55 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            ((System.ComponentModel.ISupportInitialize)(this.gc_DataDetail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gv_DataDetail)).BeginInit();
-            this.tpl_Main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gc_Data)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gv_Data)).BeginInit();
             this.SuspendLayout();
-            // 
-            // grdColD_MaterialName1
-            // 
-            this.grdColD_MaterialName1.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdColD_MaterialName1.AppearanceHeader.Options.UseFont = true;
-            this.grdColD_MaterialName1.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdColD_MaterialName1.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdColD_MaterialName1.Caption = "Material1";
-            this.grdColD_MaterialName1.FieldName = "MaterialName1";
-            this.grdColD_MaterialName1.Name = "grdColD_MaterialName1";
-            this.grdColD_MaterialName1.OptionsColumn.ReadOnly = true;
-            this.grdColD_MaterialName1.OptionsColumn.ShowCaption = false;
-            this.grdColD_MaterialName1.Visible = true;
-            this.grdColD_MaterialName1.Width = 70;
-            // 
-            // grdColD_MaterialName2
-            // 
-            this.grdColD_MaterialName2.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdColD_MaterialName2.AppearanceHeader.Options.UseFont = true;
-            this.grdColD_MaterialName2.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdColD_MaterialName2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdColD_MaterialName2.Caption = "Material2";
-            this.grdColD_MaterialName2.FieldName = "MaterialName2";
-            this.grdColD_MaterialName2.Name = "grdColD_MaterialName2";
-            this.grdColD_MaterialName2.OptionsColumn.ReadOnly = true;
-            this.grdColD_MaterialName2.OptionsColumn.ShowCaption = false;
-            this.grdColD_MaterialName2.Visible = true;
-            this.grdColD_MaterialName2.Width = 70;
-            // 
-            // grdColD_Quantity
-            // 
-            this.grdColD_Quantity.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdColD_Quantity.AppearanceHeader.Options.UseFont = true;
-            this.grdColD_Quantity.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdColD_Quantity.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdColD_Quantity.Caption = "Quantity";
-            this.grdColD_Quantity.DisplayFormat.FormatString = "{0:N0}";
-            this.grdColD_Quantity.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.grdColD_Quantity.FieldName = "Quantity";
-            this.grdColD_Quantity.Name = "grdColD_Quantity";
-            this.grdColD_Quantity.OptionsColumn.ShowCaption = false;
-            this.grdColD_Quantity.Visible = true;
-            this.grdColD_Quantity.Width = 90;
             // 
             // grdCol_Type
             // 
@@ -284,7 +222,7 @@ namespace ScandiHome.EPR.ENT
             // 
             this.grdCol_Confirm.AppearanceCell.Options.UseTextOptions = true;
             this.grdCol_Confirm.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdCol_Confirm.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grdCol_Confirm.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.grdCol_Confirm.AppearanceHeader.Options.UseFont = true;
             this.grdCol_Confirm.AppearanceHeader.Options.UseTextOptions = true;
             this.grdCol_Confirm.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -299,7 +237,7 @@ namespace ScandiHome.EPR.ENT
             // 
             this.grdCol_Design.AppearanceCell.Options.UseTextOptions = true;
             this.grdCol_Design.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdCol_Design.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grdCol_Design.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.grdCol_Design.AppearanceHeader.Options.UseFont = true;
             this.grdCol_Design.AppearanceHeader.Options.UseTextOptions = true;
             this.grdCol_Design.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -314,7 +252,7 @@ namespace ScandiHome.EPR.ENT
             // 
             this.grdCol_Materials.AppearanceCell.Options.UseTextOptions = true;
             this.grdCol_Materials.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdCol_Materials.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grdCol_Materials.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.grdCol_Materials.AppearanceHeader.Options.UseFont = true;
             this.grdCol_Materials.AppearanceHeader.Options.UseTextOptions = true;
             this.grdCol_Materials.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -329,7 +267,7 @@ namespace ScandiHome.EPR.ENT
             // 
             this.grdCol_Production.AppearanceCell.Options.UseTextOptions = true;
             this.grdCol_Production.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdCol_Production.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grdCol_Production.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.grdCol_Production.AppearanceHeader.Options.UseFont = true;
             this.grdCol_Production.AppearanceHeader.Options.UseTextOptions = true;
             this.grdCol_Production.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -344,7 +282,7 @@ namespace ScandiHome.EPR.ENT
             // 
             this.grdCol_Delivery.AppearanceCell.Options.UseTextOptions = true;
             this.grdCol_Delivery.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdCol_Delivery.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grdCol_Delivery.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.grdCol_Delivery.AppearanceHeader.Options.UseFont = true;
             this.grdCol_Delivery.AppearanceHeader.Options.UseTextOptions = true;
             this.grdCol_Delivery.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -359,7 +297,7 @@ namespace ScandiHome.EPR.ENT
             // 
             this.grdCol_Payment.AppearanceCell.Options.UseTextOptions = true;
             this.grdCol_Payment.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdCol_Payment.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grdCol_Payment.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.grdCol_Payment.AppearanceHeader.Options.UseFont = true;
             this.grdCol_Payment.AppearanceHeader.Options.UseTextOptions = true;
             this.grdCol_Payment.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -381,508 +319,6 @@ namespace ScandiHome.EPR.ENT
             this.grdCol_CODAmount.OptionsColumn.ShowCaption = false;
             this.grdCol_CODAmount.Visible = true;
             this.grdCol_CODAmount.Width = 110;
-            // 
-            // grdCol_CustomerName
-            // 
-            this.grdCol_CustomerName.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdCol_CustomerName.AppearanceHeader.Options.UseFont = true;
-            this.grdCol_CustomerName.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdCol_CustomerName.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdCol_CustomerName.Caption = "CustomerName";
-            this.grdCol_CustomerName.FieldName = "CustomerName";
-            this.grdCol_CustomerName.Name = "grdCol_CustomerName";
-            this.grdCol_CustomerName.OptionsColumn.ReadOnly = true;
-            this.grdCol_CustomerName.OptionsColumn.ShowCaption = false;
-            this.grdCol_CustomerName.Visible = true;
-            this.grdCol_CustomerName.Width = 175;
-            // 
-            // grdCol_PhoneNumber
-            // 
-            this.grdCol_PhoneNumber.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdCol_PhoneNumber.AppearanceHeader.Options.UseFont = true;
-            this.grdCol_PhoneNumber.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdCol_PhoneNumber.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdCol_PhoneNumber.Caption = "PhoneNumber";
-            this.grdCol_PhoneNumber.FieldName = "PhoneNumber";
-            this.grdCol_PhoneNumber.Name = "grdCol_PhoneNumber";
-            this.grdCol_PhoneNumber.OptionsColumn.ReadOnly = true;
-            this.grdCol_PhoneNumber.OptionsColumn.ShowCaption = false;
-            this.grdCol_PhoneNumber.Visible = true;
-            this.grdCol_PhoneNumber.Width = 90;
-            // 
-            // grdCol_ChannelName
-            // 
-            this.grdCol_ChannelName.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdCol_ChannelName.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdCol_ChannelName.Caption = "ChannelName";
-            this.grdCol_ChannelName.FieldName = "ChannelName";
-            this.grdCol_ChannelName.Name = "grdCol_ChannelName";
-            this.grdCol_ChannelName.OptionsColumn.ReadOnly = true;
-            this.grdCol_ChannelName.OptionsColumn.ShowCaption = false;
-            this.grdCol_ChannelName.Visible = true;
-            this.grdCol_ChannelName.Width = 100;
-            // 
-            // grdCol_ReferenceOrder
-            // 
-            this.grdCol_ReferenceOrder.AppearanceCell.Options.UseTextOptions = true;
-            this.grdCol_ReferenceOrder.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdCol_ReferenceOrder.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grdCol_ReferenceOrder.AppearanceHeader.Options.UseFont = true;
-            this.grdCol_ReferenceOrder.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdCol_ReferenceOrder.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdCol_ReferenceOrder.Caption = "ReferenceOrder";
-            this.grdCol_ReferenceOrder.FieldName = "ReferenceOrder";
-            this.grdCol_ReferenceOrder.Name = "grdCol_ReferenceOrder";
-            this.grdCol_ReferenceOrder.OptionsColumn.ReadOnly = true;
-            this.grdCol_ReferenceOrder.OptionsColumn.ShowCaption = false;
-            this.grdCol_ReferenceOrder.Visible = true;
-            this.grdCol_ReferenceOrder.Width = 120;
-            // 
-            // grdColD_ColorName1
-            // 
-            this.grdColD_ColorName1.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdColD_ColorName1.AppearanceHeader.Options.UseFont = true;
-            this.grdColD_ColorName1.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdColD_ColorName1.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdColD_ColorName1.Caption = "Color1";
-            this.grdColD_ColorName1.FieldName = "ColorName1";
-            this.grdColD_ColorName1.Name = "grdColD_ColorName1";
-            this.grdColD_ColorName1.OptionsColumn.ReadOnly = true;
-            this.grdColD_ColorName1.OptionsColumn.ShowCaption = false;
-            this.grdColD_ColorName1.Visible = true;
-            this.grdColD_ColorName1.Width = 70;
-            // 
-            // gc_DataDetail
-            // 
-            this.gc_DataDetail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gc_DataDetail.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2);
-            this.gc_DataDetail.Location = new System.Drawing.Point(432, 0);
-            this.gc_DataDetail.MainView = this.gv_DataDetail;
-            this.gc_DataDetail.Margin = new System.Windows.Forms.Padding(0);
-            this.gc_DataDetail.Name = "gc_DataDetail";
-            this.gc_DataDetail.Size = new System.Drawing.Size(432, 427);
-            this.gc_DataDetail.TabIndex = 0;
-            this.gc_DataDetail.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gv_DataDetail});
-            // 
-            // gv_DataDetail
-            // 
-            this.gv_DataDetail.Bands.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.GridBand[] {
-            this.gridBand11,
-            this.gridBand10,
-            this.gridBand2,
-            this.gridBand18,
-            this.gridBand3,
-            this.gridBand6,
-            this.gridBand23,
-            this.gridBand43,
-            this.gridBand42,
-            this.gridBand24,
-            this.gridBand16,
-            this.gridBand29});
-            this.gv_DataDetail.Columns.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn[] {
-            this.grdColD_Id,
-            this.grdColD_OrderCode,
-            this.grdColD_SKU,
-            this.grdColD_ColorName1,
-            this.grdColD_ColorName2,
-            this.grdColD_MaterialName1,
-            this.grdColD_MaterialName2,
-            this.grdColD_Weight,
-            this.grdColD_ProductName,
-            this.grdColD_Price,
-            this.grdColD_Quantity,
-            this.grdColD_Amount,
-            this.grdColD_SketchupFile,
-            this.grdColD_DesignerName});
-            this.gv_DataDetail.DetailHeight = 280;
-            gridFormatRule1.Column = this.grdColD_MaterialName1;
-            gridFormatRule1.Name = "Format_MaterialName1_MDF";
-            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue1.Value1 = "MDF";
-            gridFormatRule1.Rule = formatConditionRuleValue1;
-            gridFormatRule2.Column = this.grdColD_MaterialName1;
-            gridFormatRule2.Name = "Format_MaterialName1_MMR";
-            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.MediumSeaGreen;
-            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue2.Value1 = "MMR";
-            gridFormatRule2.Rule = formatConditionRuleValue2;
-            gridFormatRule3.Column = this.grdColD_MaterialName2;
-            gridFormatRule3.Name = "Format_MaterialName2_MDF";
-            formatConditionRuleValue3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue3.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue3.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue3.Value1 = "MDF";
-            gridFormatRule3.Rule = formatConditionRuleValue3;
-            gridFormatRule4.Column = this.grdColD_MaterialName2;
-            gridFormatRule4.Name = "Format_MaterialName2_MMR";
-            formatConditionRuleValue4.Appearance.BackColor = System.Drawing.Color.MediumSeaGreen;
-            formatConditionRuleValue4.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue4.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue4.Value1 = "MMR";
-            gridFormatRule4.Rule = formatConditionRuleValue4;
-            gridFormatRule5.Column = this.grdColD_Quantity;
-            gridFormatRule5.Name = "Format_Quantity";
-            formatConditionRuleValue5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            formatConditionRuleValue5.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue5.Condition = DevExpress.XtraEditors.FormatCondition.Greater;
-            formatConditionRuleValue5.Value1 = 1;
-            gridFormatRule5.Rule = formatConditionRuleValue5;
-            this.gv_DataDetail.FormatRules.Add(gridFormatRule1);
-            this.gv_DataDetail.FormatRules.Add(gridFormatRule2);
-            this.gv_DataDetail.FormatRules.Add(gridFormatRule3);
-            this.gv_DataDetail.FormatRules.Add(gridFormatRule4);
-            this.gv_DataDetail.FormatRules.Add(gridFormatRule5);
-            this.gv_DataDetail.GridControl = this.gc_DataDetail;
-            this.gv_DataDetail.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Count, "SKU", this.grdColD_SKU, "{0:N0}")});
-            this.gv_DataDetail.HorzScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Always;
-            this.gv_DataDetail.Name = "gv_DataDetail";
-            this.gv_DataDetail.OptionsBehavior.AutoExpandAllGroups = true;
-            this.gv_DataDetail.OptionsView.ColumnAutoWidth = false;
-            this.gv_DataDetail.OptionsView.ShowFooter = true;
-            this.gv_DataDetail.OptionsView.ShowGroupPanel = false;
-            this.gv_DataDetail.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
-            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.grdColD_Id, DevExpress.Data.ColumnSortOrder.Ascending)});
-            // 
-            // gridBand11
-            // 
-            this.gridBand11.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridBand11.AppearanceHeader.Options.UseFont = true;
-            this.gridBand11.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridBand11.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridBand11.Caption = "STT";
-            this.gridBand11.Columns.Add(this.grdColD_Id);
-            this.gridBand11.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
-            this.gridBand11.Name = "gridBand11";
-            this.gridBand11.VisibleIndex = 0;
-            this.gridBand11.Width = 50;
-            // 
-            // grdColD_Id
-            // 
-            this.grdColD_Id.AppearanceCell.Options.UseTextOptions = true;
-            this.grdColD_Id.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdColD_Id.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdColD_Id.AppearanceHeader.Options.UseFont = true;
-            this.grdColD_Id.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdColD_Id.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdColD_Id.Caption = "STT";
-            this.grdColD_Id.FieldName = "Line";
-            this.grdColD_Id.Name = "grdColD_Id";
-            this.grdColD_Id.OptionsColumn.ReadOnly = true;
-            this.grdColD_Id.OptionsColumn.ShowCaption = false;
-            this.grdColD_Id.SortMode = DevExpress.XtraGrid.ColumnSortMode.Value;
-            this.grdColD_Id.Visible = true;
-            this.grdColD_Id.Width = 50;
-            // 
-            // gridBand10
-            // 
-            this.gridBand10.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridBand10.AppearanceHeader.Options.UseFont = true;
-            this.gridBand10.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridBand10.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridBand10.Caption = "OrderID";
-            this.gridBand10.Columns.Add(this.grdColD_OrderCode);
-            this.gridBand10.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
-            this.gridBand10.Name = "gridBand10";
-            this.gridBand10.VisibleIndex = 1;
-            this.gridBand10.Width = 90;
-            // 
-            // grdColD_OrderCode
-            // 
-            this.grdColD_OrderCode.Caption = "OrderCode";
-            this.grdColD_OrderCode.FieldName = "OrderCode";
-            this.grdColD_OrderCode.Name = "grdColD_OrderCode";
-            this.grdColD_OrderCode.OptionsColumn.Printable = DevExpress.Utils.DefaultBoolean.True;
-            this.grdColD_OrderCode.OptionsColumn.ReadOnly = true;
-            this.grdColD_OrderCode.OptionsColumn.ShowCaption = false;
-            this.grdColD_OrderCode.Visible = true;
-            this.grdColD_OrderCode.Width = 90;
-            // 
-            // gridBand2
-            // 
-            this.gridBand2.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridBand2.AppearanceHeader.Options.UseFont = true;
-            this.gridBand2.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridBand2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridBand2.Caption = "SKU";
-            this.gridBand2.Columns.Add(this.grdColD_SKU);
-            this.gridBand2.Name = "gridBand2";
-            this.gridBand2.VisibleIndex = 2;
-            this.gridBand2.Width = 110;
-            // 
-            // grdColD_SKU
-            // 
-            this.grdColD_SKU.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdColD_SKU.AppearanceHeader.Options.UseFont = true;
-            this.grdColD_SKU.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdColD_SKU.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdColD_SKU.Caption = "SKU";
-            this.grdColD_SKU.FieldName = "SKU";
-            this.grdColD_SKU.Name = "grdColD_SKU";
-            this.grdColD_SKU.OptionsColumn.ReadOnly = true;
-            this.grdColD_SKU.OptionsColumn.ShowCaption = false;
-            this.grdColD_SKU.SortMode = DevExpress.XtraGrid.ColumnSortMode.Value;
-            this.grdColD_SKU.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "SKU", "{0:N0}")});
-            this.grdColD_SKU.Visible = true;
-            this.grdColD_SKU.Width = 110;
-            // 
-            // gridBand18
-            // 
-            this.gridBand18.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridBand18.AppearanceHeader.Options.UseFont = true;
-            this.gridBand18.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridBand18.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridBand18.Caption = "Product Name";
-            this.gridBand18.Columns.Add(this.grdColD_ProductName);
-            this.gridBand18.Name = "gridBand18";
-            this.gridBand18.VisibleIndex = 3;
-            this.gridBand18.Width = 255;
-            // 
-            // grdColD_ProductName
-            // 
-            this.grdColD_ProductName.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdColD_ProductName.AppearanceHeader.Options.UseFont = true;
-            this.grdColD_ProductName.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdColD_ProductName.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdColD_ProductName.Caption = "Product Name";
-            this.grdColD_ProductName.FieldName = "ProductName";
-            this.grdColD_ProductName.Name = "grdColD_ProductName";
-            this.grdColD_ProductName.OptionsColumn.ReadOnly = true;
-            this.grdColD_ProductName.OptionsColumn.ShowCaption = false;
-            this.grdColD_ProductName.Visible = true;
-            this.grdColD_ProductName.Width = 255;
-            // 
-            // gridBand3
-            // 
-            this.gridBand3.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridBand3.AppearanceHeader.Options.UseFont = true;
-            this.gridBand3.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridBand3.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridBand3.Caption = "Color";
-            this.gridBand3.Children.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.GridBand[] {
-            this.gridBand4,
-            this.gridBand5});
-            this.gridBand3.Name = "gridBand3";
-            this.gridBand3.VisibleIndex = 4;
-            this.gridBand3.Width = 140;
-            // 
-            // gridBand4
-            // 
-            this.gridBand4.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridBand4.AppearanceHeader.Options.UseFont = true;
-            this.gridBand4.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridBand4.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridBand4.Caption = "Color";
-            this.gridBand4.Columns.Add(this.grdColD_ColorName1);
-            this.gridBand4.Name = "gridBand4";
-            this.gridBand4.VisibleIndex = 0;
-            // 
-            // gridBand5
-            // 
-            this.gridBand5.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridBand5.AppearanceHeader.Options.UseFont = true;
-            this.gridBand5.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridBand5.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridBand5.Caption = "Color 2";
-            this.gridBand5.Columns.Add(this.grdColD_ColorName2);
-            this.gridBand5.Name = "gridBand5";
-            this.gridBand5.VisibleIndex = 1;
-            // 
-            // grdColD_ColorName2
-            // 
-            this.grdColD_ColorName2.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdColD_ColorName2.AppearanceHeader.Options.UseFont = true;
-            this.grdColD_ColorName2.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdColD_ColorName2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdColD_ColorName2.Caption = "Color2";
-            this.grdColD_ColorName2.FieldName = "ColorName2";
-            this.grdColD_ColorName2.Name = "grdColD_ColorName2";
-            this.grdColD_ColorName2.OptionsColumn.ReadOnly = true;
-            this.grdColD_ColorName2.OptionsColumn.ShowCaption = false;
-            this.grdColD_ColorName2.Visible = true;
-            this.grdColD_ColorName2.Width = 70;
-            // 
-            // gridBand6
-            // 
-            this.gridBand6.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridBand6.AppearanceHeader.Options.UseFont = true;
-            this.gridBand6.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridBand6.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridBand6.Caption = "Material";
-            this.gridBand6.Children.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.GridBand[] {
-            this.gridBand7,
-            this.gridBand8});
-            this.gridBand6.Name = "gridBand6";
-            this.gridBand6.VisibleIndex = 5;
-            this.gridBand6.Width = 140;
-            // 
-            // gridBand7
-            // 
-            this.gridBand7.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridBand7.AppearanceHeader.Options.UseFont = true;
-            this.gridBand7.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridBand7.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridBand7.Caption = "Material";
-            this.gridBand7.Columns.Add(this.grdColD_MaterialName1);
-            this.gridBand7.Name = "gridBand7";
-            this.gridBand7.VisibleIndex = 0;
-            // 
-            // gridBand8
-            // 
-            this.gridBand8.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridBand8.AppearanceHeader.Options.UseFont = true;
-            this.gridBand8.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridBand8.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridBand8.Caption = "Material 2";
-            this.gridBand8.Columns.Add(this.grdColD_MaterialName2);
-            this.gridBand8.Name = "gridBand8";
-            this.gridBand8.VisibleIndex = 1;
-            // 
-            // gridBand23
-            // 
-            this.gridBand23.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridBand23.AppearanceHeader.Options.UseFont = true;
-            this.gridBand23.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridBand23.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridBand23.Caption = "Price";
-            this.gridBand23.Columns.Add(this.grdColD_Price);
-            this.gridBand23.Name = "gridBand23";
-            this.gridBand23.VisibleIndex = 6;
-            this.gridBand23.Width = 100;
-            // 
-            // grdColD_Price
-            // 
-            this.grdColD_Price.Caption = "Price";
-            this.grdColD_Price.DisplayFormat.FormatString = "{0:N0}";
-            this.grdColD_Price.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.grdColD_Price.FieldName = "Price";
-            this.grdColD_Price.Name = "grdColD_Price";
-            this.grdColD_Price.OptionsColumn.ReadOnly = true;
-            this.grdColD_Price.OptionsColumn.ShowCaption = false;
-            this.grdColD_Price.Visible = true;
-            this.grdColD_Price.Width = 100;
-            // 
-            // gridBand43
-            // 
-            this.gridBand43.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridBand43.AppearanceHeader.Options.UseFont = true;
-            this.gridBand43.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridBand43.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridBand43.Caption = "Quantity";
-            this.gridBand43.Columns.Add(this.grdColD_Quantity);
-            this.gridBand43.Name = "gridBand43";
-            this.gridBand43.VisibleIndex = 7;
-            this.gridBand43.Width = 90;
-            // 
-            // gridBand42
-            // 
-            this.gridBand42.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridBand42.AppearanceHeader.Options.UseFont = true;
-            this.gridBand42.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridBand42.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridBand42.Caption = "Amount";
-            this.gridBand42.Columns.Add(this.grdColD_Amount);
-            this.gridBand42.Name = "gridBand42";
-            this.gridBand42.VisibleIndex = 8;
-            this.gridBand42.Width = 110;
-            // 
-            // grdColD_Amount
-            // 
-            this.grdColD_Amount.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdColD_Amount.AppearanceHeader.Options.UseFont = true;
-            this.grdColD_Amount.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdColD_Amount.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdColD_Amount.Caption = "Amount";
-            this.grdColD_Amount.DisplayFormat.FormatString = "{0:N0}";
-            this.grdColD_Amount.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.grdColD_Amount.FieldName = "Amount";
-            this.grdColD_Amount.Name = "grdColD_Amount";
-            this.grdColD_Amount.OptionsColumn.ShowCaption = false;
-            this.grdColD_Amount.Visible = true;
-            this.grdColD_Amount.Width = 110;
-            // 
-            // gridBand24
-            // 
-            this.gridBand24.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridBand24.AppearanceHeader.Options.UseFont = true;
-            this.gridBand24.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridBand24.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridBand24.Caption = "Sketchup File";
-            this.gridBand24.Columns.Add(this.grdColD_SketchupFile);
-            this.gridBand24.Name = "gridBand24";
-            this.gridBand24.VisibleIndex = 9;
-            this.gridBand24.Width = 150;
-            // 
-            // grdColD_SketchupFile
-            // 
-            this.grdColD_SketchupFile.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdColD_SketchupFile.AppearanceHeader.Options.UseFont = true;
-            this.grdColD_SketchupFile.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdColD_SketchupFile.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdColD_SketchupFile.Caption = "Sketchup File";
-            this.grdColD_SketchupFile.FieldName = "SketchupFile";
-            this.grdColD_SketchupFile.Name = "grdColD_SketchupFile";
-            this.grdColD_SketchupFile.OptionsColumn.ReadOnly = true;
-            this.grdColD_SketchupFile.OptionsColumn.ShowCaption = false;
-            this.grdColD_SketchupFile.Visible = true;
-            this.grdColD_SketchupFile.Width = 150;
-            // 
-            // gridBand16
-            // 
-            this.gridBand16.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridBand16.AppearanceHeader.Options.UseFont = true;
-            this.gridBand16.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridBand16.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridBand16.Caption = "Weight";
-            this.gridBand16.Columns.Add(this.grdColD_Weight);
-            this.gridBand16.Name = "gridBand16";
-            this.gridBand16.VisibleIndex = 10;
-            this.gridBand16.Width = 90;
-            // 
-            // grdColD_Weight
-            // 
-            this.grdColD_Weight.Caption = "Weight";
-            this.grdColD_Weight.DisplayFormat.FormatString = "{0:N0}";
-            this.grdColD_Weight.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.grdColD_Weight.FieldName = "Weight";
-            this.grdColD_Weight.Name = "grdColD_Weight";
-            this.grdColD_Weight.OptionsColumn.ReadOnly = true;
-            this.grdColD_Weight.OptionsColumn.ShowCaption = false;
-            this.grdColD_Weight.Visible = true;
-            this.grdColD_Weight.Width = 90;
-            // 
-            // gridBand29
-            // 
-            this.gridBand29.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridBand29.AppearanceHeader.Options.UseFont = true;
-            this.gridBand29.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridBand29.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridBand29.Caption = "Designer";
-            this.gridBand29.Columns.Add(this.grdColD_DesignerName);
-            this.gridBand29.Name = "gridBand29";
-            this.gridBand29.VisibleIndex = 11;
-            this.gridBand29.Width = 175;
-            // 
-            // grdColD_DesignerName
-            // 
-            this.grdColD_DesignerName.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdColD_DesignerName.AppearanceHeader.Options.UseFont = true;
-            this.grdColD_DesignerName.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdColD_DesignerName.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdColD_DesignerName.Caption = "Designer Name";
-            this.grdColD_DesignerName.FieldName = "DesignerName";
-            this.grdColD_DesignerName.Name = "grdColD_DesignerName";
-            this.grdColD_DesignerName.OptionsColumn.ReadOnly = true;
-            this.grdColD_DesignerName.OptionsColumn.ShowCaption = false;
-            this.grdColD_DesignerName.Visible = true;
-            this.grdColD_DesignerName.Width = 175;
             // 
             // btn_Refresh
             // 
@@ -1014,23 +450,6 @@ namespace ScandiHome.EPR.ENT
             this.btnView.Text = "&Xem";
             this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
-            // tpl_Main
-            // 
-            this.tpl_Main.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tpl_Main.ColumnCount = 2;
-            this.tpl_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tpl_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tpl_Main.Controls.Add(this.gc_Data, 0, 0);
-            this.tpl_Main.Controls.Add(this.gc_DataDetail, 1, 0);
-            this.tpl_Main.Location = new System.Drawing.Point(0, 9);
-            this.tpl_Main.Name = "tpl_Main";
-            this.tpl_Main.RowCount = 1;
-            this.tpl_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tpl_Main.Size = new System.Drawing.Size(864, 427);
-            this.tpl_Main.TabIndex = 28;
-            // 
             // gc_Data
             // 
             this.gc_Data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1041,8 +460,8 @@ namespace ScandiHome.EPR.ENT
             this.gc_Data.MainView = this.gv_Data;
             this.gc_Data.Margin = new System.Windows.Forms.Padding(0);
             this.gc_Data.Name = "gc_Data";
-            this.gc_Data.Size = new System.Drawing.Size(432, 427);
-            this.gc_Data.TabIndex = 1;
+            this.gc_Data.Size = new System.Drawing.Size(866, 439);
+            this.gc_Data.TabIndex = 28;
             this.gc_Data.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gv_Data});
             // 
@@ -1065,6 +484,16 @@ namespace ScandiHome.EPR.ENT
             this.gridBand36,
             this.gridBand37,
             this.gridBand38,
+            this.gridBand12,
+            this.ProductName,
+            this.gridBand14,
+            this.gridBand19,
+            this.gridBand22,
+            this.gridBand40,
+            this.gridBand46,
+            this.gridBand13,
+            this.gridBand47,
+            this.gridBand48,
             this.gridBand39,
             this.gridBand41,
             this.gridBand45,
@@ -1094,184 +523,202 @@ namespace ScandiHome.EPR.ENT
             this.grdCol_Materials,
             this.grdCol_Production,
             this.grdCol_Payment,
-            this.grdCol_Delivery});
+            this.grdCol_Delivery,
+            this.grdCol_OrderCodeItem,
+            this.grdCol_SKU,
+            this.grdCol_ColorName1,
+            this.grdCol_ColorName2,
+            this.grdCol_MaterialName1,
+            this.grdCol_MaterialName2,
+            this.grdCol_Weight,
+            this.grdCol_ProductName,
+            this.grdCol_Price,
+            this.grdCol_Quantity,
+            this.grdCol_Amount,
+            this.grdCol_SketchupFile,
+            this.grdCol_DesignerName});
             this.gv_Data.DetailHeight = 280;
-            gridFormatRule6.Column = this.grdCol_Type;
-            gridFormatRule6.Name = "Format_Type";
-            formatConditionRuleValue6.Appearance.BackColor = System.Drawing.Color.LightSkyBlue;
+            gridFormatRule1.Column = this.grdCol_Type;
+            gridFormatRule1.Name = "Format_Type";
+            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.LightSkyBlue;
+            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue1.Value1 = "Bán lẻ";
+            gridFormatRule1.Rule = formatConditionRuleValue1;
+            gridFormatRule2.Column = this.grdCol_Type;
+            gridFormatRule2.Name = "Format_Type_new";
+            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.MediumSeaGreen;
+            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue2.Value1 = "Sản phẩm mới";
+            gridFormatRule2.Rule = formatConditionRuleValue2;
+            gridFormatRule3.Column = this.grdCol_OrderStatus;
+            gridFormatRule3.Name = "Format_OrderStatus_d";
+            formatConditionRuleValue3.Appearance.BackColor = System.Drawing.Color.LightSkyBlue;
+            formatConditionRuleValue3.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue3.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue3.Value1 = "d";
+            gridFormatRule3.Rule = formatConditionRuleValue3;
+            gridFormatRule4.Column = this.grdCol_OrderStatus;
+            gridFormatRule4.Name = "Format_OrderStatus_i";
+            formatConditionRuleValue4.Appearance.BackColor = System.Drawing.Color.LightYellow;
+            formatConditionRuleValue4.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue4.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue4.Value1 = "i";
+            gridFormatRule4.Rule = formatConditionRuleValue4;
+            gridFormatRule5.Column = this.grdCol_OrderStatus;
+            gridFormatRule5.Name = "Format_OrderStatus_c";
+            formatConditionRuleValue5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            formatConditionRuleValue5.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue5.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue5.Value1 = "c";
+            gridFormatRule5.Rule = formatConditionRuleValue5;
+            gridFormatRule6.Column = this.grdCol_ShippingPriority;
+            gridFormatRule6.Name = "Format_ShippingPriority";
+            formatConditionRuleValue6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             formatConditionRuleValue6.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue6.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue6.Value1 = "Bán lẻ";
+            formatConditionRuleValue6.Value1 = "HỎA TỐC";
             gridFormatRule6.Rule = formatConditionRuleValue6;
-            gridFormatRule7.Column = this.grdCol_Type;
-            gridFormatRule7.Name = "Format_Type_new";
-            formatConditionRuleValue7.Appearance.BackColor = System.Drawing.Color.MediumSeaGreen;
+            gridFormatRule7.Column = this.grdCol_Confirm;
+            gridFormatRule7.Name = "Format_Confirm_d";
+            formatConditionRuleValue7.Appearance.BackColor = System.Drawing.Color.LightSkyBlue;
             formatConditionRuleValue7.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue7.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue7.Value1 = "Sản phẩm mới";
+            formatConditionRuleValue7.Value1 = "d";
             gridFormatRule7.Rule = formatConditionRuleValue7;
-            gridFormatRule8.Column = this.grdCol_OrderStatus;
-            gridFormatRule8.Name = "Format_OrderStatus_d";
+            gridFormatRule8.Column = this.grdCol_Design;
+            gridFormatRule8.Name = "Format_Design_d";
             formatConditionRuleValue8.Appearance.BackColor = System.Drawing.Color.LightSkyBlue;
             formatConditionRuleValue8.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue8.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
             formatConditionRuleValue8.Value1 = "d";
             gridFormatRule8.Rule = formatConditionRuleValue8;
-            gridFormatRule9.Column = this.grdCol_OrderStatus;
-            gridFormatRule9.Name = "Format_OrderStatus_i";
-            formatConditionRuleValue9.Appearance.BackColor = System.Drawing.Color.LightYellow;
+            gridFormatRule9.Column = this.grdCol_Materials;
+            gridFormatRule9.Name = "Format_Materials_d";
+            formatConditionRuleValue9.Appearance.BackColor = System.Drawing.Color.LightSkyBlue;
             formatConditionRuleValue9.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue9.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue9.Value1 = "i";
+            formatConditionRuleValue9.Value1 = "d";
             gridFormatRule9.Rule = formatConditionRuleValue9;
-            gridFormatRule10.Column = this.grdCol_OrderStatus;
-            gridFormatRule10.Name = "Format_OrderStatus_c";
-            formatConditionRuleValue10.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            gridFormatRule10.Column = this.grdCol_Production;
+            gridFormatRule10.Name = "Format_Production_d";
+            formatConditionRuleValue10.Appearance.BackColor = System.Drawing.Color.LightSkyBlue;
             formatConditionRuleValue10.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue10.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue10.Value1 = "c";
+            formatConditionRuleValue10.Value1 = "d";
             gridFormatRule10.Rule = formatConditionRuleValue10;
-            gridFormatRule11.Column = this.grdCol_ShippingPriority;
-            gridFormatRule11.Name = "Format_ShippingPriority";
-            formatConditionRuleValue11.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            gridFormatRule11.Column = this.grdCol_Delivery;
+            gridFormatRule11.Name = "Format_Delivery_d";
+            formatConditionRuleValue11.Appearance.BackColor = System.Drawing.Color.LightSkyBlue;
             formatConditionRuleValue11.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue11.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue11.Value1 = "HỎA TỐC";
+            formatConditionRuleValue11.Value1 = "d";
             gridFormatRule11.Rule = formatConditionRuleValue11;
-            gridFormatRule12.Column = this.grdCol_Confirm;
-            gridFormatRule12.Name = "Format_Confirm_d";
+            gridFormatRule12.Column = this.grdCol_Payment;
+            gridFormatRule12.Name = "Format_Payment_d";
+            formatConditionRuleValue12.AllowAnimation = DevExpress.Utils.DefaultBoolean.False;
             formatConditionRuleValue12.Appearance.BackColor = System.Drawing.Color.LightSkyBlue;
             formatConditionRuleValue12.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue12.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
             formatConditionRuleValue12.Value1 = "d";
             gridFormatRule12.Rule = formatConditionRuleValue12;
-            gridFormatRule13.Column = this.grdCol_Design;
-            gridFormatRule13.Name = "Format_Design_d";
-            formatConditionRuleValue13.Appearance.BackColor = System.Drawing.Color.LightSkyBlue;
+            gridFormatRule13.Column = this.grdCol_Confirm;
+            gridFormatRule13.Name = "Format_Confirm_i";
+            formatConditionRuleValue13.Appearance.BackColor = System.Drawing.Color.LightYellow;
             formatConditionRuleValue13.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue13.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue13.Value1 = "d";
+            formatConditionRuleValue13.Value1 = "i";
             gridFormatRule13.Rule = formatConditionRuleValue13;
-            gridFormatRule14.Column = this.grdCol_Materials;
-            gridFormatRule14.Name = "Format_Materials_d";
-            formatConditionRuleValue14.Appearance.BackColor = System.Drawing.Color.LightSkyBlue;
+            gridFormatRule14.Column = this.grdCol_Design;
+            gridFormatRule14.Name = "Format_Design_i";
+            formatConditionRuleValue14.Appearance.BackColor = System.Drawing.Color.LightYellow;
             formatConditionRuleValue14.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue14.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue14.Value1 = "d";
+            formatConditionRuleValue14.Value1 = "i";
             gridFormatRule14.Rule = formatConditionRuleValue14;
-            gridFormatRule15.Column = this.grdCol_Production;
-            gridFormatRule15.Name = "Format_Production_d";
-            formatConditionRuleValue15.Appearance.BackColor = System.Drawing.Color.LightSkyBlue;
+            gridFormatRule15.Column = this.grdCol_Materials;
+            gridFormatRule15.Name = "Format_Materials_i";
+            formatConditionRuleValue15.Appearance.BackColor = System.Drawing.Color.LightYellow;
             formatConditionRuleValue15.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue15.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue15.Value1 = "d";
+            formatConditionRuleValue15.Value1 = "i";
             gridFormatRule15.Rule = formatConditionRuleValue15;
-            gridFormatRule16.Column = this.grdCol_Delivery;
-            gridFormatRule16.Name = "Format_Delivery_d";
-            formatConditionRuleValue16.Appearance.BackColor = System.Drawing.Color.LightSkyBlue;
+            gridFormatRule16.Column = this.grdCol_Production;
+            gridFormatRule16.Name = "Format_Production_i";
+            formatConditionRuleValue16.Appearance.BackColor = System.Drawing.Color.LightYellow;
             formatConditionRuleValue16.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue16.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue16.Value1 = "d";
+            formatConditionRuleValue16.Value1 = "i";
             gridFormatRule16.Rule = formatConditionRuleValue16;
             gridFormatRule17.Column = this.grdCol_Payment;
-            gridFormatRule17.Name = "Format_Payment_d";
-            formatConditionRuleValue17.AllowAnimation = DevExpress.Utils.DefaultBoolean.False;
-            formatConditionRuleValue17.Appearance.BackColor = System.Drawing.Color.LightSkyBlue;
+            gridFormatRule17.Name = "Format_Payment_i";
+            formatConditionRuleValue17.Appearance.BackColor = System.Drawing.Color.LightYellow;
             formatConditionRuleValue17.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue17.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue17.Value1 = "d";
+            formatConditionRuleValue17.Value1 = "i";
             gridFormatRule17.Rule = formatConditionRuleValue17;
-            gridFormatRule18.Column = this.grdCol_Confirm;
-            gridFormatRule18.Name = "Format_Confirm_i";
+            gridFormatRule18.Column = this.grdCol_Delivery;
+            gridFormatRule18.Name = "Format_Delivery_i";
             formatConditionRuleValue18.Appearance.BackColor = System.Drawing.Color.LightYellow;
             formatConditionRuleValue18.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue18.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
             formatConditionRuleValue18.Value1 = "i";
             gridFormatRule18.Rule = formatConditionRuleValue18;
-            gridFormatRule19.Column = this.grdCol_Design;
-            gridFormatRule19.Name = "Format_Design_i";
-            formatConditionRuleValue19.Appearance.BackColor = System.Drawing.Color.LightYellow;
+            gridFormatRule19.Column = this.grdCol_Confirm;
+            gridFormatRule19.Name = "Format_Confirm_c";
+            formatConditionRuleValue19.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             formatConditionRuleValue19.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue19.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue19.Value1 = "i";
+            formatConditionRuleValue19.Value1 = "c";
             gridFormatRule19.Rule = formatConditionRuleValue19;
-            gridFormatRule20.Column = this.grdCol_Materials;
-            gridFormatRule20.Name = "Format_Materials_i";
-            formatConditionRuleValue20.Appearance.BackColor = System.Drawing.Color.LightYellow;
+            gridFormatRule20.Column = this.grdCol_Design;
+            gridFormatRule20.Name = "Format_Design_c";
+            formatConditionRuleValue20.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             formatConditionRuleValue20.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue20.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue20.Value1 = "i";
+            formatConditionRuleValue20.Value1 = "c";
             gridFormatRule20.Rule = formatConditionRuleValue20;
-            gridFormatRule21.Column = this.grdCol_Production;
-            gridFormatRule21.Name = "Format_Production_i";
-            formatConditionRuleValue21.Appearance.BackColor = System.Drawing.Color.LightYellow;
+            gridFormatRule21.Column = this.grdCol_Materials;
+            gridFormatRule21.Name = "Format_Materials_c";
+            formatConditionRuleValue21.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             formatConditionRuleValue21.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue21.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue21.Value1 = "i";
+            formatConditionRuleValue21.Value1 = "c";
             gridFormatRule21.Rule = formatConditionRuleValue21;
-            gridFormatRule22.Column = this.grdCol_Payment;
-            gridFormatRule22.Name = "Format_Payment_i";
-            formatConditionRuleValue22.Appearance.BackColor = System.Drawing.Color.LightYellow;
+            gridFormatRule22.Column = this.grdCol_Production;
+            gridFormatRule22.Name = "Format_Production_c";
+            formatConditionRuleValue22.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             formatConditionRuleValue22.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue22.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue22.Value1 = "i";
+            formatConditionRuleValue22.Value1 = "c";
             gridFormatRule22.Rule = formatConditionRuleValue22;
-            gridFormatRule23.Column = this.grdCol_Delivery;
-            gridFormatRule23.Name = "Format_Delivery_i";
-            formatConditionRuleValue23.Appearance.BackColor = System.Drawing.Color.LightYellow;
+            gridFormatRule23.Column = this.grdCol_Payment;
+            gridFormatRule23.Name = "Format_Payment_c";
+            formatConditionRuleValue23.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             formatConditionRuleValue23.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue23.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue23.Value1 = "i";
+            formatConditionRuleValue23.Value1 = "c";
             gridFormatRule23.Rule = formatConditionRuleValue23;
-            gridFormatRule24.Column = this.grdCol_Confirm;
-            gridFormatRule24.Name = "Format_Confirm_c";
+            gridFormatRule24.Column = this.grdCol_Delivery;
+            gridFormatRule24.Name = "Format_Delivery_c";
             formatConditionRuleValue24.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             formatConditionRuleValue24.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue24.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
             formatConditionRuleValue24.Value1 = "c";
             gridFormatRule24.Rule = formatConditionRuleValue24;
-            gridFormatRule25.Column = this.grdCol_Design;
-            gridFormatRule25.Name = "Format_Design_c";
-            formatConditionRuleValue25.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue25.Appearance.Options.UseBackColor = true;
+            gridFormatRule25.Column = this.grdCol_CODAmount;
+            gridFormatRule25.Name = "Format_CODAmount";
+            formatConditionRuleValue25.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(224)))));
+            formatConditionRuleValue25.Appearance.Options.UseForeColor = true;
             formatConditionRuleValue25.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue25.Value1 = "c";
+            formatConditionRuleValue25.Value1 = 0D;
             gridFormatRule25.Rule = formatConditionRuleValue25;
-            gridFormatRule26.Column = this.grdCol_Materials;
-            gridFormatRule26.Name = "Format_Materials_c";
-            formatConditionRuleValue26.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue26.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue26.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue26.Value1 = "c";
-            gridFormatRule26.Rule = formatConditionRuleValue26;
-            gridFormatRule27.Column = this.grdCol_Production;
-            gridFormatRule27.Name = "Format_Production_c";
-            formatConditionRuleValue27.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue27.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue27.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue27.Value1 = "c";
-            gridFormatRule27.Rule = formatConditionRuleValue27;
-            gridFormatRule28.Column = this.grdCol_Payment;
-            gridFormatRule28.Name = "Format_Payment_c";
-            formatConditionRuleValue28.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue28.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue28.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue28.Value1 = "c";
-            gridFormatRule28.Rule = formatConditionRuleValue28;
-            gridFormatRule29.Column = this.grdCol_Delivery;
-            gridFormatRule29.Name = "Format_Delivery_c";
-            formatConditionRuleValue29.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue29.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue29.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue29.Value1 = "c";
-            gridFormatRule29.Rule = formatConditionRuleValue29;
-            gridFormatRule30.Column = this.grdCol_CODAmount;
-            gridFormatRule30.Name = "Format_CODAmount";
-            formatConditionRuleValue30.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(224)))));
-            formatConditionRuleValue30.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue30.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue30.Value1 = 0D;
-            gridFormatRule30.Rule = formatConditionRuleValue30;
+            this.gv_Data.FormatRules.Add(gridFormatRule1);
+            this.gv_Data.FormatRules.Add(gridFormatRule2);
+            this.gv_Data.FormatRules.Add(gridFormatRule3);
+            this.gv_Data.FormatRules.Add(gridFormatRule4);
+            this.gv_Data.FormatRules.Add(gridFormatRule5);
             this.gv_Data.FormatRules.Add(gridFormatRule6);
             this.gv_Data.FormatRules.Add(gridFormatRule7);
             this.gv_Data.FormatRules.Add(gridFormatRule8);
@@ -1292,12 +739,8 @@ namespace ScandiHome.EPR.ENT
             this.gv_Data.FormatRules.Add(gridFormatRule23);
             this.gv_Data.FormatRules.Add(gridFormatRule24);
             this.gv_Data.FormatRules.Add(gridFormatRule25);
-            this.gv_Data.FormatRules.Add(gridFormatRule26);
-            this.gv_Data.FormatRules.Add(gridFormatRule27);
-            this.gv_Data.FormatRules.Add(gridFormatRule28);
-            this.gv_Data.FormatRules.Add(gridFormatRule29);
-            this.gv_Data.FormatRules.Add(gridFormatRule30);
             this.gv_Data.GridControl = this.gc_Data;
+            this.gv_Data.GroupCount = 1;
             this.gv_Data.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Count, "SKU", this.grdCol_OrderStatus, "{0:N0}")});
             this.gv_Data.HorzScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Always;
@@ -1307,7 +750,8 @@ namespace ScandiHome.EPR.ENT
             this.gv_Data.OptionsView.ShowFooter = true;
             this.gv_Data.OptionsView.ShowGroupPanel = false;
             this.gv_Data.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
-            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.grdCol_OrderCode, DevExpress.Data.ColumnSortOrder.Descending)});
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.grdCol_OrderCode, DevExpress.Data.ColumnSortOrder.Descending),
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.grdCol_OrderCodeItem, DevExpress.Data.ColumnSortOrder.Ascending)});
             // 
             // gridBand1
             // 
@@ -1316,11 +760,23 @@ namespace ScandiHome.EPR.ENT
             this.gridBand1.AppearanceHeader.Options.UseTextOptions = true;
             this.gridBand1.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridBand1.Caption = "Order Id";
+            this.gridBand1.Columns.Add(this.grdCol_OrderCodeItem);
             this.gridBand1.Columns.Add(this.grdCol_OrderCode);
             this.gridBand1.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
             this.gridBand1.Name = "gridBand1";
             this.gridBand1.VisibleIndex = 0;
-            this.gridBand1.Width = 90;
+            this.gridBand1.Width = 120;
+            // 
+            // grdCol_OrderCodeItem
+            // 
+            this.grdCol_OrderCodeItem.Caption = "OrderCodeItem";
+            this.grdCol_OrderCodeItem.FieldName = "OrderCodeItem";
+            this.grdCol_OrderCodeItem.Name = "grdCol_OrderCodeItem";
+            this.grdCol_OrderCodeItem.OptionsColumn.ReadOnly = true;
+            this.grdCol_OrderCodeItem.OptionsColumn.ShowCaption = false;
+            this.grdCol_OrderCodeItem.SortMode = DevExpress.XtraGrid.ColumnSortMode.Value;
+            this.grdCol_OrderCodeItem.Visible = true;
+            this.grdCol_OrderCodeItem.Width = 120;
             // 
             // grdCol_OrderCode
             // 
@@ -1331,12 +787,13 @@ namespace ScandiHome.EPR.ENT
             this.grdCol_OrderCode.Caption = "OrderCode";
             this.grdCol_OrderCode.FieldName = "OrderCode";
             this.grdCol_OrderCode.Name = "grdCol_OrderCode";
+            this.grdCol_OrderCode.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
+            this.grdCol_OrderCode.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.True;
             this.grdCol_OrderCode.OptionsColumn.ReadOnly = true;
             this.grdCol_OrderCode.OptionsColumn.ShowCaption = false;
             this.grdCol_OrderCode.SortMode = DevExpress.XtraGrid.ColumnSortMode.Value;
             this.grdCol_OrderCode.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "OrderCode", "{0:N0}")});
-            this.grdCol_OrderCode.Visible = true;
             this.grdCol_OrderCode.Width = 90;
             // 
             // gridBand9
@@ -1387,7 +844,6 @@ namespace ScandiHome.EPR.ENT
             this.grdCol_Loyalty.Name = "grdCol_Loyalty";
             this.grdCol_Loyalty.OptionsColumn.ReadOnly = true;
             this.grdCol_Loyalty.OptionsColumn.ShowCaption = false;
-            this.grdCol_Loyalty.Visible = true;
             this.grdCol_Loyalty.Width = 90;
             // 
             // gridBand27
@@ -1402,6 +858,20 @@ namespace ScandiHome.EPR.ENT
             this.gridBand27.VisibleIndex = 4;
             this.gridBand27.Width = 175;
             // 
+            // grdCol_CustomerName
+            // 
+            this.grdCol_CustomerName.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.grdCol_CustomerName.AppearanceHeader.Options.UseFont = true;
+            this.grdCol_CustomerName.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdCol_CustomerName.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_CustomerName.Caption = "CustomerName";
+            this.grdCol_CustomerName.FieldName = "CustomerName";
+            this.grdCol_CustomerName.Name = "grdCol_CustomerName";
+            this.grdCol_CustomerName.OptionsColumn.ReadOnly = true;
+            this.grdCol_CustomerName.OptionsColumn.ShowCaption = false;
+            this.grdCol_CustomerName.Visible = true;
+            this.grdCol_CustomerName.Width = 175;
+            // 
             // gridBand44
             // 
             this.gridBand44.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
@@ -1413,6 +883,20 @@ namespace ScandiHome.EPR.ENT
             this.gridBand44.Name = "gridBand44";
             this.gridBand44.VisibleIndex = 5;
             this.gridBand44.Width = 90;
+            // 
+            // grdCol_PhoneNumber
+            // 
+            this.grdCol_PhoneNumber.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.grdCol_PhoneNumber.AppearanceHeader.Options.UseFont = true;
+            this.grdCol_PhoneNumber.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdCol_PhoneNumber.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_PhoneNumber.Caption = "PhoneNumber";
+            this.grdCol_PhoneNumber.FieldName = "PhoneNumber";
+            this.grdCol_PhoneNumber.Name = "grdCol_PhoneNumber";
+            this.grdCol_PhoneNumber.OptionsColumn.ReadOnly = true;
+            this.grdCol_PhoneNumber.OptionsColumn.ShowCaption = false;
+            this.grdCol_PhoneNumber.Visible = true;
+            this.grdCol_PhoneNumber.Width = 90;
             // 
             // gridBand28
             // 
@@ -1653,6 +1137,300 @@ namespace ScandiHome.EPR.ENT
             this.grdCol_Shipper.Visible = true;
             this.grdCol_Shipper.Width = 120;
             // 
+            // gridBand12
+            // 
+            this.gridBand12.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridBand12.AppearanceHeader.Options.UseFont = true;
+            this.gridBand12.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridBand12.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridBand12.Caption = "SKU";
+            this.gridBand12.Columns.Add(this.grdCol_SKU);
+            this.gridBand12.Name = "gridBand12";
+            this.gridBand12.VisibleIndex = 16;
+            this.gridBand12.Width = 110;
+            // 
+            // grdCol_SKU
+            // 
+            this.grdCol_SKU.Caption = "SKU";
+            this.grdCol_SKU.FieldName = "SKU";
+            this.grdCol_SKU.Name = "grdCol_SKU";
+            this.grdCol_SKU.OptionsColumn.ReadOnly = true;
+            this.grdCol_SKU.OptionsColumn.ShowCaption = false;
+            this.grdCol_SKU.Visible = true;
+            this.grdCol_SKU.Width = 110;
+            // 
+            // ProductName
+            // 
+            this.ProductName.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductName.AppearanceHeader.Options.UseFont = true;
+            this.ProductName.AppearanceHeader.Options.UseTextOptions = true;
+            this.ProductName.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.ProductName.Caption = "Product Name";
+            this.ProductName.Columns.Add(this.grdCol_ProductName);
+            this.ProductName.Name = "ProductName";
+            this.ProductName.VisibleIndex = 17;
+            this.ProductName.Width = 255;
+            // 
+            // grdCol_ProductName
+            // 
+            this.grdCol_ProductName.Caption = "ProductName";
+            this.grdCol_ProductName.FieldName = "ProductName";
+            this.grdCol_ProductName.Name = "grdCol_ProductName";
+            this.grdCol_ProductName.OptionsColumn.ReadOnly = true;
+            this.grdCol_ProductName.OptionsColumn.ShowCaption = false;
+            this.grdCol_ProductName.Visible = true;
+            this.grdCol_ProductName.Width = 255;
+            // 
+            // gridBand14
+            // 
+            this.gridBand14.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridBand14.AppearanceHeader.Options.UseFont = true;
+            this.gridBand14.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridBand14.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridBand14.Caption = "Color";
+            this.gridBand14.Children.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.GridBand[] {
+            this.gridBand15,
+            this.gridBand17});
+            this.gridBand14.Name = "gridBand14";
+            this.gridBand14.VisibleIndex = 18;
+            this.gridBand14.Width = 140;
+            // 
+            // gridBand15
+            // 
+            this.gridBand15.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.gridBand15.AppearanceHeader.Options.UseFont = true;
+            this.gridBand15.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridBand15.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridBand15.Caption = "Color";
+            this.gridBand15.Columns.Add(this.grdCol_ColorName1);
+            this.gridBand15.Name = "gridBand15";
+            this.gridBand15.VisibleIndex = 0;
+            // 
+            // grdCol_ColorName1
+            // 
+            this.grdCol_ColorName1.Caption = "ColorName1";
+            this.grdCol_ColorName1.FieldName = "ColorName1";
+            this.grdCol_ColorName1.Name = "grdCol_ColorName1";
+            this.grdCol_ColorName1.OptionsColumn.ReadOnly = true;
+            this.grdCol_ColorName1.OptionsColumn.ShowCaption = false;
+            this.grdCol_ColorName1.Visible = true;
+            this.grdCol_ColorName1.Width = 70;
+            // 
+            // gridBand17
+            // 
+            this.gridBand17.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.gridBand17.AppearanceHeader.Options.UseFont = true;
+            this.gridBand17.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridBand17.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridBand17.Caption = "Color 2";
+            this.gridBand17.Columns.Add(this.grdCol_ColorName2);
+            this.gridBand17.Name = "gridBand17";
+            this.gridBand17.VisibleIndex = 1;
+            // 
+            // grdCol_ColorName2
+            // 
+            this.grdCol_ColorName2.Caption = "ColorName2";
+            this.grdCol_ColorName2.FieldName = "ColorName2";
+            this.grdCol_ColorName2.Name = "grdCol_ColorName2";
+            this.grdCol_ColorName2.OptionsColumn.ReadOnly = true;
+            this.grdCol_ColorName2.OptionsColumn.ShowCaption = false;
+            this.grdCol_ColorName2.Visible = true;
+            this.grdCol_ColorName2.Width = 70;
+            // 
+            // gridBand19
+            // 
+            this.gridBand19.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.gridBand19.AppearanceHeader.Options.UseFont = true;
+            this.gridBand19.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridBand19.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridBand19.Caption = "Material";
+            this.gridBand19.Children.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.GridBand[] {
+            this.gridBand20,
+            this.gridBand21});
+            this.gridBand19.Name = "gridBand19";
+            this.gridBand19.VisibleIndex = 19;
+            this.gridBand19.Width = 140;
+            // 
+            // gridBand20
+            // 
+            this.gridBand20.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.gridBand20.AppearanceHeader.Options.UseFont = true;
+            this.gridBand20.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridBand20.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridBand20.Caption = "Material";
+            this.gridBand20.Columns.Add(this.grdCol_MaterialName1);
+            this.gridBand20.Name = "gridBand20";
+            this.gridBand20.VisibleIndex = 0;
+            // 
+            // grdCol_MaterialName1
+            // 
+            this.grdCol_MaterialName1.Caption = "MaterialName1";
+            this.grdCol_MaterialName1.FieldName = "MaterialName1";
+            this.grdCol_MaterialName1.Name = "grdCol_MaterialName1";
+            this.grdCol_MaterialName1.OptionsColumn.ReadOnly = true;
+            this.grdCol_MaterialName1.OptionsColumn.ShowCaption = false;
+            this.grdCol_MaterialName1.Visible = true;
+            this.grdCol_MaterialName1.Width = 70;
+            // 
+            // gridBand21
+            // 
+            this.gridBand21.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.gridBand21.AppearanceHeader.Options.UseFont = true;
+            this.gridBand21.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridBand21.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridBand21.Caption = "Material 2";
+            this.gridBand21.Columns.Add(this.grdCol_MaterialName2);
+            this.gridBand21.Name = "gridBand21";
+            this.gridBand21.VisibleIndex = 1;
+            // 
+            // grdCol_MaterialName2
+            // 
+            this.grdCol_MaterialName2.Caption = "MaterialName2";
+            this.grdCol_MaterialName2.FieldName = "MaterialName2";
+            this.grdCol_MaterialName2.Name = "grdCol_MaterialName2";
+            this.grdCol_MaterialName2.OptionsColumn.ReadOnly = true;
+            this.grdCol_MaterialName2.OptionsColumn.ShowCaption = false;
+            this.grdCol_MaterialName2.Visible = true;
+            this.grdCol_MaterialName2.Width = 70;
+            // 
+            // gridBand22
+            // 
+            this.gridBand22.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridBand22.AppearanceHeader.Options.UseFont = true;
+            this.gridBand22.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridBand22.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridBand22.Caption = "Price";
+            this.gridBand22.Columns.Add(this.grdCol_Price);
+            this.gridBand22.Name = "gridBand22";
+            this.gridBand22.VisibleIndex = 20;
+            this.gridBand22.Width = 100;
+            // 
+            // grdCol_Price
+            // 
+            this.grdCol_Price.Caption = "Price";
+            this.grdCol_Price.DisplayFormat.FormatString = "{0:N0}";
+            this.grdCol_Price.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.grdCol_Price.FieldName = "Price";
+            this.grdCol_Price.Name = "grdCol_Price";
+            this.grdCol_Price.OptionsColumn.ReadOnly = true;
+            this.grdCol_Price.OptionsColumn.ShowCaption = false;
+            this.grdCol_Price.Visible = true;
+            this.grdCol_Price.Width = 100;
+            // 
+            // gridBand40
+            // 
+            this.gridBand40.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridBand40.AppearanceHeader.Options.UseFont = true;
+            this.gridBand40.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridBand40.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridBand40.Caption = "Quantity";
+            this.gridBand40.Columns.Add(this.grdCol_Quantity);
+            this.gridBand40.Name = "gridBand40";
+            this.gridBand40.VisibleIndex = 21;
+            this.gridBand40.Width = 90;
+            // 
+            // grdCol_Quantity
+            // 
+            this.grdCol_Quantity.Caption = "Quantity";
+            this.grdCol_Quantity.DisplayFormat.FormatString = "{0:N0}";
+            this.grdCol_Quantity.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.grdCol_Quantity.FieldName = "Quantity";
+            this.grdCol_Quantity.Name = "grdCol_Quantity";
+            this.grdCol_Quantity.OptionsColumn.ReadOnly = true;
+            this.grdCol_Quantity.OptionsColumn.ShowCaption = false;
+            this.grdCol_Quantity.Visible = true;
+            this.grdCol_Quantity.Width = 90;
+            // 
+            // gridBand46
+            // 
+            this.gridBand46.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridBand46.AppearanceHeader.Options.UseFont = true;
+            this.gridBand46.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridBand46.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridBand46.Caption = "Amount";
+            this.gridBand46.Columns.Add(this.grdCol_Amount);
+            this.gridBand46.Name = "gridBand46";
+            this.gridBand46.VisibleIndex = 22;
+            this.gridBand46.Width = 110;
+            // 
+            // grdCol_Amount
+            // 
+            this.grdCol_Amount.Caption = "Amount";
+            this.grdCol_Amount.DisplayFormat.FormatString = "{0:N0)";
+            this.grdCol_Amount.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.grdCol_Amount.FieldName = "Amount";
+            this.grdCol_Amount.Name = "grdCol_Amount";
+            this.grdCol_Amount.OptionsColumn.ReadOnly = true;
+            this.grdCol_Amount.OptionsColumn.ShowCaption = false;
+            this.grdCol_Amount.Visible = true;
+            this.grdCol_Amount.Width = 110;
+            // 
+            // gridBand13
+            // 
+            this.gridBand13.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridBand13.AppearanceHeader.Options.UseFont = true;
+            this.gridBand13.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridBand13.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridBand13.Caption = "Sketchup File";
+            this.gridBand13.Columns.Add(this.grdCol_SketchupFile);
+            this.gridBand13.Name = "gridBand13";
+            this.gridBand13.VisibleIndex = 23;
+            this.gridBand13.Width = 150;
+            // 
+            // grdCol_SketchupFile
+            // 
+            this.grdCol_SketchupFile.Caption = "SketchupFile";
+            this.grdCol_SketchupFile.FieldName = "SketchupFile";
+            this.grdCol_SketchupFile.Name = "grdCol_SketchupFile";
+            this.grdCol_SketchupFile.OptionsColumn.ReadOnly = true;
+            this.grdCol_SketchupFile.OptionsColumn.ShowCaption = false;
+            this.grdCol_SketchupFile.Visible = true;
+            this.grdCol_SketchupFile.Width = 150;
+            // 
+            // gridBand47
+            // 
+            this.gridBand47.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.gridBand47.AppearanceHeader.Options.UseFont = true;
+            this.gridBand47.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridBand47.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridBand47.Caption = "Weight";
+            this.gridBand47.Columns.Add(this.grdCol_Weight);
+            this.gridBand47.Name = "gridBand47";
+            this.gridBand47.VisibleIndex = 24;
+            this.gridBand47.Width = 90;
+            // 
+            // grdCol_Weight
+            // 
+            this.grdCol_Weight.Caption = "Weight";
+            this.grdCol_Weight.FieldName = "Weight";
+            this.grdCol_Weight.Name = "grdCol_Weight";
+            this.grdCol_Weight.OptionsColumn.ReadOnly = true;
+            this.grdCol_Weight.OptionsColumn.ShowCaption = false;
+            this.grdCol_Weight.Visible = true;
+            this.grdCol_Weight.Width = 90;
+            // 
+            // gridBand48
+            // 
+            this.gridBand48.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.gridBand48.AppearanceHeader.Options.UseFont = true;
+            this.gridBand48.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridBand48.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridBand48.Caption = "Designer";
+            this.gridBand48.Columns.Add(this.grdCol_DesignerName);
+            this.gridBand48.Name = "gridBand48";
+            this.gridBand48.VisibleIndex = 25;
+            this.gridBand48.Width = 175;
+            // 
+            // grdCol_DesignerName
+            // 
+            this.grdCol_DesignerName.Caption = "DesignerName";
+            this.grdCol_DesignerName.FieldName = "DesignerName";
+            this.grdCol_DesignerName.Name = "grdCol_DesignerName";
+            this.grdCol_DesignerName.OptionsColumn.ReadOnly = true;
+            this.grdCol_DesignerName.OptionsColumn.ShowCaption = false;
+            this.grdCol_DesignerName.Visible = true;
+            this.grdCol_DesignerName.Width = 175;
+            // 
             // gridBand39
             // 
             this.gridBand39.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
@@ -1662,7 +1440,7 @@ namespace ScandiHome.EPR.ENT
             this.gridBand39.Caption = "COD Amount";
             this.gridBand39.Columns.Add(this.grdCol_CODAmount);
             this.gridBand39.Name = "gridBand39";
-            this.gridBand39.VisibleIndex = 16;
+            this.gridBand39.VisibleIndex = 26;
             this.gridBand39.Width = 110;
             // 
             // gridBand41
@@ -1674,8 +1452,20 @@ namespace ScandiHome.EPR.ENT
             this.gridBand41.Caption = "Source";
             this.gridBand41.Columns.Add(this.grdCol_ChannelName);
             this.gridBand41.Name = "gridBand41";
-            this.gridBand41.VisibleIndex = 17;
+            this.gridBand41.VisibleIndex = 27;
             this.gridBand41.Width = 100;
+            // 
+            // grdCol_ChannelName
+            // 
+            this.grdCol_ChannelName.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdCol_ChannelName.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_ChannelName.Caption = "ChannelName";
+            this.grdCol_ChannelName.FieldName = "Source";
+            this.grdCol_ChannelName.Name = "grdCol_ChannelName";
+            this.grdCol_ChannelName.OptionsColumn.ReadOnly = true;
+            this.grdCol_ChannelName.OptionsColumn.ShowCaption = false;
+            this.grdCol_ChannelName.Visible = true;
+            this.grdCol_ChannelName.Width = 100;
             // 
             // gridBand45
             // 
@@ -1686,8 +1476,24 @@ namespace ScandiHome.EPR.ENT
             this.gridBand45.Caption = "Reference Order";
             this.gridBand45.Columns.Add(this.grdCol_ReferenceOrder);
             this.gridBand45.Name = "gridBand45";
-            this.gridBand45.VisibleIndex = 18;
+            this.gridBand45.VisibleIndex = 28;
             this.gridBand45.Width = 120;
+            // 
+            // grdCol_ReferenceOrder
+            // 
+            this.grdCol_ReferenceOrder.AppearanceCell.Options.UseTextOptions = true;
+            this.grdCol_ReferenceOrder.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_ReferenceOrder.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.grdCol_ReferenceOrder.AppearanceHeader.Options.UseFont = true;
+            this.grdCol_ReferenceOrder.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdCol_ReferenceOrder.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_ReferenceOrder.Caption = "ReferenceOrder";
+            this.grdCol_ReferenceOrder.FieldName = "ReferenceOrder";
+            this.grdCol_ReferenceOrder.Name = "grdCol_ReferenceOrder";
+            this.grdCol_ReferenceOrder.OptionsColumn.ReadOnly = true;
+            this.grdCol_ReferenceOrder.OptionsColumn.ShowCaption = false;
+            this.grdCol_ReferenceOrder.Visible = true;
+            this.grdCol_ReferenceOrder.Width = 120;
             // 
             // gridBand49
             // 
@@ -1704,7 +1510,7 @@ namespace ScandiHome.EPR.ENT
             this.gridBand54,
             this.gridBand55});
             this.gridBand49.Name = "gridBand49";
-            this.gridBand49.VisibleIndex = 19;
+            this.gridBand49.VisibleIndex = 29;
             this.gridBand49.Width = 450;
             // 
             // gridBand50
@@ -1784,7 +1590,7 @@ namespace ScandiHome.EPR.ENT
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(865, 492);
-            this.Controls.Add(this.tpl_Main);
+            this.Controls.Add(this.gc_Data);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.simpleButton4);
             this.Controls.Add(this.simpleButton3);
@@ -1802,9 +1608,6 @@ namespace ScandiHome.EPR.ENT
             this.Text = "Danh sách sản phẩm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmENT_Order_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.gc_DataDetail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gv_DataDetail)).EndInit();
-            this.tpl_Main.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gc_Data)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gv_Data)).EndInit();
             this.ResumeLayout(false);
@@ -1813,98 +1616,92 @@ namespace ScandiHome.EPR.ENT
         }
 
         #endregion
-        private DevExpress.XtraGrid.GridControl gc_DataDetail;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridView gv_DataDetail;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdColD_SKU;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdColD_ColorName1;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdColD_ColorName2;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdColD_MaterialName1;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdColD_MaterialName2;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdColD_ProductName;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdColD_SketchupFile;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdColD_DesignerName;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdColD_Weight;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdColD_Price;
         private DevExpress.XtraEditors.SimpleButton btn_Refresh;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdColD_Quantity;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdColD_Amount;
         private DevExpress.XtraEditors.SimpleButton btnCancel;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.SimpleButton btnView;
-        private System.Windows.Forms.TableLayoutPanel tpl_Main;
         private DevExpress.XtraGrid.GridControl gc_Data;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridView gv_Data;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_OrderCode;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_OrderStatus;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Type;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Loyalty;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_CustomerName;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_PhoneNumber;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Address;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Region;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_ShippingPriority;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_DeliveryDate;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Manufacturing;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Manufacturer;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Description;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_DeliveryTime;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_DeliveryMethodName;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Shipper;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_CODAmount;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_ChannelName;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_ReferenceOrder;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Confirm;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Design;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Materials;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Production;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand1;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_OrderCodeItem;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_OrderCode;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand9;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_OrderStatus;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand25;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Type;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand26;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Loyalty;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand27;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_CustomerName;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand44;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_PhoneNumber;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand28;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Address;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand31;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Region;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand30;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_ShippingPriority;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand32;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_DeliveryDate;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand33;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Manufacturing;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand34;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Manufacturer;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand35;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Description;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand36;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_DeliveryTime;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand37;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_DeliveryMethodName;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand38;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Shipper;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand12;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_SKU;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand ProductName;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_ProductName;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand14;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand15;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_ColorName1;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand17;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_ColorName2;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand19;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand20;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_MaterialName1;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand21;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_MaterialName2;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand22;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Price;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand40;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Quantity;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand46;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Amount;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand13;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_SketchupFile;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand47;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Weight;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand48;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_DesignerName;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand39;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_CODAmount;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand41;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_ChannelName;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand45;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_ReferenceOrder;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand49;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand50;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Confirm;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand51;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Design;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand52;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Materials;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand53;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Production;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand54;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Delivery;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand55;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Payment;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand11;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdColD_Id;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand10;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdColD_OrderCode;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand3;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand4;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand5;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand6;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand7;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand8;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand18;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand2;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand23;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand43;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand42;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand24;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand16;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand29;
     }
 }

@@ -76,8 +76,8 @@ namespace ScandiHome.EPR.List
             DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue22 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule23 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue23 = new DevExpress.XtraEditors.FormatConditionRuleValue();
-            this.grdCol_MaterialName1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.grdCol_MaterialName2 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.grdCol_Material = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.grdCol_Material2 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.grdCol_Margin = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.grdCol_TechnicalDesign = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.grdCol_PriceCalculation = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
@@ -85,7 +85,7 @@ namespace ScandiHome.EPR.List
             this.grdCol_CNC = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.grdCol_ImageBuilding = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.grdCol_On_site = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.grdCol_ColorName1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.grdCol_Color = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
             this.btnView = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -101,7 +101,7 @@ namespace ScandiHome.EPR.List
             this.gridBand3 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand4 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand5 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.grdCol_ColorName2 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.grdCol_Color2 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand6 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand7 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand8 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
@@ -141,7 +141,7 @@ namespace ScandiHome.EPR.List
             this.gridBand28 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.grdCol_DesignDate = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand29 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.grdCol_DesignerName = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.grdCol_Designer = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand30 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.grdCol_PublicName = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand31 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
@@ -151,7 +151,7 @@ namespace ScandiHome.EPR.List
             this.gridBand33 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.grdCol_AutoPrice = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand34 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.grdCol_TestPrice = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.grdCol_AdjustPrice = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand10 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand35 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand36 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
@@ -160,51 +160,78 @@ namespace ScandiHome.EPR.List
             this.gridBand39 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand40 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand41 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.gridBand44 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.gridBand45 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdCol_CostPrice = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.gridBand46 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdCol_CostPriceTP = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.gridBand47 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.grdCol_CostPriceBP = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand43 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.grdCol_Commission = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand42 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.grdCol_ShippingHCM = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.grdCol_CategoryName = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.grdCol_GroupSKUName = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.grdCol_Category = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.grdCol_GroupSKU = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.grdCol_Policy = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.btn_Refresh = new DevExpress.XtraEditors.SimpleButton();
+            this.tpl_Main = new System.Windows.Forms.TableLayoutPanel();
+            this.gc_Material = new DevExpress.XtraGrid.GridControl();
+            this.gv_Material = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.grdCol_Material_SKU = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.grdCol_Material_STT = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.grdCol_Material_ProductMaterialName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.grdCol_Material_Price = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.grdCol_Material_Quantity = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.grdCol_Material_Amount = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.grdCol_Material_BP = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.chk_BP = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
+            this.grdCol_Material_TP = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.chk_TP = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gc_Data)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gv_Data)).BeginInit();
+            this.tpl_Main.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gc_Material)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gv_Material)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chk_BP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chk_TP)).BeginInit();
             this.SuspendLayout();
             // 
-            // grdCol_MaterialName1
+            // grdCol_Material
             // 
-            this.grdCol_MaterialName1.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdCol_MaterialName1.AppearanceHeader.Options.UseFont = true;
-            this.grdCol_MaterialName1.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdCol_MaterialName1.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdCol_MaterialName1.Caption = "Material1";
-            this.grdCol_MaterialName1.FieldName = "MaterialName1";
-            this.grdCol_MaterialName1.Name = "grdCol_MaterialName1";
-            this.grdCol_MaterialName1.OptionsColumn.ReadOnly = true;
-            this.grdCol_MaterialName1.OptionsColumn.ShowCaption = false;
-            this.grdCol_MaterialName1.Visible = true;
-            this.grdCol_MaterialName1.Width = 70;
+            this.grdCol_Material.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.grdCol_Material.AppearanceHeader.Options.UseFont = true;
+            this.grdCol_Material.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdCol_Material.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_Material.Caption = "Material1";
+            this.grdCol_Material.FieldName = "Material";
+            this.grdCol_Material.Name = "grdCol_Material";
+            this.grdCol_Material.OptionsColumn.ReadOnly = true;
+            this.grdCol_Material.OptionsColumn.ShowCaption = false;
+            this.grdCol_Material.Visible = true;
+            this.grdCol_Material.Width = 70;
             // 
-            // grdCol_MaterialName2
+            // grdCol_Material2
             // 
-            this.grdCol_MaterialName2.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdCol_MaterialName2.AppearanceHeader.Options.UseFont = true;
-            this.grdCol_MaterialName2.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdCol_MaterialName2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdCol_MaterialName2.Caption = "Material2";
-            this.grdCol_MaterialName2.FieldName = "MaterialName2";
-            this.grdCol_MaterialName2.Name = "grdCol_MaterialName2";
-            this.grdCol_MaterialName2.OptionsColumn.ReadOnly = true;
-            this.grdCol_MaterialName2.OptionsColumn.ShowCaption = false;
-            this.grdCol_MaterialName2.Visible = true;
-            this.grdCol_MaterialName2.Width = 70;
+            this.grdCol_Material2.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.grdCol_Material2.AppearanceHeader.Options.UseFont = true;
+            this.grdCol_Material2.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdCol_Material2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_Material2.Caption = "Material2";
+            this.grdCol_Material2.FieldName = "Material2";
+            this.grdCol_Material2.Name = "grdCol_Material2";
+            this.grdCol_Material2.OptionsColumn.ReadOnly = true;
+            this.grdCol_Material2.OptionsColumn.ShowCaption = false;
+            this.grdCol_Material2.Visible = true;
+            this.grdCol_Material2.Width = 70;
             // 
             // grdCol_Margin
             // 
+            this.grdCol_Margin.AppearanceCell.Options.UseTextOptions = true;
+            this.grdCol_Margin.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.grdCol_Margin.AppearanceHeader.Options.UseTextOptions = true;
             this.grdCol_Margin.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdCol_Margin.Caption = "Margin";
+            this.grdCol_Margin.Caption = "Margin %";
             this.grdCol_Margin.FieldName = "Margin";
             this.grdCol_Margin.Name = "grdCol_Margin";
             this.grdCol_Margin.OptionsColumn.ReadOnly = true;
@@ -280,19 +307,19 @@ namespace ScandiHome.EPR.List
             this.grdCol_On_site.OptionsColumn.ShowCaption = false;
             this.grdCol_On_site.Visible = true;
             // 
-            // grdCol_ColorName1
+            // grdCol_Color
             // 
-            this.grdCol_ColorName1.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdCol_ColorName1.AppearanceHeader.Options.UseFont = true;
-            this.grdCol_ColorName1.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdCol_ColorName1.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdCol_ColorName1.Caption = "Color1";
-            this.grdCol_ColorName1.FieldName = "ColorName1";
-            this.grdCol_ColorName1.Name = "grdCol_ColorName1";
-            this.grdCol_ColorName1.OptionsColumn.ReadOnly = true;
-            this.grdCol_ColorName1.OptionsColumn.ShowCaption = false;
-            this.grdCol_ColorName1.Visible = true;
-            this.grdCol_ColorName1.Width = 70;
+            this.grdCol_Color.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.grdCol_Color.AppearanceHeader.Options.UseFont = true;
+            this.grdCol_Color.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdCol_Color.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_Color.Caption = "Color";
+            this.grdCol_Color.FieldName = "Color";
+            this.grdCol_Color.Name = "grdCol_Color";
+            this.grdCol_Color.OptionsColumn.ReadOnly = true;
+            this.grdCol_Color.OptionsColumn.ShowCaption = false;
+            this.grdCol_Color.Visible = true;
+            this.grdCol_Color.Width = 70;
             // 
             // btnCancel
             // 
@@ -311,6 +338,7 @@ namespace ScandiHome.EPR.List
             this.btnCancel.Size = new System.Drawing.Size(68, 28);
             this.btnCancel.TabIndex = 21;
             this.btnCancel.Text = "Đó&ng";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnView
             // 
@@ -409,11 +437,11 @@ namespace ScandiHome.EPR.List
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gc_Data.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2);
-            this.gc_Data.Location = new System.Drawing.Point(0, 11);
+            this.gc_Data.Location = new System.Drawing.Point(0, 0);
             this.gc_Data.MainView = this.gv_Data;
-            this.gc_Data.Margin = new System.Windows.Forms.Padding(2);
+            this.gc_Data.Margin = new System.Windows.Forms.Padding(0);
             this.gc_Data.Name = "gc_Data";
-            this.gc_Data.Size = new System.Drawing.Size(863, 428);
+            this.gc_Data.Size = new System.Drawing.Size(432, 427);
             this.gc_Data.TabIndex = 0;
             this.gc_Data.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gv_Data});
@@ -446,17 +474,18 @@ namespace ScandiHome.EPR.List
             this.gridBand34,
             this.gridBand10,
             this.gridBand35,
+            this.gridBand44,
             this.gridBand43,
             this.gridBand42});
             this.gv_Data.Columns.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn[] {
-            this.grdCol_CategoryName,
-            this.grdCol_GroupSKUName,
+            this.grdCol_Category,
+            this.grdCol_GroupSKU,
             this.grdCol_NewProductNote,
             this.grdCol_SKU,
-            this.grdCol_ColorName1,
-            this.grdCol_ColorName2,
-            this.grdCol_MaterialName1,
-            this.grdCol_MaterialName2,
+            this.grdCol_Color,
+            this.grdCol_Color2,
+            this.grdCol_Material,
+            this.grdCol_Material2,
             this.grdCol_Size,
             this.grdCol_Width,
             this.grdCol_Depth,
@@ -474,7 +503,7 @@ namespace ScandiHome.EPR.List
             this.grdCol_Render,
             this.grdCol_OldPrice,
             this.grdCol_AutoPrice,
-            this.grdCol_TestPrice,
+            this.grdCol_AdjustPrice,
             this.grdCol_Margin,
             this.grdCol_TechnicalDesign,
             this.grdCol_PriceCalculation,
@@ -486,33 +515,36 @@ namespace ScandiHome.EPR.List
             this.grdCol_Guideline,
             this.grdCol_WebsiteLink,
             this.grdCol_DesignDate,
-            this.grdCol_DesignerName,
+            this.grdCol_Designer,
             this.grdCol_Commission,
-            this.grdCol_ShippingHCM});
+            this.grdCol_ShippingHCM,
+            this.grdCol_CostPrice,
+            this.grdCol_CostPriceTP,
+            this.grdCol_CostPriceBP});
             this.gv_Data.DetailHeight = 280;
-            gridFormatRule1.Column = this.grdCol_MaterialName1;
-            gridFormatRule1.Name = "Format_MaterialName1_MDF";
+            gridFormatRule1.Column = this.grdCol_Material;
+            gridFormatRule1.Name = "Format_Material_MDF";
             formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
             formatConditionRuleValue1.Value1 = "MDF";
             gridFormatRule1.Rule = formatConditionRuleValue1;
-            gridFormatRule2.Column = this.grdCol_MaterialName1;
-            gridFormatRule2.Name = "Format_MaterialName1_MMR";
+            gridFormatRule2.Column = this.grdCol_Material;
+            gridFormatRule2.Name = "Format_Material_MMR";
             formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.MediumSeaGreen;
             formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
             formatConditionRuleValue2.Value1 = "MMR";
             gridFormatRule2.Rule = formatConditionRuleValue2;
-            gridFormatRule3.Column = this.grdCol_MaterialName2;
-            gridFormatRule3.Name = "Format_MaterialName2_MDF";
+            gridFormatRule3.Column = this.grdCol_Material2;
+            gridFormatRule3.Name = "Format_Material2_MDF";
             formatConditionRuleValue3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             formatConditionRuleValue3.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue3.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
             formatConditionRuleValue3.Value1 = "MDF";
             gridFormatRule3.Rule = formatConditionRuleValue3;
-            gridFormatRule4.Column = this.grdCol_MaterialName2;
-            gridFormatRule4.Name = "Format_MaterialName2_MMR";
+            gridFormatRule4.Column = this.grdCol_Material2;
+            gridFormatRule4.Name = "Format_Material2_MMR";
             formatConditionRuleValue4.Appearance.BackColor = System.Drawing.Color.MediumSeaGreen;
             formatConditionRuleValue4.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue4.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
@@ -522,8 +554,8 @@ namespace ScandiHome.EPR.List
             gridFormatRule5.Name = "Format_Margin";
             formatConditionRuleValue5.Appearance.BackColor = System.Drawing.Color.LightSkyBlue;
             formatConditionRuleValue5.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue5.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
-            formatConditionRuleValue5.Value1 = "";
+            formatConditionRuleValue5.Condition = DevExpress.XtraEditors.FormatCondition.Greater;
+            formatConditionRuleValue5.Value1 = "0";
             gridFormatRule5.Rule = formatConditionRuleValue5;
             gridFormatRule6.Column = this.grdCol_TechnicalDesign;
             gridFormatRule6.Name = "Format_TechnicalDesign_d";
@@ -685,8 +717,8 @@ namespace ScandiHome.EPR.List
             this.gv_Data.OptionsView.ShowFooter = true;
             this.gv_Data.OptionsView.ShowGroupPanel = false;
             this.gv_Data.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
-            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.grdCol_CategoryName, DevExpress.Data.ColumnSortOrder.Ascending),
-            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.grdCol_GroupSKUName, DevExpress.Data.ColumnSortOrder.Ascending)});
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.grdCol_Category, DevExpress.Data.ColumnSortOrder.Ascending),
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.grdCol_GroupSKU, DevExpress.Data.ColumnSortOrder.Ascending)});
             // 
             // gridBand1
             // 
@@ -767,7 +799,7 @@ namespace ScandiHome.EPR.List
             this.gridBand4.AppearanceHeader.Options.UseTextOptions = true;
             this.gridBand4.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridBand4.Caption = "Color";
-            this.gridBand4.Columns.Add(this.grdCol_ColorName1);
+            this.gridBand4.Columns.Add(this.grdCol_Color);
             this.gridBand4.Name = "gridBand4";
             this.gridBand4.VisibleIndex = 0;
             // 
@@ -778,23 +810,23 @@ namespace ScandiHome.EPR.List
             this.gridBand5.AppearanceHeader.Options.UseTextOptions = true;
             this.gridBand5.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridBand5.Caption = "Color 2";
-            this.gridBand5.Columns.Add(this.grdCol_ColorName2);
+            this.gridBand5.Columns.Add(this.grdCol_Color2);
             this.gridBand5.Name = "gridBand5";
             this.gridBand5.VisibleIndex = 1;
             // 
-            // grdCol_ColorName2
+            // grdCol_Color2
             // 
-            this.grdCol_ColorName2.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdCol_ColorName2.AppearanceHeader.Options.UseFont = true;
-            this.grdCol_ColorName2.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdCol_ColorName2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdCol_ColorName2.Caption = "Color2";
-            this.grdCol_ColorName2.FieldName = "ColorName2";
-            this.grdCol_ColorName2.Name = "grdCol_ColorName2";
-            this.grdCol_ColorName2.OptionsColumn.ReadOnly = true;
-            this.grdCol_ColorName2.OptionsColumn.ShowCaption = false;
-            this.grdCol_ColorName2.Visible = true;
-            this.grdCol_ColorName2.Width = 70;
+            this.grdCol_Color2.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.grdCol_Color2.AppearanceHeader.Options.UseFont = true;
+            this.grdCol_Color2.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdCol_Color2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_Color2.Caption = "Color2";
+            this.grdCol_Color2.FieldName = "Color2";
+            this.grdCol_Color2.Name = "grdCol_Color2";
+            this.grdCol_Color2.OptionsColumn.ReadOnly = true;
+            this.grdCol_Color2.OptionsColumn.ShowCaption = false;
+            this.grdCol_Color2.Visible = true;
+            this.grdCol_Color2.Width = 70;
             // 
             // gridBand6
             // 
@@ -818,7 +850,7 @@ namespace ScandiHome.EPR.List
             this.gridBand7.AppearanceHeader.Options.UseTextOptions = true;
             this.gridBand7.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridBand7.Caption = "Material";
-            this.gridBand7.Columns.Add(this.grdCol_MaterialName1);
+            this.gridBand7.Columns.Add(this.grdCol_Material);
             this.gridBand7.Name = "gridBand7";
             this.gridBand7.VisibleIndex = 0;
             // 
@@ -829,7 +861,7 @@ namespace ScandiHome.EPR.List
             this.gridBand8.AppearanceHeader.Options.UseTextOptions = true;
             this.gridBand8.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridBand8.Caption = "Material 2";
-            this.gridBand8.Columns.Add(this.grdCol_MaterialName2);
+            this.gridBand8.Columns.Add(this.grdCol_Material2);
             this.gridBand8.Name = "gridBand8";
             this.gridBand8.VisibleIndex = 1;
             // 
@@ -1291,21 +1323,25 @@ namespace ScandiHome.EPR.List
             this.gridBand28.Columns.Add(this.grdCol_DesignDate);
             this.gridBand28.Name = "gridBand28";
             this.gridBand28.VisibleIndex = 16;
-            this.gridBand28.Width = 90;
+            this.gridBand28.Width = 120;
             // 
             // grdCol_DesignDate
             // 
+            this.grdCol_DesignDate.AppearanceCell.Options.UseTextOptions = true;
+            this.grdCol_DesignDate.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.grdCol_DesignDate.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.grdCol_DesignDate.AppearanceHeader.Options.UseFont = true;
             this.grdCol_DesignDate.AppearanceHeader.Options.UseTextOptions = true;
             this.grdCol_DesignDate.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.grdCol_DesignDate.Caption = "Design Date";
+            this.grdCol_DesignDate.DisplayFormat.FormatString = "dd/MM/yyyy HH:mm:ss";
+            this.grdCol_DesignDate.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.grdCol_DesignDate.FieldName = "DesignDate";
             this.grdCol_DesignDate.Name = "grdCol_DesignDate";
             this.grdCol_DesignDate.OptionsColumn.ReadOnly = true;
             this.grdCol_DesignDate.OptionsColumn.ShowCaption = false;
             this.grdCol_DesignDate.Visible = true;
-            this.grdCol_DesignDate.Width = 90;
+            this.grdCol_DesignDate.Width = 120;
             // 
             // gridBand29
             // 
@@ -1314,24 +1350,24 @@ namespace ScandiHome.EPR.List
             this.gridBand29.AppearanceHeader.Options.UseTextOptions = true;
             this.gridBand29.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridBand29.Caption = "Designer";
-            this.gridBand29.Columns.Add(this.grdCol_DesignerName);
+            this.gridBand29.Columns.Add(this.grdCol_Designer);
             this.gridBand29.Name = "gridBand29";
             this.gridBand29.VisibleIndex = 17;
             this.gridBand29.Width = 175;
             // 
-            // grdCol_DesignerName
+            // grdCol_Designer
             // 
-            this.grdCol_DesignerName.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdCol_DesignerName.AppearanceHeader.Options.UseFont = true;
-            this.grdCol_DesignerName.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdCol_DesignerName.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdCol_DesignerName.Caption = "Designer Name";
-            this.grdCol_DesignerName.FieldName = "DesignerName";
-            this.grdCol_DesignerName.Name = "grdCol_DesignerName";
-            this.grdCol_DesignerName.OptionsColumn.ReadOnly = true;
-            this.grdCol_DesignerName.OptionsColumn.ShowCaption = false;
-            this.grdCol_DesignerName.Visible = true;
-            this.grdCol_DesignerName.Width = 175;
+            this.grdCol_Designer.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.grdCol_Designer.AppearanceHeader.Options.UseFont = true;
+            this.grdCol_Designer.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdCol_Designer.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_Designer.Caption = "Designer";
+            this.grdCol_Designer.FieldName = "Designer";
+            this.grdCol_Designer.Name = "grdCol_Designer";
+            this.grdCol_Designer.OptionsColumn.ReadOnly = true;
+            this.grdCol_Designer.OptionsColumn.ShowCaption = false;
+            this.grdCol_Designer.Visible = true;
+            this.grdCol_Designer.Width = 175;
             // 
             // gridBand30
             // 
@@ -1420,7 +1456,7 @@ namespace ScandiHome.EPR.List
             this.grdCol_AutoPrice.Caption = "Auto Price";
             this.grdCol_AutoPrice.DisplayFormat.FormatString = "{0:N0}";
             this.grdCol_AutoPrice.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.grdCol_AutoPrice.FieldName = "Auto Price";
+            this.grdCol_AutoPrice.FieldName = "AutoPrice";
             this.grdCol_AutoPrice.Name = "grdCol_AutoPrice";
             this.grdCol_AutoPrice.OptionsColumn.ReadOnly = true;
             this.grdCol_AutoPrice.OptionsColumn.ShowCaption = false;
@@ -1433,22 +1469,22 @@ namespace ScandiHome.EPR.List
             this.gridBand34.AppearanceHeader.Options.UseTextOptions = true;
             this.gridBand34.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridBand34.Caption = "Test price điều chỉnh";
-            this.gridBand34.Columns.Add(this.grdCol_TestPrice);
+            this.gridBand34.Columns.Add(this.grdCol_AdjustPrice);
             this.gridBand34.Name = "gridBand34";
             this.gridBand34.VisibleIndex = 22;
             this.gridBand34.Width = 146;
             // 
-            // grdCol_TestPrice
+            // grdCol_AdjustPrice
             // 
-            this.grdCol_TestPrice.Caption = "Test Price";
-            this.grdCol_TestPrice.DisplayFormat.FormatString = "{0:N0}";
-            this.grdCol_TestPrice.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.grdCol_TestPrice.FieldName = "TestPrice";
-            this.grdCol_TestPrice.Name = "grdCol_TestPrice";
-            this.grdCol_TestPrice.OptionsColumn.ReadOnly = true;
-            this.grdCol_TestPrice.OptionsColumn.ShowCaption = false;
-            this.grdCol_TestPrice.Visible = true;
-            this.grdCol_TestPrice.Width = 146;
+            this.grdCol_AdjustPrice.Caption = "AdjustPrice";
+            this.grdCol_AdjustPrice.DisplayFormat.FormatString = "{0:N0}";
+            this.grdCol_AdjustPrice.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.grdCol_AdjustPrice.FieldName = "AdjustPrice";
+            this.grdCol_AdjustPrice.Name = "grdCol_AdjustPrice";
+            this.grdCol_AdjustPrice.OptionsColumn.ReadOnly = true;
+            this.grdCol_AdjustPrice.OptionsColumn.ShowCaption = false;
+            this.grdCol_AdjustPrice.Visible = true;
+            this.grdCol_AdjustPrice.Width = 146;
             // 
             // gridBand10
             // 
@@ -1552,6 +1588,93 @@ namespace ScandiHome.EPR.List
             this.gridBand41.VisibleIndex = 5;
             this.gridBand41.Width = 75;
             // 
+            // gridBand44
+            // 
+            this.gridBand44.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridBand44.AppearanceHeader.Options.UseFont = true;
+            this.gridBand44.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridBand44.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridBand44.Caption = "MANUFACTURING\r\n";
+            this.gridBand44.Children.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.GridBand[] {
+            this.gridBand45,
+            this.gridBand46,
+            this.gridBand47});
+            this.gridBand44.Name = "gridBand44";
+            this.gridBand44.VisibleIndex = 25;
+            this.gridBand44.Width = 330;
+            // 
+            // gridBand45
+            // 
+            this.gridBand45.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridBand45.AppearanceHeader.Options.UseFont = true;
+            this.gridBand45.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridBand45.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridBand45.Caption = "Cost Price";
+            this.gridBand45.Columns.Add(this.grdCol_CostPrice);
+            this.gridBand45.Name = "gridBand45";
+            this.gridBand45.VisibleIndex = 0;
+            this.gridBand45.Width = 110;
+            // 
+            // grdCol_CostPrice
+            // 
+            this.grdCol_CostPrice.Caption = "CostPrice";
+            this.grdCol_CostPrice.DisplayFormat.FormatString = "{0:N0}";
+            this.grdCol_CostPrice.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.grdCol_CostPrice.FieldName = "CostPrice";
+            this.grdCol_CostPrice.Name = "grdCol_CostPrice";
+            this.grdCol_CostPrice.OptionsColumn.ReadOnly = true;
+            this.grdCol_CostPrice.OptionsColumn.ShowCaption = false;
+            this.grdCol_CostPrice.Visible = true;
+            this.grdCol_CostPrice.Width = 110;
+            // 
+            // gridBand46
+            // 
+            this.gridBand46.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridBand46.AppearanceHeader.Options.UseFont = true;
+            this.gridBand46.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridBand46.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridBand46.Caption = "Thành phẩm";
+            this.gridBand46.Columns.Add(this.grdCol_CostPriceTP);
+            this.gridBand46.Name = "gridBand46";
+            this.gridBand46.VisibleIndex = 1;
+            this.gridBand46.Width = 110;
+            // 
+            // grdCol_CostPriceTP
+            // 
+            this.grdCol_CostPriceTP.Caption = "CostPriceTP";
+            this.grdCol_CostPriceTP.DisplayFormat.FormatString = "{0:N0}";
+            this.grdCol_CostPriceTP.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.grdCol_CostPriceTP.FieldName = "CostPriceTP";
+            this.grdCol_CostPriceTP.Name = "grdCol_CostPriceTP";
+            this.grdCol_CostPriceTP.OptionsColumn.ReadOnly = true;
+            this.grdCol_CostPriceTP.OptionsColumn.ShowCaption = false;
+            this.grdCol_CostPriceTP.Visible = true;
+            this.grdCol_CostPriceTP.Width = 110;
+            // 
+            // gridBand47
+            // 
+            this.gridBand47.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridBand47.AppearanceHeader.Options.UseFont = true;
+            this.gridBand47.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridBand47.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridBand47.Caption = "Bán thành phẩm";
+            this.gridBand47.Columns.Add(this.grdCol_CostPriceBP);
+            this.gridBand47.Name = "gridBand47";
+            this.gridBand47.VisibleIndex = 2;
+            this.gridBand47.Width = 110;
+            // 
+            // grdCol_CostPriceBP
+            // 
+            this.grdCol_CostPriceBP.Caption = "CostPriceBP";
+            this.grdCol_CostPriceBP.DisplayFormat.FormatString = "{0:N0}";
+            this.grdCol_CostPriceBP.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.grdCol_CostPriceBP.FieldName = "CostPriceBP";
+            this.grdCol_CostPriceBP.Name = "grdCol_CostPriceBP";
+            this.grdCol_CostPriceBP.OptionsColumn.ReadOnly = true;
+            this.grdCol_CostPriceBP.OptionsColumn.ShowCaption = false;
+            this.grdCol_CostPriceBP.Visible = true;
+            this.grdCol_CostPriceBP.Width = 110;
+            // 
             // gridBand43
             // 
             this.gridBand43.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1561,7 +1684,7 @@ namespace ScandiHome.EPR.List
             this.gridBand43.Caption = "Commission";
             this.gridBand43.Columns.Add(this.grdCol_Commission);
             this.gridBand43.Name = "gridBand43";
-            this.gridBand43.VisibleIndex = 25;
+            this.gridBand43.VisibleIndex = 26;
             this.gridBand43.Width = 90;
             // 
             // grdCol_Commission
@@ -1584,7 +1707,7 @@ namespace ScandiHome.EPR.List
             this.gridBand42.Caption = "Shipping HCM";
             this.gridBand42.Columns.Add(this.grdCol_ShippingHCM);
             this.gridBand42.Name = "gridBand42";
-            this.gridBand42.VisibleIndex = 26;
+            this.gridBand42.VisibleIndex = 27;
             this.gridBand42.Width = 90;
             // 
             // grdCol_ShippingHCM
@@ -1599,35 +1722,35 @@ namespace ScandiHome.EPR.List
             this.grdCol_ShippingHCM.Visible = true;
             this.grdCol_ShippingHCM.Width = 90;
             // 
-            // grdCol_CategoryName
+            // grdCol_Category
             // 
-            this.grdCol_CategoryName.AppearanceCell.Options.UseTextOptions = true;
-            this.grdCol_CategoryName.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdCol_CategoryName.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdCol_CategoryName.AppearanceHeader.Options.UseFont = true;
-            this.grdCol_CategoryName.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdCol_CategoryName.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdCol_CategoryName.Caption = "Category";
-            this.grdCol_CategoryName.FieldName = "CategoryName";
-            this.grdCol_CategoryName.Name = "grdCol_CategoryName";
-            this.grdCol_CategoryName.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
-            this.grdCol_CategoryName.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.True;
-            this.grdCol_CategoryName.OptionsColumn.ReadOnly = true;
-            this.grdCol_CategoryName.Width = 70;
+            this.grdCol_Category.AppearanceCell.Options.UseTextOptions = true;
+            this.grdCol_Category.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_Category.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.grdCol_Category.AppearanceHeader.Options.UseFont = true;
+            this.grdCol_Category.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdCol_Category.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_Category.Caption = "Category";
+            this.grdCol_Category.FieldName = "Category";
+            this.grdCol_Category.Name = "grdCol_Category";
+            this.grdCol_Category.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
+            this.grdCol_Category.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.True;
+            this.grdCol_Category.OptionsColumn.ReadOnly = true;
+            this.grdCol_Category.Width = 70;
             // 
-            // grdCol_GroupSKUName
+            // grdCol_GroupSKU
             // 
-            this.grdCol_GroupSKUName.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grdCol_GroupSKUName.AppearanceHeader.Options.UseFont = true;
-            this.grdCol_GroupSKUName.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdCol_GroupSKUName.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdCol_GroupSKUName.Caption = "Group SKU";
-            this.grdCol_GroupSKUName.FieldName = "GroupSKUName";
-            this.grdCol_GroupSKUName.Name = "grdCol_GroupSKUName";
-            this.grdCol_GroupSKUName.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
-            this.grdCol_GroupSKUName.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.True;
-            this.grdCol_GroupSKUName.OptionsColumn.ReadOnly = true;
-            this.grdCol_GroupSKUName.Width = 90;
+            this.grdCol_GroupSKU.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.grdCol_GroupSKU.AppearanceHeader.Options.UseFont = true;
+            this.grdCol_GroupSKU.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdCol_GroupSKU.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_GroupSKU.Caption = "Group SKU";
+            this.grdCol_GroupSKU.FieldName = "GroupSKU";
+            this.grdCol_GroupSKU.Name = "grdCol_GroupSKU";
+            this.grdCol_GroupSKU.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
+            this.grdCol_GroupSKU.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.True;
+            this.grdCol_GroupSKU.OptionsColumn.ReadOnly = true;
+            this.grdCol_GroupSKU.Width = 90;
             // 
             // grdCol_Policy
             // 
@@ -1658,11 +1781,235 @@ namespace ScandiHome.EPR.List
             this.btn_Refresh.Visible = false;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
+            // tpl_Main
+            // 
+            this.tpl_Main.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tpl_Main.ColumnCount = 2;
+            this.tpl_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tpl_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tpl_Main.Controls.Add(this.gc_Material, 1, 0);
+            this.tpl_Main.Controls.Add(this.gc_Data, 0, 0);
+            this.tpl_Main.Location = new System.Drawing.Point(0, 0);
+            this.tpl_Main.Name = "tpl_Main";
+            this.tpl_Main.RowCount = 1;
+            this.tpl_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tpl_Main.Size = new System.Drawing.Size(864, 427);
+            this.tpl_Main.TabIndex = 29;
+            // 
+            // gc_Material
+            // 
+            this.gc_Material.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gc_Material.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2);
+            this.gc_Material.Location = new System.Drawing.Point(432, 0);
+            this.gc_Material.MainView = this.gv_Material;
+            this.gc_Material.Margin = new System.Windows.Forms.Padding(0);
+            this.gc_Material.Name = "gc_Material";
+            this.gc_Material.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.chk_BP,
+            this.chk_TP});
+            this.gc_Material.Size = new System.Drawing.Size(432, 427);
+            this.gc_Material.TabIndex = 42;
+            this.gc_Material.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gv_Material});
+            // 
+            // gv_Material
+            // 
+            this.gv_Material.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.grdCol_Material_SKU,
+            this.grdCol_Material_STT,
+            this.grdCol_Material_ProductMaterialName,
+            this.grdCol_Material_Price,
+            this.grdCol_Material_Quantity,
+            this.grdCol_Material_Amount,
+            this.grdCol_Material_BP,
+            this.grdCol_Material_TP});
+            this.gv_Material.DetailHeight = 280;
+            this.gv_Material.GridControl = this.gc_Material;
+            this.gv_Material.GroupCount = 1;
+            this.gv_Material.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.None, "Id", this.grdCol_Material_STT, "")});
+            this.gv_Material.Name = "gv_Material";
+            this.gv_Material.OptionsBehavior.AutoExpandAllGroups = true;
+            this.gv_Material.OptionsView.ColumnAutoWidth = false;
+            this.gv_Material.OptionsView.ShowFooter = true;
+            this.gv_Material.OptionsView.ShowGroupPanel = false;
+            this.gv_Material.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.grdCol_Material_SKU, DevExpress.Data.ColumnSortOrder.Ascending),
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.grdCol_Material_STT, DevExpress.Data.ColumnSortOrder.Ascending)});
+            this.gv_Material.ViewCaption = "Nguyên liệu";
+            // 
+            // grdCol_Material_SKU
+            // 
+            this.grdCol_Material_SKU.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.grdCol_Material_SKU.AppearanceHeader.Options.UseFont = true;
+            this.grdCol_Material_SKU.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdCol_Material_SKU.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_Material_SKU.Caption = "SKU";
+            this.grdCol_Material_SKU.FieldName = "SKU";
+            this.grdCol_Material_SKU.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
+            this.grdCol_Material_SKU.Name = "grdCol_Material_SKU";
+            this.grdCol_Material_SKU.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.True;
+            this.grdCol_Material_SKU.OptionsColumn.ReadOnly = true;
+            this.grdCol_Material_SKU.Visible = true;
+            this.grdCol_Material_SKU.VisibleIndex = 3;
+            this.grdCol_Material_SKU.Width = 110;
+            // 
+            // grdCol_Material_STT
+            // 
+            this.grdCol_Material_STT.AppearanceCell.Options.UseTextOptions = true;
+            this.grdCol_Material_STT.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_Material_STT.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.grdCol_Material_STT.AppearanceHeader.Options.UseFont = true;
+            this.grdCol_Material_STT.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdCol_Material_STT.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_Material_STT.Caption = "STT";
+            this.grdCol_Material_STT.DisplayFormat.FormatString = "{0:N0}";
+            this.grdCol_Material_STT.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.grdCol_Material_STT.FieldName = "ID";
+            this.grdCol_Material_STT.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
+            this.grdCol_Material_STT.MaxWidth = 50;
+            this.grdCol_Material_STT.MinWidth = 50;
+            this.grdCol_Material_STT.Name = "grdCol_Material_STT";
+            this.grdCol_Material_STT.OptionsColumn.ReadOnly = true;
+            this.grdCol_Material_STT.SortMode = DevExpress.XtraGrid.ColumnSortMode.Value;
+            this.grdCol_Material_STT.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "Id", "{0:N0}")});
+            this.grdCol_Material_STT.Visible = true;
+            this.grdCol_Material_STT.VisibleIndex = 0;
+            this.grdCol_Material_STT.Width = 50;
+            // 
+            // grdCol_Material_ProductMaterialName
+            // 
+            this.grdCol_Material_ProductMaterialName.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.grdCol_Material_ProductMaterialName.AppearanceHeader.Options.UseFont = true;
+            this.grdCol_Material_ProductMaterialName.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdCol_Material_ProductMaterialName.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_Material_ProductMaterialName.Caption = "Tên nguyên liệu";
+            this.grdCol_Material_ProductMaterialName.FieldName = "ProductMaterialName";
+            this.grdCol_Material_ProductMaterialName.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
+            this.grdCol_Material_ProductMaterialName.MaxWidth = 300;
+            this.grdCol_Material_ProductMaterialName.MinWidth = 250;
+            this.grdCol_Material_ProductMaterialName.Name = "grdCol_Material_ProductMaterialName";
+            this.grdCol_Material_ProductMaterialName.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.True;
+            this.grdCol_Material_ProductMaterialName.OptionsColumn.ReadOnly = true;
+            this.grdCol_Material_ProductMaterialName.Visible = true;
+            this.grdCol_Material_ProductMaterialName.VisibleIndex = 1;
+            this.grdCol_Material_ProductMaterialName.Width = 250;
+            // 
+            // grdCol_Material_Price
+            // 
+            this.grdCol_Material_Price.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.grdCol_Material_Price.AppearanceHeader.Options.UseFont = true;
+            this.grdCol_Material_Price.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdCol_Material_Price.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_Material_Price.Caption = "Đơn giá";
+            this.grdCol_Material_Price.DisplayFormat.FormatString = "{0:N0}";
+            this.grdCol_Material_Price.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.grdCol_Material_Price.FieldName = "Price";
+            this.grdCol_Material_Price.Name = "grdCol_Material_Price";
+            this.grdCol_Material_Price.Visible = true;
+            this.grdCol_Material_Price.VisibleIndex = 2;
+            this.grdCol_Material_Price.Width = 100;
+            // 
+            // grdCol_Material_Quantity
+            // 
+            this.grdCol_Material_Quantity.AppearanceCell.Options.UseTextOptions = true;
+            this.grdCol_Material_Quantity.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.grdCol_Material_Quantity.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.grdCol_Material_Quantity.AppearanceHeader.Options.UseFont = true;
+            this.grdCol_Material_Quantity.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdCol_Material_Quantity.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_Material_Quantity.Caption = "Số lượng";
+            this.grdCol_Material_Quantity.DisplayFormat.FormatString = "{0:N2}";
+            this.grdCol_Material_Quantity.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.grdCol_Material_Quantity.FieldName = "Quantity";
+            this.grdCol_Material_Quantity.MaxWidth = 100;
+            this.grdCol_Material_Quantity.MinWidth = 80;
+            this.grdCol_Material_Quantity.Name = "grdCol_Material_Quantity";
+            this.grdCol_Material_Quantity.Visible = true;
+            this.grdCol_Material_Quantity.VisibleIndex = 3;
+            this.grdCol_Material_Quantity.Width = 90;
+            // 
+            // grdCol_Material_Amount
+            // 
+            this.grdCol_Material_Amount.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.grdCol_Material_Amount.AppearanceHeader.Options.UseFont = true;
+            this.grdCol_Material_Amount.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdCol_Material_Amount.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_Material_Amount.Caption = "Thành tiền";
+            this.grdCol_Material_Amount.DisplayFormat.FormatString = "{0:N0}";
+            this.grdCol_Material_Amount.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.grdCol_Material_Amount.FieldName = "Amount";
+            this.grdCol_Material_Amount.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Right;
+            this.grdCol_Material_Amount.Name = "grdCol_Material_Amount";
+            this.grdCol_Material_Amount.Visible = true;
+            this.grdCol_Material_Amount.VisibleIndex = 4;
+            this.grdCol_Material_Amount.Width = 110;
+            // 
+            // grdCol_Material_BP
+            // 
+            this.grdCol_Material_BP.AppearanceCell.Options.UseTextOptions = true;
+            this.grdCol_Material_BP.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_Material_BP.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.grdCol_Material_BP.AppearanceHeader.Options.UseFont = true;
+            this.grdCol_Material_BP.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdCol_Material_BP.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_Material_BP.Caption = "Bán thành phẩm";
+            this.grdCol_Material_BP.ColumnEdit = this.chk_BP;
+            this.grdCol_Material_BP.DisplayFormat.FormatString = "{0:N0}";
+            this.grdCol_Material_BP.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.grdCol_Material_BP.FieldName = "BP";
+            this.grdCol_Material_BP.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Right;
+            this.grdCol_Material_BP.Name = "grdCol_Material_BP";
+            this.grdCol_Material_BP.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.True;
+            this.grdCol_Material_BP.OptionsColumn.ReadOnly = true;
+            this.grdCol_Material_BP.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "BP", "{0:N0}")});
+            this.grdCol_Material_BP.Visible = true;
+            this.grdCol_Material_BP.VisibleIndex = 6;
+            this.grdCol_Material_BP.Width = 110;
+            // 
+            // chk_BP
+            // 
+            this.chk_BP.AutoHeight = false;
+            this.chk_BP.Name = "chk_BP";
+            // 
+            // grdCol_Material_TP
+            // 
+            this.grdCol_Material_TP.AppearanceCell.Options.UseTextOptions = true;
+            this.grdCol_Material_TP.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_Material_TP.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.grdCol_Material_TP.AppearanceHeader.Options.UseFont = true;
+            this.grdCol_Material_TP.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdCol_Material_TP.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdCol_Material_TP.Caption = "Thành phẩm";
+            this.grdCol_Material_TP.ColumnEdit = this.chk_TP;
+            this.grdCol_Material_TP.DisplayFormat.FormatString = "{0:N0}";
+            this.grdCol_Material_TP.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.grdCol_Material_TP.FieldName = "TP";
+            this.grdCol_Material_TP.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Right;
+            this.grdCol_Material_TP.Name = "grdCol_Material_TP";
+            this.grdCol_Material_TP.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.True;
+            this.grdCol_Material_TP.OptionsColumn.ReadOnly = true;
+            this.grdCol_Material_TP.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "TP", "{0:N0}")});
+            this.grdCol_Material_TP.Visible = true;
+            this.grdCol_Material_TP.VisibleIndex = 5;
+            this.grdCol_Material_TP.Width = 110;
+            // 
+            // chk_TP
+            // 
+            this.chk_TP.AutoHeight = false;
+            this.chk_TP.Name = "chk_TP";
+            // 
             // frmLST_Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(865, 492);
+            this.Controls.Add(this.tpl_Main);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.simpleButton4);
             this.Controls.Add(this.simpleButton3);
@@ -1670,7 +2017,6 @@ namespace ScandiHome.EPR.List
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.btn_Refresh);
             this.Controls.Add(this.btnView);
-            this.Controls.Add(this.gc_Data);
             this.IconOptions.Image = global::ScandiHome.Properties.Resources.logo;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -1683,6 +2029,11 @@ namespace ScandiHome.EPR.List
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmLST_Product_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.gc_Data)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gv_Data)).EndInit();
+            this.tpl_Main.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gc_Material)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gv_Material)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chk_BP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chk_TP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1697,14 +2048,14 @@ namespace ScandiHome.EPR.List
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private DevExpress.XtraGrid.GridControl gc_Data;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridView gv_Data;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_CategoryName;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_GroupSKUName;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Category;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_GroupSKU;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_NewProductNote;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_SKU;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_ColorName1;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_ColorName2;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_MaterialName1;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_MaterialName2;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Color;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Color2;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Material;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Material2;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Size;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Width;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Depth;
@@ -1719,14 +2070,14 @@ namespace ScandiHome.EPR.List
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Guideline;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_WebsiteLink;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_DesignDate;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_DesignerName;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Designer;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_PublicName;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Weight;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Price;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Render;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_OldPrice;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_AutoPrice;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_TestPrice;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_AdjustPrice;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Margin;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_ShippingHCM;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_TechnicalDesign;
@@ -1737,6 +2088,20 @@ namespace ScandiHome.EPR.List
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_On_site;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Policy;
         private DevExpress.XtraEditors.SimpleButton btn_Refresh;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Commission;
+        private System.Windows.Forms.TableLayoutPanel tpl_Main;
+        private DevExpress.XtraGrid.GridControl gc_Material;
+        private DevExpress.XtraGrid.Views.Grid.GridView gv_Material;
+        private DevExpress.XtraGrid.Columns.GridColumn grdCol_Material_STT;
+        private DevExpress.XtraGrid.Columns.GridColumn grdCol_Material_ProductMaterialName;
+        private DevExpress.XtraGrid.Columns.GridColumn grdCol_Material_Quantity;
+        private DevExpress.XtraGrid.Columns.GridColumn grdCol_Material_Price;
+        private DevExpress.XtraGrid.Columns.GridColumn grdCol_Material_Amount;
+        private DevExpress.XtraGrid.Columns.GridColumn grdCol_Material_SKU;
+        private DevExpress.XtraGrid.Columns.GridColumn grdCol_Material_BP;
+        private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit chk_BP;
+        private DevExpress.XtraGrid.Columns.GridColumn grdCol_Material_TP;
+        private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit chk_TP;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand1;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand2;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand3;
@@ -1778,8 +2143,14 @@ namespace ScandiHome.EPR.List
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand39;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand40;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand41;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand44;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand45;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_CostPrice;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand46;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_CostPriceTP;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand47;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_CostPriceBP;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand43;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Commission;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand42;
     }
 }

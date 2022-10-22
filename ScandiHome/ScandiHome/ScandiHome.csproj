@@ -77,6 +77,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\CustomerDAO.cs" />
+    <Compile Include="DAO\OrderDAO.cs" />
+    <Compile Include="DAO\ProductDAO.cs" />
     <Compile Include="DTO\Account.cs" />
     <Compile Include="DTO\GetProductDetail.cs" />
     <Compile Include="DTO\RequestModel.cs" />
@@ -123,6 +127,7 @@
     <Compile Include="EPR\Setting\frmST_Quota.Designer.cs">
       <DependentUpon>frmST_Quota.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helper\DataProvider.cs" />
     <Compile Include="Helper\HttpHelper.cs" />
     <Compile Include="Helper\ReadWriteINIfile.cs" />
     <Compile Include="Helper\WaitFormFunc.cs" />

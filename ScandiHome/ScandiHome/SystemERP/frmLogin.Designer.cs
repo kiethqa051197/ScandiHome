@@ -55,6 +55,7 @@ namespace ScandiHome
             // 
             this.txtPass.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPass.EditValue = "admin";
             this.txtPass.Location = new System.Drawing.Point(106, 33);
             this.txtPass.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtPass.Name = "txtPass";
@@ -77,6 +78,7 @@ namespace ScandiHome
             // 
             this.txtUserName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtUserName.EditValue = "admin";
             this.txtUserName.Location = new System.Drawing.Point(106, 10);
             this.txtUserName.Margin = new System.Windows.Forms.Padding(2);
             this.txtUserName.Name = "txtUserName";

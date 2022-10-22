@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using ScandiHome.DAO;
 using System;
 using System.Windows.Forms;
 
@@ -13,15 +13,9 @@ namespace ScandiHome
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            RequestModel model = new RequestModel(txtUserName.Text, txtPass.Text);
+            var mResult = AccountDAO.Instance.Login(txtUserName.Text, txtPass.Text);
 
-            var json = JsonConvert.SerializeObject(model);
-
-            string result = HttpHelper.webRequest("Account/login", json, "POST", "application/json");
-
-            var country = JsonConvert.DeserializeObject<ResponseModel<Account>>(result);
-
-            if (country.Succeeded)
+            if (mResult.Success)
             {
                 try
                 {
@@ -37,7 +31,7 @@ namespace ScandiHome
             }
             else
             {
-                MessageBox.Show(country.Errors);
+                MessageBox.Show(mResult.Message);
             }
         }
 
