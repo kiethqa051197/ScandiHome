@@ -167,6 +167,8 @@ namespace ScandiHome.EPR.ENT
             this.gridBand53 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand54 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand55 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
+            this.openFileDlg = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.gc_Data)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gv_Data)).BeginInit();
             this.SuspendLayout();
@@ -460,7 +462,7 @@ namespace ScandiHome.EPR.ENT
             this.gc_Data.MainView = this.gv_Data;
             this.gc_Data.Margin = new System.Windows.Forms.Padding(0);
             this.gc_Data.Name = "gc_Data";
-            this.gc_Data.Size = new System.Drawing.Size(866, 439);
+            this.gc_Data.Size = new System.Drawing.Size(866, 427);
             this.gc_Data.TabIndex = 28;
             this.gc_Data.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gv_Data});
@@ -1585,6 +1587,29 @@ namespace ScandiHome.EPR.ENT
             this.gridBand55.VisibleIndex = 5;
             this.gridBand55.Width = 75;
             // 
+            // simpleButton5
+            // 
+            this.simpleButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton5.Appearance.Options.UseFont = true;
+            this.simpleButton5.AutoSize = true;
+            this.simpleButton5.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.simpleButton5.ImageOptions.SvgImage = global::ScandiHome.Properties.Resources.excel1;
+            this.simpleButton5.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.simpleButton5.Location = new System.Drawing.Point(21, 441);
+            this.simpleButton5.Margin = new System.Windows.Forms.Padding(2);
+            this.simpleButton5.Name = "simpleButton5";
+            this.simpleButton5.Padding = new System.Windows.Forms.Padding(2);
+            this.simpleButton5.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton5.Size = new System.Drawing.Size(68, 28);
+            this.simpleButton5.TabIndex = 22;
+            this.simpleButton5.Text = "&Excel";
+            this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
+            // 
+            // openFileDlg
+            // 
+            this.openFileDlg.FileName = "openFileDialog1";
+            // 
             // frmENT_Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -1592,6 +1617,7 @@ namespace ScandiHome.EPR.ENT
             this.ClientSize = new System.Drawing.Size(865, 492);
             this.Controls.Add(this.gc_Data);
             this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.simpleButton5);
             this.Controls.Add(this.simpleButton4);
             this.Controls.Add(this.simpleButton3);
             this.Controls.Add(this.simpleButton2);
@@ -1703,5 +1729,7 @@ namespace ScandiHome.EPR.ENT
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Delivery;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand55;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn grdCol_Payment;
+        private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private System.Windows.Forms.OpenFileDialog openFileDlg;
     }
 }

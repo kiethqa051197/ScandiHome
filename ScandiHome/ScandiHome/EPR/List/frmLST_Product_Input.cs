@@ -1,11 +1,6 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using ScandiHome.DAO;
-using ScandiHome.DTO;
+﻿using ScandiHome.DAO;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace ScandiHome.EPR.List

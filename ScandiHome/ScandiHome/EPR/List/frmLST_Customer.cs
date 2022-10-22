@@ -1,15 +1,6 @@
-﻿using DevExpress.XtraEditors;
-using Newtonsoft.Json.Linq;
+﻿using ScandiHome.DAO;
 using ScandiHome.Helper;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ScandiHome.EPR.List
@@ -31,13 +22,10 @@ namespace ScandiHome.EPR.List
 
                 Thread.Sleep(500);
 
-                string result = HttpHelper.webRequest("Customer/GetAll", null, "POST", "application/json");
+                var result = CustomerDAO.Instance.GetAll();
+                gc_Data.DataSource = result;
 
-                var jsonObject = JObject.Parse(result);
-                DataTable dt = jsonObject["Data"].ToObject<DataTable>();
-                gc_Data.DataSource = dt;
-
-                waitForm.Close(dt);
+                waitForm.Close(result);
             }
             catch { }
         }

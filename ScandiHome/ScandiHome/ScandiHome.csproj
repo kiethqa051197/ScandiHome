@@ -82,9 +82,6 @@
     <Compile Include="DAO\OrderDAO.cs" />
     <Compile Include="DAO\ProductDAO.cs" />
     <Compile Include="DTO\Account.cs" />
-    <Compile Include="DTO\GetProductDetail.cs" />
-    <Compile Include="DTO\RequestModel.cs" />
-    <Compile Include="DTO\ResponseModel.cs" />
     <Compile Include="EPR\ENT\frmENT_Order.cs">
       <SubType>Form</SubType>
     </Compile>
