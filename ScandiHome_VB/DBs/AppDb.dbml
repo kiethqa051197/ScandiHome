@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ScandiHome_20221020_001" Class="AppDbDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=ScandiHome_20221020_001;User ID=sa" SettingsObjectName="DBs.My.MySettings" SettingsPropertyName="ScandiHome_20221020_001ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Category" Member="Categories">
+    <Type Name="Category">
+      <Column Name="CategoryCode" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CategoryName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ComputerName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Category_ModelSKU" Member="ModelSKUs" ThisKey="CategoryCode" OtherKey="CategoryCode" Type="ModelSKU" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Color" Member="Colors">
+    <Type Name="Color">
+      <Column Name="ColorCode" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ColorName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ComputerName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Color_ProductColor" Member="ProductColors" ThisKey="ColorCode" OtherKey="ColorCode" Type="ProductColor" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LinkFile" Member="LinkFiles">
+    <Type Name="LinkFile">
+      <Column Name="Id" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SKU" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ReferalLink" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SketchupFile" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CNCFile" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Guideline" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="WebsiteLink" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ImageLink" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Product_LinkFile" Member="Product" ThisKey="SKU" OtherKey="SKU" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Material" Member="Materials">
+    <Type Name="Material">
+      <Column Name="MaterialCode" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaterialName" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="ComputerName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Material_ProductMaterial" Member="ProductMaterials" ThisKey="MaterialCode" OtherKey="MaterialCode" Type="ProductMaterial" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ModelSKU" Member="ModelSKUs">
+    <Type Name="ModelSKU">
+      <Column Name="ModelSKUCode" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ModelSKUName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DraftName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CategoryCode" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SeriesCode" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Width" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Depth" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Height" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Weight" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="ModelSKU_Product" Member="Products" ThisKey="ModelSKUCode" OtherKey="ModelSKUCode" Type="Product" />
+      <Association Name="Category_ModelSKU" Member="Category" ThisKey="CategoryCode" OtherKey="CategoryCode" Type="Category" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Price" Member="Prices">
+    <Type Name="Price">
+      <Column Name="Id" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SKU" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ComputerName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Product_Price" Member="Product" ThisKey="SKU" OtherKey="SKU" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PriceQuota" Member="PriceQuotas">
+    <Type Name="PriceQuota">
+      <Column Name="Id" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProductCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ComputerName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ProductQuota_PriceQuota" Member="ProductQuota" ThisKey="ProductCode" OtherKey="ProductCode" Type="ProductQuota" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Product" Member="Products">
+    <Type Name="Product">
+      <Column Name="SKU" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProductCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ProductCatCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ModelSKUCode" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Render" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ShippingHCM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ExpectedMargin" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Designer" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DesignDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ComputerName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Product_LinkFile" Member="LinkFiles" ThisKey="SKU" OtherKey="SKU" Type="LinkFile" />
+      <Association Name="Product_Price" Member="Prices" ThisKey="SKU" OtherKey="SKU" Type="Price" />
+      <Association Name="Product_ProductColor" Member="ProductColors" ThisKey="SKU" OtherKey="SKU" Type="ProductColor" />
+      <Association Name="Product_ProductMaterial" Member="ProductMaterials" ThisKey="SKU" OtherKey="SKU" Type="ProductMaterial" />
+      <Association Name="Product_ProductProgress" Member="ProductProgress" ThisKey="SKU" OtherKey="SKU" Type="ProductProgress" Cardinality="One" />
+      <Association Name="Product_Quota" Member="Quotas" ThisKey="SKU" OtherKey="SKU" Type="Quota" />
+      <Association Name="Product_OrderDetail" Member="OrderDetails" ThisKey="SKU" OtherKey="SKU" Type="OrderDetail" />
+      <Association Name="ModelSKU_Product" Member="ModelSKU" ThisKey="ModelSKUCode" OtherKey="ModelSKUCode" Type="ModelSKU" IsForeignKey="true" />
+      <Association Name="ProductCat_Product" Member="ProductCat" ThisKey="ProductCatCode" OtherKey="ProductCatCode" Type="ProductCat" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductCat" Member="ProductCats">
+    <Type Name="ProductCat">
+      <Column Name="ProductCatCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProductCatName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="ComputerName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ProductCat_Product" Member="Products" ThisKey="ProductCatCode" OtherKey="ProductCatCode" Type="Product" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductColor" Member="ProductColors">
+    <Type Name="ProductColor">
+      <Column Name="Id" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SKU" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ColorCode" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Association Name="Color_ProductColor" Member="Color" ThisKey="ColorCode" OtherKey="ColorCode" Type="Color" IsForeignKey="true" />
+      <Association Name="Product_ProductColor" Member="Product" ThisKey="SKU" OtherKey="SKU" Type="Product" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductMaterial" Member="ProductMaterials">
+    <Type Name="ProductMaterial">
+      <Column Name="Id" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SKU" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MaterialCode" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Association Name="Material_ProductMaterial" Member="Material" ThisKey="MaterialCode" OtherKey="MaterialCode" Type="Material" IsForeignKey="true" />
+      <Association Name="Product_ProductMaterial" Member="Product" ThisKey="SKU" OtherKey="SKU" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductProgress" Member="ProductProgresses">
+    <Type Name="ProductProgress">
+      <Column Name="SKU" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TechnicalDesign" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PriceCalculation" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DesignQC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CNC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ImageBuilding" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="On_site" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Product_ProductProgress" Member="Product" ThisKey="SKU" OtherKey="SKU" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductQuota" Member="ProductQuotas">
+    <Type Name="ProductQuota">
+      <Column Name="ProductCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProductName" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="ProductCatCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ComputerName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ProductQuota_PriceQuota" Member="PriceQuotas" ThisKey="ProductCode" OtherKey="ProductCode" Type="PriceQuota" />
+      <Association Name="ProductQuota_QuotaDetail" Member="QuotaDetails" ThisKey="ProductCode" OtherKey="ProductMaterialCode" Type="QuotaDetail" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Quota" Member="Quotas">
+    <Type Name="Quota">
+      <Column Name="Id" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SKU" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ComputerName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Quota_QuotaDetail" Member="QuotaDetails" ThisKey="Id" OtherKey="QuotaId" Type="QuotaDetail" />
+      <Association Name="Product_Quota" Member="Product" ThisKey="SKU" OtherKey="SKU" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QuotaDetail" Member="QuotaDetails">
+    <Type Name="QuotaDetail">
+      <Column Name="Id" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="QuotaId" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ProductMaterialCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Quantity" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="BP" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TP" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="ProductQuota_QuotaDetail" Member="ProductQuota" ThisKey="ProductMaterialCode" OtherKey="ProductCode" Type="ProductQuota" IsForeignKey="true" />
+      <Association Name="Quota_QuotaDetail" Member="Quota" ThisKey="QuotaId" OtherKey="Id" Type="Quota" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Series" Member="Series">
+    <Type Name="Series">
+      <Column Name="SeriesCode" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SeriesName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SeriesReference" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ComputerName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ShippingFee" Member="ShippingFees">
+    <Type Name="ShippingFee">
+      <Column Name="Id" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Price" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Fee" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Role" Member="Roles">
+    <Type Name="Role">
+      <Column Name="Id" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="Role_UserRole" Member="UserRoles" ThisKey="Id" OtherKey="RoleId" Type="UserRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PasswordHash" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LastLogin" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ComputerName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Enabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="User_UserRole" Member="UserRoles" ThisKey="UserName" OtherKey="UserId" Type="UserRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserRole" Member="UserRoles">
+    <Type Name="UserRole">
+      <Column Name="UserId" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Role_UserRole" Member="Role" ThisKey="RoleId" OtherKey="Id" Type="Role" IsForeignKey="true" />
+      <Association Name="User_UserRole" Member="User" ThisKey="UserId" OtherKey="UserName" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Order]" Member="Orders">
+    <Type Name="Order">
+      <Column Name="OrderCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ComputerName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Order_OrderDetail" Member="OrderDetails" ThisKey="OrderCode" OtherKey="OrderCode" Type="OrderDetail" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OrderDetail" Member="OrderDetails">
+    <Type Name="OrderDetail">
+      <Column Name="OrderCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="OrderCodeItem" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OrderType" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Customer" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Region" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DeliveryDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Manufacturing" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Manufacturer" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DeliveryTime" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DeliveryMethod" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Staff" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PaymentNote" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SKU" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Quantity" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="CODAmountPaid" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="CODAmount" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ReferenceOrder" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ShippingFee" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="[Confirm]" Member="Confirm" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Design" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Materials" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Production" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Delivery" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Payment" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Source" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Order_OrderDetail" Member="Order" ThisKey="OrderCode" OtherKey="OrderCode" Type="Order" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Product_OrderDetail" Member="Product" ThisKey="SKU" OtherKey="SKU" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
