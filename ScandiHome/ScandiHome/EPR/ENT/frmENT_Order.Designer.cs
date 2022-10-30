@@ -1589,14 +1589,14 @@ namespace ScandiHome.EPR.ENT
             // 
             // simpleButton5
             // 
-            this.simpleButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.simpleButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.simpleButton5.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton5.Appearance.Options.UseFont = true;
             this.simpleButton5.AutoSize = true;
             this.simpleButton5.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.simpleButton5.ImageOptions.SvgImage = global::ScandiHome.Properties.Resources.excel1;
             this.simpleButton5.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.simpleButton5.Location = new System.Drawing.Point(11, 441);
+            this.simpleButton5.Location = new System.Drawing.Point(21, 441);
             this.simpleButton5.Margin = new System.Windows.Forms.Padding(2);
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.Padding = new System.Windows.Forms.Padding(2);
